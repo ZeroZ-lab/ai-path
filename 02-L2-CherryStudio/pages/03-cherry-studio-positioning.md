@@ -124,7 +124,7 @@ layout: default
 
 ## 2.3 即看即用 Demo
 
-<div class="grid gap-6 md:grid-cols-[1fr_1.5fr] mt-8 items-center h-[400px]">
+<div class="grid gap-6 md:grid-cols-[1fr_1.5fr] mt-8 items-center">
 
 <div class="space-y-6">
   <div class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-6 shadow-lg">
@@ -148,16 +148,16 @@ layout: default
   </div>
 </div>
 
-<div class="rounded-3xl border border-slate-200 bg-slate-800 p-4 shadow-2xl relative overflow-hidden flex items-center justify-center aspect-video">
+<div class="rounded-3xl border border-slate-200 bg-white/80 p-4 shadow-2xl relative overflow-hidden flex items-center justify-center aspect-video backdrop-blur-sm">
   <!-- Placeholder for screen mirroring or video -->
   <div class="text-center">
-    <div class="text-6xl mb-4">👀</div>
-    <h3 class="text-xl font-bold text-white mb-2">演示进行中...</h3>
-    <p class="text-slate-400 text-sm">请关注讲师屏幕</p>
+    <div class="text-6xl mb-4 text-slate-800">👀</div>
+    <h3 class="text-xl font-bold text-slate-900 mb-2">演示进行中...</h3>
+    <p class="text-slate-600 text-sm">请关注讲师屏幕</p>
   </div>
   <!-- Visual decoration -->
-  <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
-  <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"></div>
 </div>
 
 </div>

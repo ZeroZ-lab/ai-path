@@ -1,5 +1,5 @@
 
-### 为什么 AI 总是“猜”不对？——乔哈里视窗
+## 4.3 为什么 AI 总是“猜”不对？
 <div class="mt-4 grid md:grid-cols-2 gap-16 items-center h-[80%]">
 <!-- 视窗图示容器 -->
 <div class="relative aspect-square ml-8 mt-6">
