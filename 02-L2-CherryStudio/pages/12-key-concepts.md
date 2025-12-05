@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+## 5.5 核心概念：向量与数据库
+
+<div class="grid gap-6 md:grid-cols-2 mt-4 items-stretch">
+
+<!-- Concept 1: Embeddings -->
+<div class="rounded-[32px] border border-indigo-100 bg-indigo-50/80 p-5 shadow-[0_15px_30px_rgba(99,102,241,0.1)] flex flex-col hover:-translate-y-1 transition-transform">
+  <div class="flex items-center gap-3 mb-2">
+    <span class="text-2xl p-1.5 bg-white rounded-xl shadow-sm">🔢</span>
+    <h3 class="text-lg font-bold text-indigo-900">Embedding (向量)</h3>
+  </div>
+  
+  <p class="text-xs text-slate-700 leading-relaxed mb-4">
+    计算机看不懂文字，只能看懂数字。Embedding 就是把文字“翻译”成一串数字坐标。
+  </p>
+
+  <div class="bg-white/60 rounded-2xl p-4 border border-indigo-100/50 flex-1 flex flex-col justify-center gap-2">
+    <div class="flex justify-between items-center bg-white/50 p-2 rounded-lg">
+        <span class="font-bold text-slate-700 text-sm">🐱 猫</span>
+        <span class="font-mono text-[10px] text-slate-400">[0.12, 0.88, 0.03...]</span>
+    </div>
+    <div class="flex justify-between items-center bg-white/50 p-2 rounded-lg">
+        <span class="font-bold text-slate-700 text-sm">🐈 小猫</span>
+        <span class="font-mono text-[10px] text-slate-400">[0.13, 0.87, 0.04...]</span>
+    </div>
+    <div class="w-full h-px bg-indigo-200/50 my-1"></div>
+    <div class="flex justify-between items-center opacity-50 bg-white/30 p-2 rounded-lg">
+        <span class="font-bold text-slate-700 text-sm">🚗 汽车</span>
+        <span class="font-mono text-[10px] text-slate-400">[0.91, 0.02, 0.15...]</span>
+    </div>
+    <div class="text-center text-[10px] text-indigo-500 font-bold mt-2">
+        语义越近，坐标距离越近
+    </div>
+  </div>
+</div>
+
+<!-- Concept 2: Vector DB -->
+<div class="rounded-[32px] border border-amber-100 bg-amber-50/80 p-5 shadow-[0_15px_30px_rgba(245,158,11,0.1)] flex flex-col hover:-translate-y-1 transition-transform">
+  <div class="flex items-center gap-3 mb-2">
+    <span class="text-2xl p-1.5 bg-white rounded-xl shadow-sm">🗄️</span>
+    <h3 class="text-lg font-bold text-amber-900">Vector DB (向量数据库)</h3>
+  </div>
+
+  <p class="text-xs text-slate-700 leading-relaxed mb-4">
+    专门存储这些“坐标”的高维地图。传统数据库查“关键词匹配”，它查“意思相近”。
+  </p>
+
+  <div class="bg-white/60 rounded-2xl p-4 border border-amber-100/50 flex-1 relative overflow-hidden min-h-[160px]">
+    <!-- Visualization of search -->
+    <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-24 h-24 rounded-full border-2 border-dashed border-amber-300 flex items-center justify-center animate-spin-slow"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-2 h-2 bg-red-500 rounded-full shadow-[0_0_10px_rgba(239,68,68,0.6)] z-10"></div> <!-- Target -->
+        <div class="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-slate-400 rounded-full -translate-x-6 -translate-y-6"></div>
+        <div class="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-slate-400 rounded-full translate-x-5 translate-y-3"></div>
+        <div class="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-slate-400 rounded-full translate-x-8 -translate-y-2"></div>
+    </div>
+    <div class="absolute bottom-2 w-full text-center text-[10px] text-amber-600 font-bold">
+        🔍 寻找最近邻居 (Nearest Neighbor)
+    </div>
+  </div>
+</div>
+
+</div>

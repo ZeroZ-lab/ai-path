@@ -15,12 +15,12 @@ mdc: true
 duration: 35min
 ---
 
-## AI 基础认知与思维启蒙
+## AI 基础认知与启蒙
 
-<!-- 
+
 <template #graphic>
-  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Generative illustration" />
-</template> -->
+  <img src="/imgs/ai.png" alt="" />
+</template>
 
 
 ---
@@ -202,6 +202,18 @@ hide: false
 ---
 layout: default
 src: ./pages/29.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/pre-johari.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/johari-window.md
 hide: false
 ---
 
