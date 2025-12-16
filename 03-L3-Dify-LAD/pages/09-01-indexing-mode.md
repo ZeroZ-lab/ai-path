@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 10.1 索引模式：高质量 vs 经济
+## 9.1 索引模式：高质量 vs 经济
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 

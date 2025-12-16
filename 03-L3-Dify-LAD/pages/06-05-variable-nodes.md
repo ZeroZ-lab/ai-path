@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.5 记忆与变量：读写操作
+## 6.5 记忆与变量：读写操作
 
 <div class="grid gap-10 md:grid-cols-2 mt-10 items-center">
 

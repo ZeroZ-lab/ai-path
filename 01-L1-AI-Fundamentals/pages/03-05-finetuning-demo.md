@@ -14,7 +14,7 @@ const isLast = computed(() => demoRef.value?.currentStageIndex === 2)
 const isTyping = computed(() => demoRef.value?.isTyping)
 </script>
 
-## 3.3.b 交互演示：微调的作用
+## 3.5 交互演示：微调的作用
 
 <div class="flex items-center justify-center h-[80%]">
   <FinetuningDemo ref="demoRef" />

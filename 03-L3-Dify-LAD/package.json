@@ -2,7 +2,7 @@
   "name": "03-l3-dify",
   "private": true,
   "scripts": {
-    "dev": "slidev --open",
+    "dev": "slidev",
     "build": "slidev build",
     "export": "slidev export"
   },

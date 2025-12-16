@@ -3,7 +3,7 @@ layout: default
 class: px-14
 ---
 
-## 10.0.1 知识库 (RAG) 的核心价值
+## 9.0.1 知识库 (RAG) 的核心价值
 
 <div class="mt-2 text-sm text-slate-500 mb-4">
   RAG (检索增强生成) 就像给大模型“外挂”了一个实时更新、可查阅的图书馆：

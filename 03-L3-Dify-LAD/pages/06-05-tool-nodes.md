@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.5 工具箱：HTTP & 列表操作
+## 6.5 工具箱：HTTP & 列表操作
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.2 交互与触发：从开始到结束
+## 6.2 交互与触发：从开始到结束
 
 <div class="grid gap-6 md:grid-cols-2 mt-6 mb-6 items-stretch" v-pre>
 

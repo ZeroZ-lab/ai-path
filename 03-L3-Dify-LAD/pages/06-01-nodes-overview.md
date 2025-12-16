@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1 节点全景图：Dify 的 20 个积木
+## 6.1 节点全景图：Dify 的 20 个积木
 
 <div class="grid grid-cols-3 gap-4 mt-6">
 

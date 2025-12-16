@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.6 连接外部世界：HTTP & Tools
+## 6.6 连接外部世界：HTTP & Tools
 
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 10.4 进阶：Knowledge Pipeline (数据流水线)
+## 9.4 进阶：Knowledge Pipeline (数据流水线)
 
 <div class="flex flex-col justify-center h-full gap-8">
 

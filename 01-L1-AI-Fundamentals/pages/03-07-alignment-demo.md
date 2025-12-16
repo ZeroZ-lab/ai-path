@@ -1,4 +1,4 @@
-## 3.4.b 交互演示：RLHF 人类反馈
+## 3.7 交互演示：RLHF 人类反馈
 
 <div class="flex items-center justify-center h-[90%]">
   <AlignmentDemo />

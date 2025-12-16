@@ -9,7 +9,6 @@
         “我把任务、角色、背景、约束都写了，为什么它写出来的文案还是没那味儿？”
       </p>
     </div>
-    
     <div class="rounded-2xl border-l-4 border-emerald-500 bg-emerald-50 p-5 shadow-sm">
       <h3 class="text-lg font-bold text-emerald-900">💡 解决方案：Few-Shot（少样本提示）</h3>
       <p class="mt-2 text-sm text-emerald-800">
@@ -33,7 +32,6 @@
         → AI：亲们！这款面霜真的绝绝子，保湿炸裂！(过于浮夸)
       </div>
     </div>
-
     <div>
       <div class="text-xs font-bold uppercase tracking-widest text-blue-500">✅ 指令 + 例子 (Few-Shot)</div>
       <div class="mt-2 font-mono text-slate-800 bg-blue-50 p-2 rounded border border-blue-100">

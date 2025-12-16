@@ -19,7 +19,7 @@ const isFirstStep = computed(() => pretrainingStepsRef.value?.currentStep === 0)
 const isLastStep = computed(() => pretrainingStepsRef.value?.currentStep === (pretrainingStepsRef.value?.steps?.length - 1))
 </script>
 
-## 3.2.b 交互演示：预训练的流水线
+## 3.3 交互演示：预训练的流水线
 
 <div class="flex items-center justify-center h-[80%]">
   <PretrainingSteps ref="pretrainingStepsRef" />

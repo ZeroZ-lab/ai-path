@@ -3,7 +3,7 @@ layout: default
 class: px-14
 ---
 
-## 10.0 为什么“只靠大模型”不够？
+## 9.0 为什么“只靠大模型”不够？
 
 <div class="mt-2 text-sm text-slate-500 mb-4">
   在企业落地中，直接使用通用大模型（LLM）通常会面临“四大硬伤”：

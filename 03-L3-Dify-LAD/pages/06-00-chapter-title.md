@@ -2,6 +2,6 @@
 layout: center
 ---
 
-# 07 工作流实战：智能写作流水线
+# 06 节点详解：构建复杂的逻辑
 
-<div class="mt-4 text-slate-500">Building an Intelligent Writing Pipeline</div>
+<div class="mt-4 text-slate-500">Mastering Dify Nodes</div>

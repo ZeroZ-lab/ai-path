@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.6 知识与外部工具：Knowledge & External
+## 6.6 知识与外部工具：Knowledge & External
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 

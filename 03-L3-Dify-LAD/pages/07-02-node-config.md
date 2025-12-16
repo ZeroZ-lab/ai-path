@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.2 核心配置：Prompt 编排与传参
+## 7.2 核心配置：Prompt 编排与传参
 
 <div class="grid gap-6 md:grid-cols-2 mt-6 items-stretch">
 

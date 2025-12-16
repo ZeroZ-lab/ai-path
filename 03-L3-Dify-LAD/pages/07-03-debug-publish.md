@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.3 调试与发布：从 Demo 到 API
+## 7.3 调试与发布：从 Demo 到 API
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-start">
 

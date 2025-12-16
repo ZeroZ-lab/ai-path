@@ -206,49 +206,43 @@ hide: false
 
 ---
 layout: default
-src: ./pages/03-02-b-pretraining-steps.md
+src: ./pages/03-03-pretraining-steps.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-03-finetuning.md
+src: ./pages/03-04-finetuning.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-03-b-finetuning-demo.md
+src: ./pages/03-05-finetuning-demo.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-04-alignment.md
+src: ./pages/03-06-alignment.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-04-b-alignment-demo.md
+src: ./pages/03-07-alignment-demo.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-04-b-alignment-demo.md
+src: ./pages/03-08-six-characteristics.md
 hide: false
 ---
 
 ---
 layout: default
-src: ./pages/03-05-six-characteristics.md
-hide: false
----
-
----
-layout: default
-src: ./pages/03-06-capabilities.md
+src: ./pages/03-09-capabilities.md
 hide: false
 ---
 
@@ -342,7 +336,13 @@ hide: false
 
 ---
 layout: default
-src: ./pages/04-14-mental-models.md
+src: ./pages/04-14-few-shot.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/04-15-mental-models.md
 hide: false
 ---
 

@@ -2,6 +2,8 @@
 layout: center
 ---
 
-# 10 如何构建知识库
+# 09 理论：如何构建知识库
 
-<div class="mt-4 text-slate-500">RAG 原理 · 索引与切片 · 检索与重排 · 数据管线</div>
+<div class="mt-4 text-slate-500">
+  RAG 原理 · 切片策略 · 检索优化
+</div>

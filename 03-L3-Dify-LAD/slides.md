@@ -75,6 +75,11 @@ hide: false
 ---
 
 ---
+src: ./pages/05-01-json-markdown.md
+hide: false
+---
+
+---
 src: ./pages/05-02-variables.md
 hide: false
 ---
@@ -89,61 +94,104 @@ src: ./pages/05-04-nodes-explained.md
 hide: false
 ---
 
+<!-- Chapter 06: Node Details (Swapped from 07) -->
 ---
 src: ./pages/06-00-chapter-title.md
 hide: false
 ---
 
 ---
-src: ./pages/06-01-workflow-goal.md
+src: ./pages/06-01-nodes-overview.md
 hide: false
 ---
 
 ---
-src: ./pages/06-02-node-config.md
+src: ./pages/06-02-interaction-nodes.md
 hide: false
 ---
 
 ---
-src: ./pages/06-03-debug-publish.md
+src: ./pages/06-03-logic-nodes.md
 hide: false
 ---
 
+---
+src: ./pages/06-04-data-nodes.md
+hide: false
+---
+
+---
+src: ./pages/06-05-tool-nodes.md
+hide: false
+---
+
+---
+src: ./pages/06-05-variable-nodes.md
+hide: false
+---
+
+---
+src: ./pages/06-06-external-nodes.md
+hide: false
+---
+
+---
+src: ./pages/06-06-knowledge-external.md
+hide: false
+---
+
+<!-- Chapter 07: Workflow Practice (Swapped from 06) -->
 ---
 src: ./pages/07-00-chapter-title.md
 hide: false
 ---
 
 ---
-src: ./pages/07-01-nodes-overview.md
+src: ./pages/07-00-part1-intro.md
 hide: false
 ---
 
 ---
-src: ./pages/07-02-interaction-nodes.md
+src: ./pages/07-01-workflow-goal.md
 hide: false
 ---
 
 ---
-src: ./pages/07-03-logic-nodes.md
+src: ./pages/07-02-node-config.md
 hide: false
 ---
 
 ---
-src: ./pages/07-04-data-nodes.md
+src: ./pages/07-03-debug-publish.md
 hide: false
 ---
 
 ---
-src: ./pages/07-05-tool-nodes.md
+src: ./pages/07-04-legal-agent-intro.md
 hide: false
 ---
 
 ---
-src: ./pages/07-06-knowledge-external.md
+src: ./pages/07-04-legal-roadmap.md
 hide: false
 ---
 
+---
+src: ./pages/07-04-demo-v1.md
+hide: false
+---
+
+---
+src: ./pages/07-04-demo-v2.md
+hide: false
+---
+
+---
+src: ./pages/07-04-demo-v3.md
+hide: false
+---
+
+<!-- Chapter 08: Ops -->
 ---
 src: ./pages/08-00-chapter-title.md
 hide: false
@@ -164,11 +212,7 @@ src: ./pages/08-03-ops-monitoring.md
 hide: false
 ---
 
----
-src: ./pages/09-00-workflow-practice.md
-hide: false
----
-
+<!-- Chapter 09: Knowledge Base -->
 ---
 src: ./pages/09-00-chapter-title.md
 hide: false
@@ -190,7 +234,22 @@ hide: false
 ---
 
 ---
-src: ./pages/09-01-indexing-mode.md
+src: ./pages/09-01-index-keyword.md
+hide: false
+---
+
+---
+src: ./pages/09-01-index-vector.md
+hide: false
+---
+
+---
+src: ./pages/09-01-index-comparison.md
+hide: false
+---
+
+---
+src: ./pages/09-01-index-interactive.md
 hide: false
 ---
 
@@ -200,12 +259,57 @@ hide: false
 ---
 
 ---
-src: ./pages/09-03-retrieval-rerank.md
+src: ./pages/09-02-parent-child-modes.md
+hide: false
+---
+
+---
+src: ./pages/09-02-chunking-scenarios.md
+hide: false
+---
+
+---
+src: ./pages/09-02-chunking-visuals.md
+hide: false
+---
+
+---
+src: ./pages/09-02-demo-qa.md
+hide: false
+---
+
+---
+src: ./pages/09-02-demo-parent-child.md
+hide: false
+---
+
+---
+src: ./pages/09-02-demo-full-doc.md
+hide: false
+---
+
+---
+src: ./pages/09-03-why-rerank.md
+hide: false
+---
+
+---
+src: ./pages/09-03-rerank-mechanism.md
+hide: false
+---
+
+---
+src: ./pages/09-03-rerank-demo.md
 hide: false
 ---
 
 ---
 src: ./pages/09-04-knowledge-pipeline.md
+hide: false
+---
+
+---
+src: ./pages/09-05-rag-checklist.md
 hide: false
 ---
 

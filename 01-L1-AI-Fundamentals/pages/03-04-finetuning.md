@@ -1,4 +1,4 @@
-## 3.3 阶段二：微调（做任务）
+## 3.4 阶段二：微调（做任务）
 
 <div class="mt-4 rounded-3xl border border-amber-200 bg-amber-50/80 px-5 py-4 text-center text-base font-semibold text-amber-900">
   微调解决的是“模型虽然懂，但不会按你的要求工作”的问题。
