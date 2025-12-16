@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 3.2 模型配置：接入你的 "大脑"
+## 3.1 模型配置：接入你的 "大脑"
 
 <div class="grid gap-8 md:grid-cols-[1fr_1.2fr] mt-8 items-center">
 

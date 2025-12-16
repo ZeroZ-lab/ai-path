@@ -2,14 +2,6 @@
 layout: center
 ---
 
-# 03 Dify 主要架构
+# 03 核心配置
 
----
-layout: default
----
-
-## 3.1 Dify 主要架构
-
-<div class="mt-8 flex justify-center">
-  <img src="/imgs/dify-architecture.png" class="h-[400px] rounded-1xl shadow-2xl border border-slate-200" alt="Dify Architecture" />
-</div>
+<div class="mt-4 text-slate-500">Model Provider · Plugin · Setup</div>

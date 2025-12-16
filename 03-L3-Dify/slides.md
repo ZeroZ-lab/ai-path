@@ -22,6 +22,7 @@ src: ./pages/01-02-ecosystem.md
 hide: false
 ---
 
+
 ---
 src: ./pages/02-installation.md
 hide: false
@@ -48,7 +49,17 @@ hide: false
 ---
 
 ---
-src: ./pages/04-core-concepts.md
+src: ./pages/04-00-chapter-title.md
+hide: false
+---
+
+---
+src: ./pages/04-01-create-chat-app.md
+hide: false
+---
+
+---
+src: ./pages/04-02-prompt-debugging.md
 hide: false
 ---
 

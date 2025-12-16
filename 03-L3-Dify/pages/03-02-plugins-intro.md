@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 3.3 插件化架构：无限扩展能力
+## 3.2 插件化架构：无限扩展能力
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 
