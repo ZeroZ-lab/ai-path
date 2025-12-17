@@ -4,75 +4,69 @@ layout: default
 
 ## 6.4 逻辑三剑客：If, Iteration, Loop
 
-<div class="grid gap-6 md:grid-cols-3 mt-4 mb-6 items-start">
+<div class="grid gap-6 md:grid-cols-3 mt-8 mb-6 items-stretch">
 
 <!-- If-Else -->
-<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2">
-        <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔀</span>
-        <h3 class="text-sm font-bold text-amber-900">If-Else (分支)</h3>
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
+    <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔀</span>
+        <h3 class="text-lg font-bold text-amber-900">If-Else (分支)</h3>
     </div>
-    <div class="bg-white rounded-xl p-2 border border-amber-100 h-16 flex flex-col justify-center">
-        <div class="flex justify-center items-center gap-4 text-[10px] font-mono">
+    <div class="bg-white rounded-xl p-3 border border-amber-100 h-20 flex flex-col justify-center">
+        <div class="flex justify-center items-center gap-4 text-xs font-mono">
             <div class="flex flex-col items-center">
-                <span class="text-green-600 font-bold text-[9px]">True</span>
-                <span class="i-carbon-arrow-down-right text-base text-green-400"></span>
+                <span class="text-green-600 font-bold text-[10px]">True</span>
+                <span class="i-carbon-arrow-down-right text-lg text-green-400"></span>
             </div>
-            <span class="bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200 text-[9px]">x > 5?</span>
+            <span class="bg-slate-100 px-2 py-1 rounded border border-slate-200">x > 5?</span>
             <div class="flex flex-col items-center">
-                <span class="text-rose-600 font-bold text-[9px]">False</span>
-                <span class="i-carbon-arrow-down-left text-base text-rose-400"></span>
+                <span class="text-rose-600 font-bold text-[10px]">False</span>
+                <span class="i-carbon-arrow-down-left text-lg text-rose-400"></span>
             </div>
         </div>
     </div>
-    <p class="text-[10px] text-slate-600 mt-2 leading-relaxed">
+    <p class="text-sm text-slate-600 mt-4 leading-relaxed">
         单次判断。用于根据条件走不同路径（如：问题是关于售前还是售后？）。
     </p>
 </div>
 
 <!-- Iteration -->
-<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2">
-        <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔁</span>
-        <h3 class="text-sm font-bold text-blue-900">Iteration (迭代)</h3>
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
+    <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔁</span>
+        <h3 class="text-lg font-bold text-blue-900">Iteration (迭代)</h3>
     </div>
-    <div class="bg-white rounded-xl p-2 border border-blue-100 h-16 flex flex-col justify-center gap-1">
-        <div class="flex justify-center gap-1">
-            <span class="w-2.5 h-2.5 bg-slate-300 rounded"></span>
-            <span class="w-2.5 h-2.5 bg-slate-300 rounded"></span>
-            <span class="w-2.5 h-2.5 bg-slate-300 rounded"></span>
+    <div class="bg-white rounded-xl p-3 border border-blue-100 h-20 flex flex-col justify-center gap-1">
+        <div class="flex justify-center gap-2">
+            <span class="w-3 h-3 bg-slate-300 rounded"></span>
+            <span class="w-3 h-3 bg-slate-300 rounded"></span>
+            <span class="w-3 h-3 bg-slate-300 rounded"></span>
         </div>
-        <div class="i-carbon-arrow-down text-center w-full text-slate-300 text-[10px]"></div>
-        <div class="flex justify-center gap-1">
-            <span class="w-2.5 h-2.5 bg-blue-400 rounded animate-pulse"></span>
-            <span class="w-2.5 h-2.5 bg-blue-400 rounded animate-pulse"></span>
-            <span class="w-2.5 h-2.5 bg-blue-400 rounded animate-pulse"></span>
+        <div class="i-carbon-arrow-down text-center w-full text-slate-300 text-sm"></div>
+        <div class="flex justify-center gap-2">
+            <span class="w-3 h-3 bg-blue-400 rounded animate-pulse"></span>
+            <span class="w-3 h-3 bg-blue-400 rounded animate-pulse"></span>
+            <span class="w-3 h-3 bg-blue-400 rounded animate-pulse"></span>
         </div>
     </div>
-    <p class="text-[10px] text-slate-600 mt-2 leading-relaxed">
-        并行/串行处理数组。用于对列表中的每一项执行相同操作（如：翻译 5 段文本）。
+    <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+        并行/串行处理数组。用于对列表中的每一项执行相同操作。
     </p>
 </div>
 
 <!-- Loop -->
-<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2">
-        <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔄</span>
-        <h3 class="text-sm font-bold text-purple-900">Loop (循环)</h3>
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
+    <div class="flex items-center gap-3 mb-4">
+        <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔄</span>
+        <h3 class="text-lg font-bold text-purple-900">Loop (循环)</h3>
     </div>
-    <div class="bg-white rounded-xl p-2 border border-purple-100 h-16 flex items-center justify-center relative">
-        <div class="w-8 h-8 border-4 border-purple-100 rounded-full border-t-purple-500 animate-spin"></div>
-        <span class="absolute text-[8px] font-bold text-purple-700">Until</span>
+    <div class="bg-white rounded-xl p-3 border border-purple-100 h-20 flex items-center justify-center relative">
+        <div class="w-10 h-10 border-4 border-purple-100 rounded-full border-t-purple-500 animate-spin"></div>
+        <span class="absolute text-[10px] font-bold text-purple-700">Until</span>
     </div>
-    <p class="text-[10px] text-slate-600 mt-2 leading-relaxed">
-        逻辑循环。反复执行某段逻辑直到满足条件（如：生成内容直到字数 > 1000）。
+    <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+        逻辑循环。反复执行某段逻辑直到满足条件（如：生成直到字数达标）。
     </p>
 </div>
 
 </div>
-
-<!--
-（点击 1）**If-Else** 是最常用的。比如：用户是不是 VIP？是的话走左边（极速通道），不是走右边（排队）。
-（点击 2）**Iteration** 是“批发商”。给你一个 Excel 里的 100 个名字，它能自动跑 100 次“发邮件”流程。
-（点击 3）**Loop** 是“死磕派”。比如让 AI 写代码，写完跑不通？那就自动重写，直到跑通为止。
--->

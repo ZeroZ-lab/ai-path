@@ -75,6 +75,11 @@ hide: false
 ---
 
 ---
+src: ./pages/02-00-deploy-options.md
+hide: false
+---
+
+---
 src: ./pages/02-01-installation-mirror.md
 hide: false
 ---
