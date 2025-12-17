@@ -7,7 +7,7 @@ layout: default
 <div class="mt-4 grid gap-8 md:grid-cols-2 items-stretch">
 
 <!-- 1. 自动分段 (Automatic) -->
-<div class="rounded-3xl border border-blue-100 bg-blue-50/50 p-6 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/50 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4">
         <span class="text-2xl bg-white p-2 rounded-xl shadow-sm text-blue-600">✂️</span>
         <div>
@@ -30,7 +30,7 @@ layout: default
 </div>
 
 <!-- 2. 规则分段 (Rule-based) -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/50 p-6 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/50 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4">
         <span class="text-2xl bg-white p-2 rounded-xl shadow-sm text-purple-600">📑</span>
         <div>
@@ -58,6 +58,17 @@ layout: default
 
 </div>
 
-<div class="mt-6 text-center text-xs text-slate-500">
+<div v-click class="mt-6 text-center text-xs text-slate-500 transition-all duration-500">
     <span class="font-bold">局限性：</span> 无论哪种方式，都可能把一个完整的语义切碎，导致“只见树木，不见森林”。
 </div>
+
+<!--
+（点击 1）**自动分段**：这是最傻瓜的方式。就像切香肠，每 500 个字切一刀。
+为了防止把“我爱你”切成“我爱”和“你”，我们会设置一点重叠（Overlap）。
+
+（点击 2）**规则分段**：如果你有 Markdown 文档，最好按标题切。
+保证每一个“章节”都是完整的。
+
+（点击 3）但它们都有个大问题：
+如果这一段只写了“他同意了”，但没写“他是谁”（在上一段），那这一段被检索出来也是废的。
+-->

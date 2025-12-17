@@ -7,7 +7,7 @@ layout: default
 <div class="mt-6 grid gap-6 md:grid-cols-2 items-stretch">
 
   <!-- Case 1: Miss -->
-  <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+  <div v-click class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3 border-b border-slate-100 pb-2">
       <div class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-xs">1</div>
       <div>
@@ -23,7 +23,7 @@ layout: default
   </div>
 
   <!-- Case 2: Wrong Rank -->
-  <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+  <div v-click class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3 border-b border-slate-100 pb-2">
       <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-xs">2</div>
       <div>
@@ -38,7 +38,7 @@ layout: default
   </div>
 
   <!-- Case 3: Hallucination -->
-  <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+  <div v-click class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3 border-b border-slate-100 pb-2">
       <div class="w-8 h-8 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-xs">3</div>
       <div>
@@ -53,7 +53,7 @@ layout: default
   </div>
 
   <!-- Case 4: Context Loss -->
-  <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col">
+  <div v-click class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3 border-b border-slate-100 pb-2">
       <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">4</div>
       <div>
@@ -68,3 +68,14 @@ layout: default
   </div>
 
 </div>
+
+<!--
+最后，我送给大家一份“调优黄金清单”。
+以后你们在项目中遇到问题，就按这个清单去查：
+- 搜不到？开混合检索。
+- 排序错？开 Rerank。
+- 胡说八道？调阈值。
+- 断章取义？开父子索引。
+
+这张图价值千金，建议大家拍照保存。
+-->

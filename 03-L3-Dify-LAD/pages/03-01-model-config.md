@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-[1fr_1.2fr] mt-8 items-center">
 
 <!-- Left: Concept -->
-<div class="space-y-6">
+<div v-click class="space-y-6 transition-all duration-500">
     <div class="rounded-3xl bg-indigo-50/80 border border-indigo-100 p-6 shadow-sm">
         <div class="text-xs font-bold uppercase tracking-widest text-indigo-500 mb-3">Model Provider</div>
         <h3 class="text-xl font-bold text-indigo-900 mb-4">模型供应商</h3>
@@ -30,7 +30,7 @@ layout: default
 </div>
 
 <!-- Right: Steps -->
-<div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg relative overflow-hidden">
+<div v-click class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg relative overflow-hidden transition-all duration-500">
     <div class="absolute top-0 right-0 bg-slate-100 px-3 py-1 rounded-bl-xl text-[10px] text-slate-500 font-mono">Settings > Model Provider</div>
     <div class="space-y-5 relative z-10">
         <div class="flex gap-4">
@@ -62,3 +62,15 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）首先，我们要搞清楚一个概念：Dify 本身是不带大模型的。
+它就像一个“插线板”，你需要把 OpenAI、DeepSeek 这些厂商的“插头”插上去。
+重点要配置两类模型：
+一个是“系统推理模型”，用来陪你聊天；
+另一个是“Embedding 模型”，用来做知识库向量化。
+
+（点击 2）操作非常简单：
+进入设置 -> 模型供应商，找到你买的那家（比如 DeepSeek），填入 API Key。
+最后别忘了设为“默认模型”，这样新建应用时就不用每次都选了。
+-->

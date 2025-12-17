@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 
 <!-- JSON Card -->
-<div class="rounded-[32px] border border-amber-100 bg-amber-50/80 p-6 shadow-lg flex flex-col">
+<div v-click class="rounded-[32px] border border-amber-100 bg-amber-50/80 p-6 shadow-lg flex flex-col transition-all duration-500 hover:-translate-y-1">
   <div class="flex items-center gap-3 mb-4">
     <span class="text-3xl p-2 bg-white rounded-xl shadow-sm">📦</span>
     <div>
@@ -35,7 +35,7 @@ layout: default
 </div>
 
 <!-- Markdown Card -->
-<div class="rounded-[32px] border border-blue-100 bg-blue-50/80 p-6 shadow-lg flex flex-col">
+<div v-click class="rounded-[32px] border border-blue-100 bg-blue-50/80 p-6 shadow-lg flex flex-col transition-all duration-500 hover:-translate-y-1">
   <div class="flex items-center gap-3 mb-4">
     <span class="text-3xl p-2 bg-white rounded-xl shadow-sm">📝</span>
     <div>
@@ -61,3 +61,16 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）首先是 JSON。
+大家把它想象成一个“有着严格格子的储物柜”。
+每个格子上贴着标签（Key），里面放着东西（Value）。
+机器最喜欢这种，因为绝对不会拿错。
+我们后面做“合同生成”时，提取变量用的就是 JSON。
+
+（点击 2）然后是 Markdown。
+它就像我们平时写的“带格式的笔记”。
+用 `#` 表示标题，用 `*` 表示加粗。
+AI 输出的长文章，基本都是 Markdown 格式，为了让人看得舒服。
+-->

@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 7.3 调试与发布：从 Demo 到 API
+## 7.3 调试与发布：从 Demo 到 应用
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-start">
 
 <!-- Debugging -->
-<div class="flex flex-col gap-4">
+<div v-click class="flex flex-col gap-4 transition-all duration-500">
     <div class="flex items-center gap-2 text-blue-600">
         <span class="i-carbon-play-filled text-xl"></span>
         <h3 class="text-lg font-bold">1. 预览与运行 (Run)</h3>
@@ -35,7 +35,7 @@ layout: default
 </div>
 
 <!-- Publishing -->
-<div class="flex flex-col gap-4">
+<div v-click class="flex flex-col gap-4 transition-all duration-500">
     <div class="flex items-center gap-2 text-purple-600">
         <span class="i-carbon-rocket text-xl"></span>
         <h3 class="text-lg font-bold">2. 发布 (Publish)</h3>
@@ -66,3 +66,14 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）千万不要写完直接点发布。
+先点右下角的“运行”。
+看到右侧这个黑色的日志框了吗？它会告诉你每一个节点到底跑了多久，输出了什么。
+如果中间断了，这里会显示红色的 Error，方便你修 Bug。
+
+（点击 2）调试通了，再点右上角的“发布”。
+Dify 会自动生成一个 Web 网页，你可以发给同事用。
+或者复制 API Key，让研发同事把它接到公司的钉钉机器人里。
+-->

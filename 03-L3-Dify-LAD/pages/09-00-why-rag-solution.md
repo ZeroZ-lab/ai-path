@@ -12,7 +12,7 @@ class: px-14
 <div class="grid gap-4 md:grid-cols-2 items-stretch">
 
   <!-- 价值 1：外挂知识 -->
-  <div class="rounded-2xl border border-blue-100 bg-blue-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-blue-100 bg-blue-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">🧩</span>
       <h3 class="text-sm font-bold text-blue-900">数据可插拔 (Update Easily)</h3>
@@ -24,7 +24,7 @@ class: px-14
   </div>
 
   <!-- 价值 2：精准溯源 -->
-  <div class="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">🔎</span>
       <h3 class="text-sm font-bold text-emerald-900">可信溯源 (Citations)</h3>
@@ -36,7 +36,7 @@ class: px-14
   </div>
 
   <!-- 价值 3：权限控制 -->
-  <div class="rounded-2xl border border-purple-100 bg-purple-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-purple-100 bg-purple-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">🛡️</span>
       <h3 class="text-sm font-bold text-purple-900">权限隔离 (Access Control)</h3>
@@ -48,7 +48,7 @@ class: px-14
   </div>
 
   <!-- 价值 4：降本增效 -->
-  <div class="rounded-2xl border border-amber-100 bg-amber-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-amber-100 bg-amber-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">💰</span>
       <h3 class="text-sm font-bold text-amber-900">成本效益 (Cost Effective)</h3>
@@ -61,6 +61,13 @@ class: px-14
 
 </div>
 
-<div class="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-2 text-center text-xs text-slate-500">
+<div v-click class="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-2 text-center text-xs text-slate-500 transition-all duration-500">
   <strong>结论：</strong> RAG 是企业引入 AI 的“安全阀”和“加速器”，解决了<strong>数据不出域</strong>与<strong>回答准确性</strong>的矛盾。
 </div>
+
+<!--
+（点击 1）**插拔**：制度改了？把旧文档删了，新文档拖进去，一秒钟更新。不用去微调模型。
+（点击 2）**溯源**：老板问“AI 凭什么这么说？”，AI 马上甩出链接：“我是根据《XX合同》第三页说的。”
+（点击 3）**权限**：这是企业最看重的。CEO 能搜到的和前台能搜到的，不一样。
+（点击 4）**省钱**：不用把整本书发给 AI，只发最重要的那一段。
+-->

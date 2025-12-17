@@ -4,10 +4,10 @@ layout: default
 
 ## 6.2 交互与触发：从开始到结束
 
-<div class="grid gap-6 md:grid-cols-2 mt-6 mb-6 items-stretch" v-pre>
+<div class="grid gap-6 md:grid-cols-2 mt-6 mb-6 items-stretch">
 
 <!-- 1. Trigger (Start) -->
-<div class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm flex flex-col hover:bg-blue-100/80 transition-colors">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm flex flex-col hover:bg-blue-100/80 transition-all duration-500">
     <div class="flex items-center gap-3 mb-2 pb-2 border-b border-blue-200">
         <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl">▶️</div>
         <div>
@@ -24,7 +24,7 @@ layout: default
 </div>
 
 <!-- 2. User Input -->
-<div class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col hover:bg-amber-100/80 transition-colors">
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col hover:bg-amber-100/80 transition-all duration-500">
     <div class="flex items-center gap-3 mb-2 pb-2 border-b border-amber-200">
         <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center text-xl">🙋</div>
         <div>
@@ -41,7 +41,7 @@ layout: default
 </div>
 
 <!-- 3. Answer -->
-<div class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col hover:bg-cyan-100/80 transition-colors">
+<div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col hover:bg-cyan-100/80 transition-all duration-500">
     <div class="flex items-center gap-3 mb-2 pb-2 border-b border-cyan-200">
         <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center text-xl">💬</div>
         <div>
@@ -58,7 +58,7 @@ layout: default
 </div>
 
 <!-- 4. End -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col hover:bg-purple-100/80 transition-colors">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col hover:bg-purple-100/80 transition-all duration-500">
     <div class="flex items-center gap-3 mb-2 pb-2 border-b border-purple-200">
         <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl">🏁</div>
         <div>
@@ -75,3 +75,10 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）如果你的应用是“后台自动跑”的（比如每天早上发日报），用 **Start**。
+（点击 2）如果需要“人填表单”才开始（比如请假申请），用 **User Input**。
+（点击 3）如果你的应用是“聊天机器人”，用 **Answer**，它能一个字一个字地吐出来。
+（点击 4）如果你的应用是给“别的系统调用”的 API，用 **End**，它会返回标准的 JSON。
+-->

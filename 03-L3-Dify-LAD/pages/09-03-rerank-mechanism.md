@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 
 <!-- Embedding (Fast Reading) -->
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col relative group">
+<div v-click class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col relative group transition-all duration-500 hover:-translate-y-1">
     <div class="absolute -top-3 left-4 bg-slate-100 text-slate-500 px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">Embedding</div>
     <div class="text-center mb-6 mt-2">
         <h3 class="text-lg font-bold text-slate-700">👀 匆忙的“速读”</h3>
@@ -26,7 +26,7 @@ layout: default
 </div>
 
 <!-- Rerank (Deep Reading) -->
-<div class="rounded-2xl border border-purple-200 bg-purple-50/30 p-6 shadow-md flex flex-col relative group">
+<div v-click class="rounded-2xl border border-purple-200 bg-purple-50/30 p-6 shadow-md flex flex-col relative group transition-all duration-500 hover:-translate-y-1">
     <div class="absolute -top-3 left-4 bg-purple-600 text-white px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider shadow-lg">Rerank</div>
     <div class="text-center mb-6 mt-2">
         <h3 class="text-lg font-bold text-purple-900">🧐 认真的“精读”</h3>
@@ -46,6 +46,12 @@ layout: default
 
 </div>
 
-<div class="mt-8 text-center bg-amber-50 border border-amber-100 p-3 rounded-xl text-xs text-amber-800">
+<div v-click class="mt-8 text-center bg-amber-50 border border-amber-100 p-3 rounded-xl text-xs text-amber-800 transition-all duration-500">
     <strong>最佳策略：</strong> 先让“速读者”快速找出前 50 本书，再让“精读者”从中挑出最好的 3 本。既快又准。
 </div>
+
+<!--
+（点击 1）**Embedding 是“速读”**。它一目十行，能快速从 10 万个文档里找出 50 个“看起来相关”的。
+（点击 2）**Rerank 是“精读”**。它会把这 50 个文档拿过来，一个字一个字地读，打出最精确的分数。
+（点击 3）**最佳实践**：先海选 (Top 50)，再精排 (Top 3)。这就是 RAG 的黄金组合。
+-->

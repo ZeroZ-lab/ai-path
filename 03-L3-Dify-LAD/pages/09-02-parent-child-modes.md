@@ -10,7 +10,7 @@ layout: default
 
 <div class="grid gap-8 md:grid-cols-2 items-stretch">
     <!-- Mode A: Parent Chunk -->
-    <div class="rounded-3xl border border-indigo-100 bg-indigo-50/60 p-6 shadow-sm flex flex-col relative overflow-hidden">
+    <div v-click class="rounded-3xl border border-indigo-100 bg-indigo-50/60 p-6 shadow-sm flex flex-col relative overflow-hidden transition-all duration-500 hover:-translate-y-1">
         <div class="absolute -right-4 -top-4 w-16 h-16 bg-indigo-200 rounded-full blur-xl opacity-50"></div>
         <h3 class="text-sm font-bold text-indigo-900 mb-4 flex items-center gap-2">
             <span class="bg-white p-1 rounded border border-indigo-100 shadow-sm">🅰️</span>
@@ -41,7 +41,7 @@ layout: default
         </p>
     </div>
     <!-- Mode B: Parent Document -->
-    <div class="rounded-3xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm flex flex-col relative overflow-hidden">
+    <div v-click class="rounded-3xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm flex flex-col relative overflow-hidden transition-all duration-500 hover:-translate-y-1">
         <div class="absolute -right-4 -top-4 w-16 h-16 bg-teal-200 rounded-full blur-xl opacity-50"></div>
         <h3 class="text-sm font-bold text-teal-900 mb-4 flex items-center gap-2">
             <span class="bg-white p-1 rounded border border-teal-100 shadow-sm">🅱️</span>
@@ -70,3 +70,16 @@ layout: default
     </div>
 
 </div>
+
+<!--
+为了解决“上下文丢失”的问题，Dify 引入了“父子索引”。
+
+（点击 1）**父切片模式**：
+我们把文档切成很小的“子切片”（比如 200 字），用来做精准搜索。
+但是，当真的搜到了，我们不把这 200 字给 AI，而是把包围它的 2000 字（父切片）给 AI。
+这样既搜得准，又读得全。
+
+（点击 2）**全文模式**：
+如果你的文档本身就不长（比如一篇新闻），那就更干脆了。
+搜到了任何一个片段，直接把整篇文章甩给 AI。
+-->

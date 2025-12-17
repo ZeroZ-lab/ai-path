@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 
 <!-- Left: The Problem -->
-<div class="space-y-6">
+<div v-click class="space-y-6 transition-all duration-500">
     <div class="rounded-3xl border border-rose-100 bg-rose-50/60 p-6 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
             <span class="text-3xl">📐</span>
@@ -29,7 +29,7 @@ layout: default
 </div>
 
 <!-- Right: The Analogy -->
-<div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg flex flex-col items-center text-center">
+<div v-click class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-1">
     <div class="text-[10px] font-bold uppercase text-slate-400 tracking-widest mb-6">招聘面试比喻</div>
     <div class="relative w-full flex flex-col items-center gap-4">
         <!-- Stage 1: Resume Screening -->
@@ -41,7 +41,6 @@ layout: default
             </div>
         </div>
         <div class="i-carbon-arrow-down text-slate-300"></div>
-        <!-- Stage 2: Interview -->
         <div class="w-full bg-emerald-50 p-3 rounded-xl border border-blue-100 flex items-center gap-3">
             <span class="text-2xl">👔</span>
             <div class="text-left">
@@ -50,6 +49,15 @@ layout: default
             </div>
         </div>
     </div>
+
 </div>
 
 </div>
+
+<!--
+Embedding 虽然快，但它不够细。
+就像找工作，HR 筛选简历时（Embedding），只看你有几个关键词匹配。
+但真正能不能录用，还得靠业务主管面试（Rerank）。
+
+Rerank 就是这个“面试官”。它虽然慢，但它能真正读懂你的简历。
+-->

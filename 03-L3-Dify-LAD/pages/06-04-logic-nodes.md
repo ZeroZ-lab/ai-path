@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 6.3 逻辑三剑客：If, Iteration, Loop
+## 6.4 逻辑三剑客：If, Iteration, Loop
 
 <div class="grid gap-6 md:grid-cols-3 mt-4 mb-6 items-start">
 
 <!-- If-Else -->
-<div class="rounded-3xl border border-amber-100 bg-amber-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-transform">
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
     <div class="flex items-center gap-3 mb-2">
         <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔀</span>
         <h3 class="text-sm font-bold text-amber-900">If-Else (分支)</h3>
@@ -31,7 +31,7 @@ layout: default
 </div>
 
 <!-- Iteration -->
-<div class="rounded-3xl border border-blue-100 bg-blue-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-transform">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
     <div class="flex items-center gap-3 mb-2">
         <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔁</span>
         <h3 class="text-sm font-bold text-blue-900">Iteration (迭代)</h3>
@@ -55,7 +55,7 @@ layout: default
 </div>
 
 <!-- Loop -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-transform">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-4 shadow-sm group hover:scale-[1.02] transition-all duration-500">
     <div class="flex items-center gap-3 mb-2">
         <span class="text-2xl p-1.5 bg-white rounded-lg shadow-sm">🔄</span>
         <h3 class="text-sm font-bold text-purple-900">Loop (循环)</h3>
@@ -70,3 +70,9 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**If-Else** 是最常用的。比如：用户是不是 VIP？是的话走左边（极速通道），不是走右边（排队）。
+（点击 2）**Iteration** 是“批发商”。给你一个 Excel 里的 100 个名字，它能自动跑 100 次“发邮件”流程。
+（点击 3）**Loop** 是“死磕派”。比如让 AI 写代码，写完跑不通？那就自动重写，直到跑通为止。
+-->

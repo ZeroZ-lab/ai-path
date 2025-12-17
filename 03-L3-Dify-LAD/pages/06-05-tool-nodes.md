@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 
 <!-- HTTP Request -->
-<div class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-6 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-4 mb-4">
         <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm text-cyan-600">🌐</div>
         <div>
@@ -31,7 +31,7 @@ layout: default
 </div>
 
 <!-- List Operator -->
-<div class="rounded-3xl border border-orange-100 bg-orange-50/80 p-6 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-orange-100 bg-orange-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-4 mb-4">
         <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm text-orange-600">📋</div>
         <div>
@@ -56,3 +56,11 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**HTTP Request** 是连接 Dify 和外部世界的“网线”。
+你可以用它把 AI 生成的日报推送到飞书群里，或者去你们公司的数据库里查一个订单状态。
+
+（点击 2）**List Operator** 是“过滤器”。
+比如 RAG 检索出了 10 条结果，你只想把其中分数大于 0.8 的 3 条发给大模型，就用这个节点。
+-->

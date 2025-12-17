@@ -12,18 +12,54 @@ mdc: true
   <img src="/imgs/dify-logo.svg" class="h-24 w-auto mx-auto" alt="Dify Logo" />
 </template>
 
+
 ---
 src: ./pages/01-intro.md
 hide: false
 ---
 
 ---
-src: ./pages/01-02-ecosystem.md
+src: ./pages/01-00-opening-poll.md
 hide: false
 ---
 
 ---
-src: ./pages/01-03-why-workflow.md
+src: ./pages/01-00-pain-points-poll.md
+hide: false
+---
+
+---
+src: ./pages/01-00-pain.md
+hide: false
+---
+
+---
+src: ./pages/01-01-workflow-need.md
+hide: false
+---
+
+---
+src: ./pages/01-01-workflow-translator.md
+hide: false
+---
+
+---
+src: ./pages/01-01-multi-model.md
+hide: false
+---
+
+---
+src: ./pages/01-01-selection.md
+hide: false
+---
+
+---
+src: ./pages/01-02-why-dify.md
+hide: false
+---
+
+---
+src: ./pages/01-03-dify-ecosystem.md
 hide: false
 ---
 
@@ -85,12 +121,12 @@ hide: false
 ---
 
 ---
-src: ./pages/05-03-workflow-analogy.md
+src: ./pages/05-04-nodes-explained.md
 hide: false
 ---
 
 ---
-src: ./pages/05-04-nodes-explained.md
+src: ./pages/05-03-workflow-analogy.md
 hide: false
 ---
 
@@ -111,32 +147,22 @@ hide: false
 ---
 
 ---
-src: ./pages/06-03-logic-nodes.md
+src: ./pages/06-03-reasoning-nodes.md
 hide: false
 ---
 
 ---
-src: ./pages/06-04-data-nodes.md
+src: ./pages/06-04-logic-nodes.md
 hide: false
 ---
 
 ---
-src: ./pages/06-05-tool-nodes.md
+src: ./pages/06-05-transformation-nodes.md
 hide: false
 ---
 
 ---
-src: ./pages/06-05-variable-nodes.md
-hide: false
----
-
----
-src: ./pages/06-06-external-nodes.md
-hide: false
----
-
----
-src: ./pages/06-06-knowledge-external.md
+src: ./pages/06-06-extension-nodes.md
 hide: false
 ---
 

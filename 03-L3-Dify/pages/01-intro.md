@@ -2,10 +2,6 @@
 layout: center
 ---
 
-# 01 Dify 是什么？
-
-<div class="mt-4 text-slate-500">The LLM App Development Platform</div>
-
 ---
 layout: default
 ---

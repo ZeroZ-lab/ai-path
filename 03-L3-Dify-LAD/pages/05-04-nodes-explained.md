@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 5.4 Node (节点)：流水线上的工位
+## 5.3 Node (节点)：流水线上的工位
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 
 <!-- Anatomy of a Node -->
-<div class="rounded-[32px] border border-slate-200 bg-white p-6 shadow-lg relative">
+<div v-click class="rounded-[32px] border border-slate-200 bg-white p-6 shadow-lg relative transition-all duration-500">
     <div class="absolute -top-3 left-6 bg-slate-800 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Node Anatomy</div>
     <div class="flex flex-col gap-4">
         <!-- Input Port -->
@@ -37,7 +37,7 @@ layout: default
 </div>
 
 <!-- Common Nodes -->
-<div class="grid gap-4 grid-cols-2">
+<div v-click class="grid gap-4 grid-cols-2 transition-all duration-500">
     <div class="p-4 rounded-2xl bg-blue-50/80 border border-blue-100 hover:bg-blue-100 transition-colors cursor-default">
         <div class="text-2xl mb-2">🏁</div>
         <h4 class="font-bold text-blue-900 text-sm">开始 (Start)</h4>
@@ -61,3 +61,17 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）每个“工位”（节点）都长这样：
+左边进料（Input），中间加工（Logic），右边出货（Output）。
+不管是大模型，还是小工具，都是这个结构。
+
+（点击 2）常用的积木主要有这四种：
+- **Start**：一切的起点。
+- **LLM**：最核心的大脑。
+- **If-Else**：红绿灯，控制方向。
+- **End**：打包发货。
+
+掌握了这四个，你就掌握了 Workflow 的 80%。
+-->

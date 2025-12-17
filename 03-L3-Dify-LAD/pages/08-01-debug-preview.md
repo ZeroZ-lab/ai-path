@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 
 <!-- Left: Preview & Debug -->
-<div class="rounded-3xl border border-blue-100 bg-blue-50/80 p-6 shadow-sm flex flex-col h-full">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-6 shadow-sm flex flex-col h-full transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4 pb-2 border-b border-blue-200">
         <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl">▶️</div>
         <div>
@@ -30,7 +30,7 @@ layout: default
 </div>
 
 <!-- Right: Run History -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col h-full">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col h-full transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4 pb-2 border-b border-purple-200">
         <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl">📜</div>
         <div>
@@ -55,3 +55,13 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）左边这个是“调试预览”。它最强大的地方在于 **Tracing（追踪）**。
+如果你的流程有 10 个节点，它会告诉你每个节点花了多少秒，消耗了多少 Token，甚至每个中间变量的值是什么。
+这就像给代码做了 CT 扫描，哪里堵了一目了然。
+
+（点击 2）右边这个是“运行历史”。
+你是不是经常遇到这种情况：改了一个 Prompt，觉得不好，想改回去，却忘了原来写的是啥？
+在这里，你的每一次“点击运行”，都会被记录下来。你可以随时回溯，找回那个“灵光一闪”的版本。
+-->

@@ -9,7 +9,7 @@ layout: default
 <!-- Left: Concept & Syntax -->
 <div class="flex flex-col gap-4">
     <!-- Concept -->
-    <div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-4 shadow-md">
+    <div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-4 shadow-md transition-all duration-500">
         <div class="flex items-center gap-3 mb-2">
             <span class="text-3xl bg-white rounded-xl p-1.5 shadow-sm">📦</span>
             <div>
@@ -25,7 +25,7 @@ layout: default
         </div>
     </div>
     <!-- Types List -->
-    <div class="rounded-3xl border border-blue-100 bg-white p-4 shadow-md flex-1">
+    <div v-click class="rounded-3xl border border-blue-100 bg-white p-4 shadow-md flex-1 transition-all duration-500">
         <div class="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2">Variable Scopes</div>
         <div class="space-y-2">
             <div class="flex items-center gap-3 p-1.5 hover:bg-slate-50 rounded-lg transition-colors">
@@ -55,7 +55,7 @@ layout: default
 </div>
 
 <!-- Right: Data Flow Visualization -->
-<div class="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-inner flex flex-col relative overflow-hidden">
+<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-inner flex flex-col relative overflow-hidden transition-all duration-500">
     <div class="absolute top-3 right-4 text-[10px] font-bold text-slate-400 uppercase">Data Flow</div>
     <div class="flex flex-col justify-center items-center h-full gap-3 relative z-10">
         <!-- Node A -->
@@ -87,3 +87,19 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）什么是变量？
+想象你在写一封群发邮件：“你好，{{name}}”。
+发给张三时，{{name}} 变成“张三”；发给李四时，它变成“李四”。
+变量就是一个“占位符”，一个“盒子”。
+
+（点击 2）在 Dify 里，我们主要用三种变量：
+- System：用户刚才说了啥。
+- Environment：全局的 API Key。
+- Conversation：AI 记住的“上下文”。
+
+（点击 3）变量最核心的作用是“传递”。
+用户在“开始节点”说的话，要被打包进变量，传给“LLM 节点”，模型才能看到并处理。
+这就是工作流的血液。
+-->

@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 
 <!-- Concept: Everything is a Plugin -->
-<div class="rounded-[32px] border border-violet-100 bg-violet-50/80 p-8 shadow-lg flex flex-col justify-center text-center relative overflow-hidden h-[360px]">
+<div v-click class="rounded-[32px] border border-violet-100 bg-violet-50/80 p-8 shadow-lg flex flex-col justify-center text-center relative overflow-hidden h-[360px] transition-all duration-500">
     <div class="relative z-10">
         <div class="text-xs font-bold uppercase tracking-[0.3em] text-violet-500 mb-4">Core Philosophy</div>
         <h3 class="text-2xl font-bold text-violet-900 mb-6">万物皆插件</h3>
@@ -35,7 +35,7 @@ layout: default
 </div>
 
 <!-- Action: How to Install -->
-<div class="flex flex-col gap-4">
+<div v-click class="flex flex-col gap-4 transition-all duration-500">
     <!-- Step 1 -->
     <div class="rounded-2xl border border-slate-200 bg-white p-5 flex gap-4 items-center shadow-sm hover:border-violet-300 transition-colors">
         <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center font-bold">1</div>
@@ -64,3 +64,13 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）除了模型，Dify 的另一个核心理念是“万物皆插件”。
+以前我们要用谷歌搜索，得写代码调 API。现在，它就是一个“插件”。
+模型是插件、工具是插件、扩展功能也是插件。
+
+（点击 2）使用方法跟手机装 App 一样简单：
+进入插件市场，搜你要的（比如 Google Search），点安装，填 Key，搞定。
+装好后，你就能在工作流里直接拖拽使用它了。
+-->

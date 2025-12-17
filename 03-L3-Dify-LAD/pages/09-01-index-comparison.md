@@ -4,7 +4,7 @@ layout: default
 
 ## 9.1.3 终极对决：我该怎么选？
 
-<div class="mt-6 mb-8">
+<div v-click class="mt-6 mb-8 transition-all duration-500">
     <table class="w-full text-sm text-left border-collapse rounded-2xl overflow-hidden shadow-sm">
         <thead class="bg-slate-100 text-slate-700 font-bold uppercase text-[10px]">
             <tr>
@@ -33,7 +33,7 @@ layout: default
     </table>
 </div>
 
-<div class="rounded-3xl bg-gradient-to-r from-blue-50 to-emerald-50 border border-slate-200 p-6 shadow-md relative overflow-hidden">
+<div v-click class="rounded-3xl bg-gradient-to-r from-blue-50 to-emerald-50 border border-slate-200 p-6 shadow-md relative overflow-hidden transition-all duration-500 hover:-translate-y-1">
     <div class="absolute right-0 top-0 text-9xl opacity-5 rotate-12">🤝</div>
     <div class="relative z-10">
         <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-center gap-2">
@@ -60,3 +60,15 @@ layout: default
         </p>
     </div>
 </div>
+
+<!--
+（点击 1）这是一张终极对比表。
+如果你是做“故障码查询”，选经济模式。
+如果你是做“法律咨询”，选高质量模式。
+
+（点击 2）但其实，我们并不需要纠结。
+Dify 提供了 **混合检索**。
+它可以同时跑两套引擎，然后把结果合并起来。
+既能搜到“SKU-8821”，也能懂“我要最便宜的那个”。
+这是目前业界的最佳实践。
+-->

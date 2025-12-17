@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 
 <!-- Features -->
-<div class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3">
         <span class="text-2xl">🧩</span>
         <h3 class="text-sm font-bold text-amber-900">功能 (Features)</h3>
@@ -32,7 +32,7 @@ layout: default
 </div>
 
 <!-- Publish -->
-<div class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-5 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3">
         <span class="text-2xl">🚀</span>
         <h3 class="text-sm font-bold text-emerald-900">发布 (Publish)</h3>
@@ -50,7 +50,7 @@ layout: default
 </div>
 
 <!-- History -->
-<div class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-3">
         <span class="text-2xl">🕰️</span>
         <h3 class="text-sm font-bold text-cyan-900">版本历史 (History)</h3>
@@ -78,3 +78,9 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**功能增强**：在发布前，别忘了看看“功能”选项卡。这里有很多免费的“外挂”，比如语音输入、开场白，勾选一下就能用。
+（点击 2）**发布机制**：Dify 采用了“草稿/发布”分离的机制。你在调试区的修改，只要不点发布，线上的用户是无感知的。这保证了生产环境的安全。
+（点击 3）**版本回滚**：万一发布后发现重大 Bug 怎么办？别慌，日志页面的“版本历史”里，你可以一键回滚到上一个稳定版本。
+-->

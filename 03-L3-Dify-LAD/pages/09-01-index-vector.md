@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 
 <!-- Left: Concept -->
-<div class="space-y-6">
+<div v-click class="space-y-6 transition-all duration-500">
     <div class="rounded-2xl bg-slate-50 border border-slate-200 p-6 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
             <span class="text-3xl bg-white p-2 rounded-xl shadow-sm border border-slate-100">📐</span>
@@ -41,7 +41,7 @@ layout: default
 </div>
 
 <!-- Right: Visual -->
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg flex flex-col items-center justify-center h-full relative overflow-hidden">
+<div v-click class="rounded-2xl border border-slate-200 bg-white p-6 shadow-lg flex flex-col items-center justify-center h-full relative overflow-hidden transition-all duration-500 hover:-translate-y-1">
     <!-- 2D Vector Space Visualization -->
     <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#64748b_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <div class="relative w-full h-64 border-l-2 border-b-2 border-slate-300">
@@ -69,3 +69,13 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**高质量模式**：这是大模型时代的“魔法”。
+它不看字面，看“意思”。哪怕文档里没有“喵星人”这三个字，只要有“猫”，它就知道这是同一个东西。
+原理是把它们都变成“向量”，算距离。
+
+（点击 2）看右图：
+在数学空间里，“喵星人”和“猫”靠得很近，所以一搜就出来了。
+而“狗”虽然也是宠物，但距离比较远，就被过滤掉了。
+-->

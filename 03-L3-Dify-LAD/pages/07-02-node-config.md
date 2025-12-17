@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-6 md:grid-cols-2 mt-6 items-stretch">
 
 <!-- Node 1 Config -->
-<div class="rounded-3xl border border-blue-100 bg-white p-5 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-blue-100 bg-white p-5 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center justify-between mb-3 pb-2 border-b border-blue-50">
         <div class="flex items-center gap-2">
             <span class="text-xl">📑</span>
@@ -34,7 +34,7 @@ layout: default
 </div>
 
 <!-- Node 2 Config -->
-<div class="rounded-3xl border border-purple-100 bg-white p-5 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-purple-100 bg-white p-5 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center justify-between mb-3 pb-2 border-b border-purple-50">
         <div class="flex items-center gap-2">
             <span class="text-xl">✍️</span>
@@ -63,8 +63,14 @@ layout: default
 
 </div>
 
-<div class="mt-6 rounded-2xl border border-amber-200 bg-amber-50/60 p-3 text-center shadow-sm">
+<div v-click class="mt-6 rounded-2xl border border-amber-200 bg-amber-50/60 p-3 text-center shadow-sm transition-all duration-500">
     <p class="text-xs text-amber-800">
         🔑 <strong>关键点：</strong> 后一个节点的输入变量，必须选择前一个节点的输出（Output）。
     </p>
 </div>
+
+<!--
+（点击 1）这是第一个节点。注意看，它的输入变量 `topic` 引用的是 `Start` 节点的输入。
+（点击 2）这是第二个节点。它的输入变量 `outline` 引用的是 **上一个节点 (Node 1)** 的输出。
+（点击 3）这就是“传参”。就像接力跑一样，第一棒跑完，把棒子（大纲）递给第二棒。如果选错了，第二棒手里就是空的，文章就写不出来。
+-->

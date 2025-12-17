@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 6.4 数据处理：Code, Template, Assigner
+## 6.5 转换处理：Code, Template, Assigner
 
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 
 <!-- Code Node -->
-<div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-shadow">
+<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-all duration-500">
     <div class="flex items-center gap-3 mb-3">
         <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-xl text-emerald-600">💻</div>
         <h3 class="text-sm font-bold text-slate-800">Code (代码)</h3>
@@ -26,7 +26,7 @@ def main(x):
 </div>
 
 <!-- Template Node -->
-<div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-shadow">
+<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-all duration-500">
     <div class="flex items-center gap-3 mb-3">
         <div class="w-10 h-10 bg-pink-100 rounded-xl flex items-center justify-center text-xl text-pink-600">📝</div>
         <h3 class="text-sm font-bold text-slate-800">Template (模板)</h3>
@@ -43,7 +43,7 @@ def main(x):
 </div>
 
 <!-- Assigner Node -->
-<div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-shadow">
+<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col shadow-sm hover:shadow-md transition-all duration-500">
     <div class="flex items-center gap-3 mb-3">
         <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-xl text-blue-600">💾</div>
         <h3 class="text-sm font-bold text-slate-800">Assigner (赋值)</h3>
@@ -64,3 +64,9 @@ def main(x):
 </div>
 
 </div>
+
+<!--
+（点击 1）**Code**：虽然我们说低代码，但有时候写一行代码（比如算个加法）比拖是个节点都快。
+（点击 2）**Template**：这是最常用的。比如把“姓名”和“金额”填进一个“合同模板”里。
+（点击 3）**Assigner**：它负责“记笔记”。比如聊天过程中，用户说“我喜欢红色”，Assigner 就赶紧拿小本本记下来“color=red”，下次就知道了。
+-->

@@ -2,9 +2,9 @@
 layout: default
 ---
 
-## 5.3 Workflow：自动化流水线
+## 5.4 Workflow：自动化流水线
 
-<div class="relative mt-8 h-[320px] w-full rounded-[32px] bg-slate-100 border border-slate-200 overflow-hidden shadow-inner flex items-center justify-center">
+<div v-click class="relative mt-8 h-[320px] w-full rounded-[32px] bg-slate-100 border border-slate-200 overflow-hidden shadow-inner flex items-center justify-center transition-all duration-500">
     <!-- Background Conveyor Belt -->
     <div class="absolute inset-x-0 top-1/2 h-4 bg-slate-300 -translate-y-1/2"></div>
     <!-- Node 1: Input -->
@@ -47,3 +47,15 @@ layout: default
 <div class="mt-6 text-center text-slate-500 text-sm">
     Workflow 将复杂的任务拆解成一个个简单的步骤，像工厂流水线一样自动化执行。
 </div>
+
+<!--
+（点击 1）理解了变量，Workflow 就好懂了。
+它就是一条“工厂流水线”。
+
+- 原料：用户输入的问题。
+- 加工：LLM 思考、推理。
+- 包装：把结果整理成 JSON 或 Markdown。
+- 成品：最终展示给用户的答案。
+
+我们在 Dify 里拖拽节点，其实就是在设计这条流水线上的“工位”。
+-->

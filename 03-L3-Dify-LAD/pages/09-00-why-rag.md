@@ -12,7 +12,7 @@ class: px-14
 <div class="grid gap-4 md:grid-cols-2 items-stretch">
 
   <!-- 痛点 1：幻觉与准确性 -->
-  <div class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">🤥</span>
       <h3 class="text-sm font-bold text-rose-900">1. 幻觉与胡说 (Hallucination)</h3>
@@ -23,7 +23,7 @@ class: px-14
   </div>
 
   <!-- 痛点 2：时效性与更新 -->
-  <div class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">📅</span>
       <h3 class="text-sm font-bold text-rose-900">2. 知识滞后 (Outdated)</h3>
@@ -34,7 +34,7 @@ class: px-14
   </div>
 
   <!-- 痛点 3：私有数据与隐私 -->
-  <div class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">🔒</span>
       <h3 class="text-sm font-bold text-rose-900">3. 私有数据壁垒 (Privacy)</h3>
@@ -45,7 +45,7 @@ class: px-14
   </div>
 
   <!-- 痛点 4：上下文窗口 -->
-  <div class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm">
+  <div v-click class="rounded-2xl border border-rose-100 bg-rose-50/60 p-4 shadow-sm transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-2 mb-2">
       <span class="text-xl">📝</span>
       <h3 class="text-sm font-bold text-rose-900">4. 窗口限制 (Context Limit)</h3>
@@ -56,3 +56,10 @@ class: px-14
   </div>
 
 </div>
+
+<!--
+（点击 1）**幻觉**：这是最头疼的。你问它“我们公司的报销制度”，它可能会编造一个看起来很真但完全不存在的制度。
+（点击 2）**时效**：GPT-4 可能只知道 2023 年之前的事，但你问的是昨天的股价。
+（点击 3）**隐私**：你的工资表、客户名单，敢直接发给 OpenAI 吗？不敢。
+（点击 4）**窗口**：就算你敢发，你的《员工手册》有 200 页，一次性发过去，Token 费用可能比你工资还高。
+-->

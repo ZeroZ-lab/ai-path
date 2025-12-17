@@ -7,7 +7,7 @@ layout: default
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 
 <!-- Knowledge Retrieval -->
-<div class="rounded-3xl border border-indigo-100 bg-indigo-50/80 p-6 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-indigo-100 bg-indigo-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-4 mb-4">
         <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm text-indigo-600">📚</div>
         <div>
@@ -27,7 +27,7 @@ layout: default
 </div>
 
 <!-- External Tools (Plugin/MCP) -->
-<div class="rounded-3xl border border-pink-100 bg-pink-50/80 p-6 shadow-md flex flex-col">
+<div v-click class="rounded-3xl border border-pink-100 bg-pink-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-4 mb-4">
         <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-3xl shadow-sm text-pink-600">🧩</div>
         <div>
@@ -48,3 +48,11 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**知识库检索**：这可能是 Dify 里最值钱的节点。
+只要你把文档传上去，它就能自动完成“搜索-匹配”的工作。
+
+（点击 2）**外部工具**：如果内置功能不够用，你还可以装插件，或者把自己写的 API 封装成工具。
+这就是 Dify 为什么叫“生态”的原因。
+-->
