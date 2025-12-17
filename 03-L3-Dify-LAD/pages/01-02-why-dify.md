@@ -19,7 +19,7 @@ layout: default
     <div class="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2">Dify 的完美契合</div>
     <ul class="text-sm text-blue-900/80 space-y-3 list-disc pl-6">
       <li><strong>可视化编排</strong>：所见即所得，业务人员也能看懂逻辑。</li>
-      <li><strong>开源 & 私有化</strong>：Docker 一键部署，完全掌控数据。</li>
+      <li><strong>开源 & 私有化</strong>：一键部署，完全掌控数据。</li>
       <li><strong>模型中立</strong>：支持全球数百种模型，一键切换。</li>
     </ul>
   </div>

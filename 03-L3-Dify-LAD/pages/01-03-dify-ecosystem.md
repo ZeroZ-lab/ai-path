@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 1.3 Dify 是什么？(生态定位)
+## 1.3 Dify 是什么？
 
 <div class="grid gap-4 md:grid-cols-[1fr_1.8fr_1fr] mt-18 items-center">
 <!-- Left: What Dify Abstracts (The Dirty Work) -->

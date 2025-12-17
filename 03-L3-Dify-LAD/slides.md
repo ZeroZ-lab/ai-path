@@ -49,6 +49,11 @@ hide: false
 ---
 
 ---
+src: ./pages/01-01-tool-action.md
+hide: false
+---
+
+---
 src: ./pages/01-01-selection.md
 hide: false
 ---
@@ -127,6 +132,11 @@ hide: false
 
 ---
 src: ./pages/05-03-workflow-analogy.md
+hide: false
+---
+
+---
+src: ./pages/05-05-chatflow-vs-workflow.md
 hide: false
 ---
 
