@@ -7,8 +7,12 @@ layout: default
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 
 <!-- Knowledge -->
-<div v-click class="rounded-3xl border border-indigo-100 bg-indigo-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+<div v-click class="rounded-3xl border border-indigo-100 bg-indigo-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+    <!-- Badge -->
+    <div class="absolute top-0 right-0 bg-indigo-600 text-white px-3 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        ⭐ 核心 (Core)
+    </div>
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl">📚</span>
         <h3 class="text-lg font-bold text-indigo-900">知识库</h3>
     </div>
@@ -20,7 +24,7 @@ layout: default
 
 <!-- HTTP -->
 <div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl">🌐</span>
         <h3 class="text-lg font-bold text-cyan-900">HTTP</h3>
     </div>
@@ -32,7 +36,7 @@ layout: default
 
 <!-- Tools -->
 <div v-click class="rounded-3xl border border-pink-100 bg-pink-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl">🧩</span>
         <h3 class="text-lg font-bold text-pink-900">Tools</h3>
     </div>

@@ -39,6 +39,11 @@ hide: false
 ---
 
 ---
+src: ./pages/01-01-workflow-workshop.md
+hide: false
+---
+
+---
 src: ./pages/01-01-workflow-translator.md
 hide: false
 ---
@@ -114,6 +119,11 @@ src: ./pages/04-02-prompt-debugging.md
 hide: false
 ---
 
+---
+src: ./pages/04-03-mini-challenge.md
+hide: false
+---
+
 
 ---
 src: ./pages/05-00-core-dev-concepts.md
@@ -142,6 +152,11 @@ hide: false
 
 ---
 src: ./pages/05-05-chatflow-vs-workflow.md
+hide: false
+---
+
+---
+src: ./pages/05-06-role-play.md
 hide: false
 ---
 

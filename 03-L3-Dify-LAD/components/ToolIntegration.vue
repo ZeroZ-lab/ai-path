@@ -4,12 +4,21 @@ import { ref } from 'vue'
 const isConnected = ref(false)
 const status = ref('Thinking...')
 
-function connect() {
-  isConnected.value = true
-  status.value = 'Executing...'
-  setTimeout(() => {
-    status.value = 'Done ✅'
-  }, 1500)
+function toggle() {
+  if (isConnected.value) {
+    // Disconnect
+    isConnected.value = false
+    status.value = 'Thinking...'
+  } else {
+    // Connect
+    isConnected.value = true
+    status.value = 'Executing...'
+    setTimeout(() => {
+      if (isConnected.value) {
+        status.value = 'Done ✅'
+      }
+    }, 1500)
+  }
 }
 </script>
 
@@ -18,11 +27,11 @@ function connect() {
     
     <div class="flex justify-center">
       <button 
-        @click="connect"
+        @click="toggle"
         class="px-6 py-2 rounded-full font-bold text-xs transition-all flex items-center gap-2 shadow-md"
-        :class="isConnected ? 'bg-green-100 text-green-700 border border-green-200' : 'bg-slate-800 text-white hover:bg-slate-700'"
+        :class="isConnected ? 'bg-green-100 text-green-700 border border-green-200 hover:bg-green-200' : 'bg-slate-800 text-white hover:bg-slate-700'"
       >
-        <span>{{ isConnected ? '已连接工具' : '🔌 连接工具' }}</span>
+        <span>{{ isConnected ? '✅ 已连接 (点击断开)' : '🔌 连接工具' }}</span>
       </button>
     </div>
 
@@ -30,8 +39,8 @@ function connect() {
       
       <!-- Brain (LLM) -->
       <div class="w-40 h-40 bg-purple-50 border-2 border-purple-200 rounded-full flex flex-col items-center justify-center z-10 shadow-lg relative">
-        <div class="text-5xl mb-2">🧠</div>
-        <div class="text-xs font-bold text-purple-900">LLM</div>
+        <div class="text-5xl mb-2">👨‍💼</div>
+        <div class="text-xs font-bold text-purple-900">职员 / LLM</div>
         <div class="text-[9px] text-purple-500 bg-white px-2 py-0.5 rounded-full mt-1 border border-purple-100">Thinking</div>
         
         <!-- Thought Bubble -->

@@ -4,81 +4,71 @@ layout: default
 
 ## 6.2 交互与触发：从开始到结束
 
-<div class="grid gap-6 md:grid-cols-2 mt-6 mb-6 items-stretch">
+<div class="grid gap-6 md:grid-cols-2 mt-8 items-stretch">
 
-<!-- 1. Trigger (Start) -->
-<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm flex flex-col hover:bg-blue-100/80 transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2 pb-2 border-b border-blue-200">
-        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl">▶️</div>
+<!-- 1. Start -->
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm flex flex-col hover:bg-blue-100/80 transition-all duration-500 h-48">
+    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-blue-200">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl">🏁</div>
         <div>
-            <h3 class="text-sm font-bold text-blue-900">Start (Trigger)</h3>
-            <span class="text-[9px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded font-bold">Workflow Only</span>
+            <h3 class="text-base font-bold text-blue-900">Start (开始)</h3>
+            <span class="text-xs bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded font-bold">必选</span>
         </div>
     </div>
-    <p class="text-xs text-slate-600 leading-relaxed mb-2">
-        用于自动化场景。通过 API 调用或定时任务触发工作流，通常不需要人工干预。
+    <p class="text-sm text-slate-600 leading-relaxed flex-1">
+        一切流程的起点。它负责接收最初的信号，就像发令枪。
     </p>
-    <div class="bg-white p-2 rounded border border-blue-100 text-[10px] text-slate-500 font-mono">
-        Trigger: Cron / Webhook
-    </div>
 </div>
 
 <!-- 2. User Input -->
-<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col hover:bg-amber-100/80 transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2 pb-2 border-b border-amber-200">
-        <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center text-xl">🙋</div>
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm flex flex-col hover:bg-amber-100/80 transition-all duration-500 h-48">
+    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-amber-200">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center text-2xl">🙋</div>
         <div>
-            <h3 class="text-sm font-bold text-amber-900">User Input</h3>
-            <span class="text-[9px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-bold">Chatflow & Workflow</span>
+            <h3 class="text-base font-bold text-amber-900">User Input (输入)</h3>
+            <span class="text-xs bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded font-bold">交互</span>
         </div>
     </div>
-    <p class="text-xs text-slate-600 leading-relaxed mb-2">
-        用于需要<strong>人工填写表单</strong>启动的场景。定义好输入字段（如文本、文件），用户填完后流程开始。
+    <p class="text-sm text-slate-600 leading-relaxed mb-2 flex-1">
+        需要用户填写表单时使用。比如让用户输入“姓名”和“金额”。
     </p>
-    <div class="bg-white p-2 rounded border border-amber-100 text-[10px] text-slate-500">
-        Form: { Name, File, Option }
+    <div class="bg-white p-2 rounded border border-amber-100 text-xs text-slate-500 font-mono">
+        Field: Name, Age
     </div>
 </div>
 
 <!-- 3. Answer -->
-<div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col hover:bg-cyan-100/80 transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2 pb-2 border-b border-cyan-200">
-        <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center text-xl">💬</div>
+<div v-click class="rounded-3xl border border-cyan-100 bg-cyan-50/80 p-5 shadow-sm flex flex-col hover:bg-cyan-100/80 transition-all duration-500 h-48">
+    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-cyan-200">
+        <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center text-2xl">💬</div>
         <div>
-            <h3 class="text-sm font-bold text-cyan-900">Answer (直接回复)</h3>
-            <span class="text-[9px] bg-blue-100 text-blue-600 px-1.5 py-0.5 rounded font-bold">Chatflow Only</span>
+            <h3 class="text-base font-bold text-cyan-900">Answer (回复)</h3>
+            <span class="text-xs bg-cyan-200 text-cyan-800 px-1.5 py-0.5 rounded font-bold">流式</span>
         </div>
     </div>
-    <p class="text-xs text-slate-600 leading-relaxed mb-2">
-        像打字机一样<strong>流式输出</strong>内容给用户。支持在一个流程中多次使用。
+    <p class="text-sm text-slate-600 leading-relaxed mb-2 flex-1">
+        像打字机一样一个个字吐出来。适合聊天场景。
     </p>
-    <div class="bg-white p-2 rounded border border-cyan-100 text-[10px] text-slate-500 animate-pulse">
-        Typing... ▌
+    <div class="bg-white p-2 rounded border border-cyan-100 text-xs text-slate-500 animate-pulse">
+        Writing... ▌
     </div>
 </div>
 
 <!-- 4. End -->
-<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col hover:bg-purple-100/80 transition-all duration-500">
-    <div class="flex items-center gap-3 mb-2 pb-2 border-b border-purple-200">
-        <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl">🏁</div>
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col hover:bg-purple-100/80 transition-all duration-500 h-48">
+    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-purple-200">
+        <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-2xl">🛑</div>
         <div>
-            <h3 class="text-sm font-bold text-purple-900">End (结束)</h3>
-            <span class="text-[9px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded font-bold">Workflow Only</span>
+            <h3 class="text-base font-bold text-purple-900">End (结束)</h3>
+            <span class="text-xs bg-purple-200 text-purple-800 px-1.5 py-0.5 rounded font-bold">结构化</span>
         </div>
     </div>
-    <p class="text-xs text-slate-600 leading-relaxed mb-2">
-        定义 API 最终返回的<strong>结构化数据</strong> (JSON)。
+    <p class="text-sm text-slate-600 leading-relaxed mb-2 flex-1">
+        流程的终点。直接返回一个 JSON 结果给外部系统。
     </p>
-    <div class="bg-white p-2 rounded border border-purple-100 text-[10px] text-slate-500 font-mono">
-        Return: { "code": 200, "data": ... }
+    <div class="bg-white p-2 rounded border border-purple-100 text-xs text-slate-500 font-mono">
+        { "status": "ok" }
     </div>
 </div>
 
 </div>
-
-<!--
-（点击 1）如果你的应用是“后台自动跑”的（比如每天早上发日报），用 **Start**。
-（点击 2）如果需要“人填表单”才开始（比如请假申请），用 **User Input**。
-（点击 3）如果你的应用是“聊天机器人”，用 **Answer**，它能一个字一个字地吐出来。
-（点击 4）如果你的应用是给“别的系统调用”的 API，用 **End**，它会返回标准的 JSON。
--->

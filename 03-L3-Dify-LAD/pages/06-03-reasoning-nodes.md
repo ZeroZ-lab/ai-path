@@ -7,7 +7,11 @@ layout: default
 <div class="grid gap-8 md:grid-cols-[1.4fr_1fr] mt-8 items-stretch">
 
 <!-- LLM Node -->
-<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+    <!-- Core Badge -->
+    <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        ⭐ 核心 (Core)
+    </div>
     <div class="flex items-center gap-4 mb-4 border-b border-purple-200 pb-3">
         <span class="text-4xl">🤖</span>
         <h3 class="text-xl font-bold text-purple-900">LLM (大模型)</h3>

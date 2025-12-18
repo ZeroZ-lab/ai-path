@@ -7,8 +7,12 @@ layout: default
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 
 <!-- Code Node -->
-<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-6 flex flex-col shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-6 flex flex-col shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+    <!-- Badge -->
+    <div class="absolute top-0 right-0 bg-emerald-600 text-white px-3 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        ⚔️ 高手 (Advanced)
+    </div>
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-3xl text-emerald-600">💻</div>
         <h3 class="text-lg font-bold text-slate-800">Code (代码)</h3>
     </div>
@@ -26,8 +30,12 @@ def main(x):
 </div>
 
 <!-- Template Node -->
-<div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-6 flex flex-col shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+<div v-click class="rounded-3xl border border-pink-100 bg-pink-50/80 p-6 shadow-md flex flex-col transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
+    <!-- Badge -->
+    <div class="absolute top-0 right-0 bg-pink-600 text-white px-3 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        ⭐ 核心 (Core)
+    </div>
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-3xl text-pink-600">📝</div>
         <h3 class="text-lg font-bold text-slate-800">Template (模板)</h3>
     </div>
@@ -44,7 +52,7 @@ def main(x):
 
 <!-- Assigner Node -->
 <div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-6 flex flex-col shadow-sm hover:shadow-md transition-all duration-500 hover:-translate-y-1">
-    <div class="flex items-center gap-3 mb-4">
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-3xl text-blue-600">💾</div>
         <h3 class="text-lg font-bold text-slate-800">Assigner (赋值)</h3>
     </div>

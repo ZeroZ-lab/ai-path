@@ -7,8 +7,12 @@ layout: default
 <div class="grid gap-6 md:grid-cols-3 mt-8 mb-6 items-stretch">
 
 <!-- If-Else -->
-<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-4">
+<div v-click class="rounded-3xl border border-amber-100 bg-amber-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+    <!-- Badge -->
+    <div class="absolute top-0 right-0 bg-amber-600 text-white px-3 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        🔥 高频 (Must Use)
+    </div>
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔀</span>
         <h3 class="text-lg font-bold text-amber-900">If-Else (分支)</h3>
     </div>
@@ -31,8 +35,12 @@ layout: default
 </div>
 
 <!-- Iteration -->
-<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-4">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+    <!-- Badge -->
+    <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1.5 rounded-bl-2xl font-bold text-xs shadow-md z-10 group-hover:scale-110 transition-transform">
+        ⚡️ 提效 (Efficiency)
+    </div>
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔁</span>
         <h3 class="text-lg font-bold text-blue-900">Iteration (迭代)</h3>
     </div>
@@ -56,7 +64,7 @@ layout: default
 
 <!-- Loop -->
 <div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm group hover:scale-[1.02] transition-all duration-500">
-    <div class="flex items-center gap-3 mb-4">
+    <div class="flex items-center gap-3 mb-4 mt-2">
         <span class="text-4xl p-2 bg-white rounded-xl shadow-sm">🔄</span>
         <h3 class="text-lg font-bold text-purple-900">Loop (循环)</h3>
     </div>

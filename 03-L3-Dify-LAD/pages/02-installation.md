@@ -27,7 +27,7 @@ layout: default
     <p class="text-sm text-blue-700/80 leading-relaxed mb-6">
         像注册微信一样简单。无需安装，无需服务器，注册账号即可开始构建应用。
     </p>
-    <a href="https://cloud.dify.ai" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition-colors">
+    <a href="https://cloud.dify.ai" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition-colors !text-white">
         立即注册 (cloud.dify.ai)
     </a>
 </div>

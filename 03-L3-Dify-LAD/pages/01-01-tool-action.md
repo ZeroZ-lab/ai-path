@@ -2,17 +2,12 @@
 layout: default
 ---
 
-## 1.1.4 进阶：工作还需要“工具” 🤖🛠️
+## 1.1.4 进阶：工作还需要“工具” 
 
 <div class="h-[400px] w-full mt-6">
   <ToolIntegration />
 </div>
 
-<div class="mt-4 text-center text-xs text-slate-500">
-  <span class="font-bold text-slate-700">Workflow 的最后一块拼图：</span>
-  大模型负责“想”，工具节点负责“做”。
-  <br>通过 API 连接，AI 可以直接操作飞书、钉钉、数据库，实现<strong>闭环交付</strong>。
-</div>
 
 <!--
 （交互演示）
