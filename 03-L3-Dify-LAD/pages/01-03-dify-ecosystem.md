@@ -60,7 +60,7 @@ layout: default
         <div class="flex justify-center gap-2 text-[9px] font-mono text-slate-500 mt-0.5">
             <span>OpenAI</span>
             <span>•</span>
-            <span>HuggingFace</span>
+            <span>Hugging Face</span>
             <span>•</span>
             <span>Vector DB</span>
         </div>

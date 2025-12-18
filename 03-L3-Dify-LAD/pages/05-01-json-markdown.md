@@ -18,7 +18,7 @@ layout: default
   
   <div class="bg-slate-900 rounded-2xl p-4 font-mono text-xs text-emerald-400 leading-relaxed flex-1 overflow-hidden shadow-inner">
 <pre>{
-  "name": "Cherry Studio",
+  "name": "Dify LAD",
   "version": 1.0,
   "features": [
     "Workflow",

@@ -12,7 +12,7 @@ layout: center
 
   <!-- Example -->
   <div v-click class="rounded-3xl border-2 border-slate-200 bg-slate-50 p-6 opacity-80 scale-90">
-    <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">举个栗子 (报销)</div>
+    <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">举个例子 (报销)</div>
     <div class="flex flex-col gap-3 items-center">
       <div class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-xs">收到发票</div>
       <div class="i-carbon-arrow-down text-slate-300"></div>
