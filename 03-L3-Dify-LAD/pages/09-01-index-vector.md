@@ -23,16 +23,16 @@ layout: default
     </div>
     <div class="grid grid-cols-2 gap-4">
         <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
-            <div class="text-xs font-bold text-emerald-800 mb-1">✅ 优势</div>
-            <ul class="text-[10px] text-emerald-700 space-y-1 list-disc pl-4">
+            <div class="text-sm font-bold text-emerald-800 mb-1">✅ 优势</div>
+            <ul class="text-xs text-emerald-700 space-y-1 list-disc pl-4">
                 <li><strong>语义理解：</strong> 搜“怎么付钱”，能找到“支付流程”。</li>
                 <li><strong>跨语言：</strong> 搜中文问题，能找到英文答案。</li>
                 <li><strong>容错强：</strong> 即使有错别字，大概率也能搜到。</li>
             </ul>
         </div>
         <div class="p-4 rounded-2xl bg-rose-50 border border-rose-100">
-            <div class="text-xs font-bold text-rose-800 mb-1">❌ 劣势</div>
-            <ul class="text-[10px] text-rose-700 space-y-1 list-disc pl-4">
+            <div class="text-sm font-bold text-rose-800 mb-1">❌ 劣势</div>
+            <ul class="text-xs text-rose-700 space-y-1 list-disc pl-4">
                 <li><strong>成本：</strong> 每次索引和搜索都要消耗 Token。</li>
                 <li><strong>精确度：</strong> 搜特定型号时，可能因为太“发散”而匹配不准。</li>
             </ul>
@@ -46,24 +46,24 @@ layout: default
     <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#64748b_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <div class="relative w-full h-64 border-l-2 border-b-2 border-slate-300">
         <!-- Query Point -->
-        <div class="absolute left-[30%] top-[40%] flex flex-col items-center group">
-            <div class="w-3 h-3 bg-blue-600 rounded-full shadow-lg ring-4 ring-blue-100"></div>
-            <span class="text-[9px] font-bold text-blue-700 mt-1">Query: "喵星人"</span>
+        <div class="absolute left-[30%] top-[40%] flex flex-col items-center group text-sm">
+            <div class="w-4 h-4 bg-blue-600 rounded-full shadow-lg ring-4 ring-blue-100"></div>
+            <span class="font-bold text-blue-700 mt-1">Query: "喵星人"</span>
         </div>
         <!-- Target Match -->
-        <div class="absolute left-[35%] top-[35%] flex flex-col items-center group animate-pulse">
-            <div class="w-3 h-3 bg-emerald-500 rounded-full shadow-lg"></div>
-            <span class="text-[9px] font-bold text-emerald-700 mt-1">Doc: "猫"</span>
+        <div class="absolute left-[35%] top-[35%] flex flex-col items-center group animate-pulse text-sm">
+            <div class="w-4 h-4 bg-emerald-500 rounded-full shadow-lg"></div>
+            <span class="font-bold text-emerald-700 mt-1">Doc: "猫"</span>
             <!-- Connection Line -->
             <div class="absolute -z-10 w-16 h-0.5 bg-emerald-200 -rotate-45 top-4 -left-4"></div>
         </div>
         <!-- Distant Point -->
-        <div class="absolute right-[20%] bottom-[20%] flex flex-col items-center opacity-50">
-            <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
-            <span class="text-[9px] text-slate-500 mt-1">Doc: "狗"</span>
+        <div class="absolute right-[20%] bottom-[20%] flex flex-col items-center opacity-50 text-sm">
+            <div class="w-3 h-3 bg-slate-400 rounded-full"></div>
+            <span class="text-slate-500 mt-1">Doc: "狗"</span>
         </div>
     </div>
-    <div class="mt-4 text-[10px] text-slate-500 text-center">
+    <div class="mt-4 text-xs text-slate-500 text-center font-bold">
         Distance(喵星人, 猫) = 0.98 (High Similarity)
     </div>
 </div>
@@ -71,11 +71,14 @@ layout: default
 </div>
 
 <!--
-（点击 1）**高质量模式**：这是大模型时代的“魔法”。
-它不看字面，看“意思”。哪怕文档里没有“喵星人”这三个字，只要有“猫”，它就知道这是同一个东西。
-原理是把它们都变成“向量”，算距离。
+如果说“关键词模式”是查户口（对名字），那么**高质量模式**（向量索引）就是在**找知音（对脾气）**。
 
-（点击 2）看右图：
-在数学空间里，“喵星人”和“猫”靠得很近，所以一搜就出来了。
-而“狗”虽然也是宠物，但距离比较远，就被过滤掉了。
+（点击 1）**向量化 (Embedding)** 就像是给每一句话做一次“人格测试”。
+*   它把一句话的意思，变成一串几千位的坐标。
+*   **语义理解**：你说“怎么付钱”，它虽然没对上字，但它发现“支付流程”和这句话的“脾气”最像，都在讨论钱的事，所以能搜到。
+*   **跨语言**：它甚至知道中文的“苹果”和英文的“Apple”是同一个意思。
+
+（点击 2）看右边的空间图：在 AI 的眼里，“喵星人”和“猫”就像两个住对门的邻居，**距离极近**；而“狗”虽然也是动物，但它住在另外一条街。
+
+**缺点**：这种“找知音”的过程是要付小费的（消耗 Token），而且有时候它太“发散”了，容易找错人。
 -->

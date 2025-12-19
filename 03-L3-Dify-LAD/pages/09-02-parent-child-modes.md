@@ -35,7 +35,7 @@ layout: default
                 <div class="w-1/4 h-8 bg-indigo-600 rounded-lg shadow-md"></div>
             </div>
         </div>
-        <p class="text-[10px] text-slate-600 leading-relaxed bg-white p-3 rounded-xl border border-indigo-100">
+        <p class="text-xs text-slate-600 leading-relaxed bg-white p-3 rounded-xl border border-indigo-100 shadow-inner">
             检索时命中下方的<strong>子切片</strong>，但提交给 LLM 时，自动替换为它所属的<strong>父切片</strong>窗口。<br>
             <span class="text-indigo-600 font-bold">适用：</span> 长文章、长上下文关联的内容。
         </p>
@@ -43,8 +43,8 @@ layout: default
     <!-- Mode B: Parent Document -->
     <div v-click class="rounded-3xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm flex flex-col relative overflow-hidden transition-all duration-500 hover:-translate-y-1">
         <div class="absolute -right-4 -top-4 w-16 h-16 bg-teal-200 rounded-full blur-xl opacity-50"></div>
-        <h3 class="text-sm font-bold text-teal-900 mb-4 flex items-center gap-2">
-            <span class="bg-white p-1 rounded border border-teal-100 shadow-sm">🅱️</span>
+        <h3 class="text-base font-bold text-teal-900 mb-4 flex items-center gap-2">
+            <span class="bg-white p-1.5 rounded border border-teal-100 shadow-sm">🅱️</span>
             全文模式 (Full Document)
         </h3>
         <!-- Visual -->
@@ -52,7 +52,7 @@ layout: default
             <!-- Parent -->
             <div class="w-full bg-white border-2 border-solid border-teal-600 p-2 rounded-xl text-center shadow-sm relative">
                 <div class="text-[10px] font-bold text-teal-800 uppercase">Full Document (File)</div>
-                <div class="absolute -right-2 -top-2 bg-teal-600 text-white text-[8px] px-1.5 rounded-full">DOC</div>
+                <div class="absolute -right-2 -top-2 bg-teal-600 text-white text-[8px] px-1.5 rounded-full shadow-sm">DOC</div>
             </div>
             <!-- Link -->
             <div class="h-4 w-px bg-teal-300"></div>
@@ -63,7 +63,7 @@ layout: default
                 <div class="w-1/4 h-8 bg-teal-400/50 rounded-lg"></div>
             </div>
         </div>
-        <p class="text-[10px] text-slate-600 leading-relaxed bg-white p-3 rounded-xl border border-teal-100">
+        <p class="text-xs text-slate-600 leading-relaxed bg-white p-3 rounded-xl border border-teal-100 shadow-inner">
             检索时命中某个片段，直接把<strong>整篇文档</strong>喂给 LLM。<br>
             <span class="text-teal-600 font-bold">适用：</span> 篇幅较短的规章制度、合同条款，需全文理解。
         </p>
@@ -72,14 +72,16 @@ layout: default
 </div>
 
 <!--
-为了解决“上下文丢失”的问题，Dify 引入了“父子索引”。
+之前的分段方式有一个致命伤：**只见树木，不见森林。** AI 虽然找到了那一句话，但它不知道前因后果。于是，我们有了 **父子索引 (Parent-Child)**。
 
-（点击 1）**父切片模式**：
-我们把文档切成很小的“子切片”（比如 200 字），用来做精准搜索。
-但是，当真的搜到了，我们不把这 200 字给 AI，而是把包围它的 2000 字（父切片）给 AI。
-这样既搜得准，又读得全。
+（点击 1）**父切片模式 (书摘模式)**：
+我们把一本书做成很多张**小卡片（子切片）**。
+*   **搜索时**：我们在小卡片里飞速查找，定位非常精准。
+*   **回答时**：一旦找到了某张卡片，我们不只给 AI 看卡片，而是把卡片背后那一整页**原书内容（父切片）**都递给它。
+*   **结果**：AI 既能秒回，又懂上下文。
 
-（点击 2）**全文模式**：
-如果你的文档本身就不长（比如一篇新闻），那就更干脆了。
-搜到了任何一个片段，直接把整篇文章甩给 AI。
+（点击 2）**全文模式 (一问全知)**：
+这更简单。如果你问的是《员工守则》，只要命中了里面任何一条，我就把**整本守则**都丢给 AI 读。
+
+**父子索引是解决“AI 断章取义”的终极武器。**
 -->
