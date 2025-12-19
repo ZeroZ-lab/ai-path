@@ -18,7 +18,7 @@ layout: default
     </div>
     <div class="bg-white rounded-xl p-4 border border-indigo-100 flex-1 text-xs text-slate-600 space-y-3">
         <p class="leading-relaxed text-sm"><strong>核心功能：</strong> 从百万文档中召回最相关的片段。</p>
-        <div class="bg-indigo-50 p-2 rounded border border-indigo-100 font-mono text-indigo-700">Query: {{ user_input }}</div>
+        <div class="bg-indigo-50 p-2 rounded border border-indigo-100 font-mono text-indigo-700">Query: 【 user_input 】</div>
     </div>
 </div>
 
@@ -47,6 +47,8 @@ layout: default
             <span class="bg-pink-50 px-2 py-1 rounded text-[10px] text-pink-700 font-bold">Wiki</span>
         </div>
     </div>
+</div>
+
 </div>
 
 <!--

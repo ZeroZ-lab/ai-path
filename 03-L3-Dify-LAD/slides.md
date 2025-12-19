@@ -12,7 +12,9 @@ mdc: true
   <img src="/imgs/dify-logo.svg" class="h-24 w-auto mx-auto" alt="Dify Logo" />
 </template>
 
-
+<!--
+各位好，欢迎来到今天的 Dify 实战课程。在过去的一段时间里，我们可能都尝试过直接使用 ChatGPT 或 Claude 进行对话，但如何将这些强大的模型真正变成我们手中的“数字员工”，甚至是一个自动化的法务专家？这就是 Dify 要解决的问题。今天我将带大家从零开始，不仅学会部署，更要学会如何搭建属于你自己的 AI 应用。
+-->
 ---
 src: ./pages/01-intro.md
 hide: false
@@ -373,3 +375,4 @@ hide: false
 src: ./pages/99-qa.md
 hide: false
 ---
+
