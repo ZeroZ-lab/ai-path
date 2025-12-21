@@ -5,7 +5,6 @@ layout: default
 ## 3.2 节点全接触：Workflow 的零件库
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
-
 <!-- Anatomy of a Node -->
 <div v-click class="rounded-[32px] border border-slate-200 bg-white p-6 shadow-lg relative transition-all duration-500">
     <div class="absolute -top-3 left-6 bg-slate-800 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Node Anatomy</div>
@@ -35,7 +34,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- Common Nodes -->
 <div v-click class="grid gap-4 grid-cols-2 transition-all duration-500">
     <div class="p-4 rounded-2xl bg-blue-50/80 border border-blue-100 hover:bg-blue-100 transition-colors cursor-default">
@@ -59,7 +57,6 @@ layout: default
         <p class="text-[10px] text-emerald-700 mt-1">输出最终结果给用户。</p>
     </div>
 </div>
-
 </div>
 
 <!--

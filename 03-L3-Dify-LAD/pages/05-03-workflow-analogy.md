@@ -41,7 +41,6 @@ layout: default
         <div class="text-4xl drop-shadow-md">✨</div>
         <div class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">成品 (Output)</div>
     </div>
-
 </div>
 
 <div class="mt-6 text-center text-slate-500 text-sm">

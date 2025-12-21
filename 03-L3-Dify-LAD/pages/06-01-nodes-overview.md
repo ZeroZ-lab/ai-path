@@ -5,7 +5,6 @@ layout: default
 ## 4.1 节点全景图：5 大核心阵营
 
 <div class="grid grid-cols-5 gap-4 mt-10 items-stretch">
-
 <!-- 1. Interaction -->
 <div v-click class="flex flex-col gap-2 group">
     <div class="bg-blue-50 border-2 border-blue-200 rounded-2xl p-4 h-full hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -18,7 +17,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- 2. Reasoning -->
 <div v-click class="flex flex-col gap-2 group">
     <div class="bg-purple-50 border-2 border-purple-200 rounded-2xl p-4 h-full hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -31,7 +29,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- 3. Logic -->
 <div v-click class="flex flex-col gap-2 group">
     <div class="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 h-full hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -43,7 +40,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- 4. Transformation -->
 <div v-click class="flex flex-col gap-2 group">
     <div class="bg-slate-50 border-2 border-slate-200 rounded-2xl p-4 h-full hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -56,7 +52,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- 5. Extension -->
 <div v-click class="flex flex-col gap-2 group">
     <div class="bg-emerald-50 border-2 border-emerald-200 rounded-2xl p-4 h-full hover:shadow-2xl transition-all hover:-translate-y-2">
@@ -68,7 +63,6 @@ layout: default
         </div>
     </div>
 </div>
-
 </div>
 
 <!--

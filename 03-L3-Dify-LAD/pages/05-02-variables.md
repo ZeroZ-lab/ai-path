@@ -5,7 +5,6 @@ layout: default
 ## 3.1 变量：数据的“搬运工”
 
 <div class="grid gap-4 md:grid-cols-2 mt-4 items-stretch">
-
 <!-- Left: The Analogy -->
 <div class="flex flex-col gap-4">
     <!-- Intro -->
@@ -44,7 +43,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- Right: Data Flow Visualization -->
 <div v-click class="rounded-3xl border border-slate-200 bg-slate-50 p-4 shadow-inner flex flex-col relative overflow-hidden transition-all duration-500">
     <div class="absolute top-3 right-4 text-[10px] font-bold text-slate-400 uppercase">Data Flow</div>
@@ -76,5 +74,4 @@ layout: default
     <!-- Background decorative lines -->
     <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#475569_1px,transparent_1px)] [background-size:16px_16px]"></div>
 </div>
-
 </div>

@@ -11,14 +11,12 @@ layout: default
 ## 👋 动手时刻：5 分钟挑战
 
 <div class="mt-6 flex flex-col items-center gap-6">
-
   <!-- Mission Card -->
   <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-3xl shadow-lg w-full max-w-2xl text-center relative overflow-hidden">
     <div class="absolute -right-4 -top-4 text-6xl opacity-20">🏆</div>
     <h3 class="text-2xl font-bold mb-2 !text-white">任务：搭建最简单的三节点工作流</h3>
     <p class="text-sm opacity-90 !text-slate-200">不要光看不练，现在就打开 Dify！</p>
   </div>
-
   <!-- Steps -->
   <div class="grid grid-cols-3 gap-4 w-full max-w-4xl">
     <div class="bg-white border border-slate-200 p-4 rounded-2xl shadow-sm flex flex-col gap-2">
@@ -52,11 +50,9 @@ layout: default
       </div>
     </div>
   </div>
-
   <!-- Countdown (Visual Only) -->
   <div class="flex items-center gap-2 text-slate-400 mt-4 animate-pulse">
     <span class="i-carbon-timer text-xl"></span>
     <span class="text-sm">限时 5 分钟，完成后请举手 🙋‍♂️</span>
   </div>
-
 </div>

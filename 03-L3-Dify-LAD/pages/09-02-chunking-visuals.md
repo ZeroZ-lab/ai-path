@@ -5,7 +5,6 @@ layout: default
 ## 7.1.5 案例图解：切分前 vs 切分后
 
 <div class="grid gap-8 md:grid-cols-2 mt-6 items-stretch">
-
   <!-- Case 1: QA Split -->
   <div class="rounded-3xl border border-emerald-100 bg-emerald-50/50 p-6 shadow-sm flex flex-col">
     <div class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-4 flex items-center gap-2">
@@ -32,7 +31,6 @@ layout: default
       </div>
     </div>
   </div>
-
   <!-- Case 2: Rule Split -->
   <div class="rounded-3xl border border-blue-100 bg-blue-50/50 p-6 shadow-sm flex flex-col">
     <div class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-4 flex items-center gap-2">
@@ -61,7 +59,6 @@ layout: default
       </div>
     </div>
   </div>
-
 </div>
 
 <style>
