@@ -2,9 +2,9 @@
 layout: center
 ---
 
-# 04 小试牛刀：智能写作助手
+# 04 小试牛刀：三节点对话流
 
-<div class="mt-4 text-slate-500">Building a Basic Chat App</div>
+<div class="mt-4 text-slate-500">Building a Basic Chatflow App</div>
 
 <!--
 环境装好了，模型也配好了。

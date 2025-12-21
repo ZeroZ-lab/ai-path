@@ -22,52 +22,52 @@ hide: false
 
 ---
 src: ./pages/01-00-opening-poll.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-00-pain-points-poll.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-00-pain.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-workflow-need.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-workflow-workshop.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-workflow-translator.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-multi-model.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-tool-action.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-01-selection.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/01-02-why-dify.md
-hide: false
+hide: true
 ---
 
 ---
@@ -78,47 +78,47 @@ hide: false
 
 ---
 src: ./pages/02-installation.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/02-00-deploy-options.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/02-01-installation-mirror.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/03-00-chapter-title.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/03-01-model-config.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/03-02-plugins-intro.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/04-00-chapter-title.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/04-01-create-chat-app.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/04-02-prompt-debugging.md
-hide: false
+hide: true
 ---
 
 ---
@@ -134,7 +134,7 @@ hide: false
 
 ---
 src: ./pages/05-01-json-markdown.md
-hide: false
+hide: true
 ---
 
 ---
@@ -154,7 +154,7 @@ hide: false
 
 ---
 src: ./pages/05-05-chatflow-vs-workflow.md
-hide: false
+hide: true
 ---
 
 ---
@@ -180,6 +180,16 @@ hide: false
 
 ---
 src: ./pages/06-03-reasoning-nodes.md
+hide: false
+---
+
+---
+src: ./pages/06-03-llm-concepts.md
+hide: false
+---
+
+---
+src: ./pages/06-03-model-params.md
 hide: false
 ---
 

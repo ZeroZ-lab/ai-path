@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 09 知识库实战
+# 07 知识库实战
 
 <div class="mt-4 text-slate-500">
   RAG 原理 · 切片策略 · 检索优化

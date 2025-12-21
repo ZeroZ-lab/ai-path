@@ -1,8 +1,14 @@
 ---
+layout: center
+---
+
+# 01 Dify 介绍
+
+---
 layout: default
 ---
 
-## 1.3 Dify 是什么？
+## Dify 是什么？
 
 <div class="grid gap-4 md:grid-cols-[1fr_1.8fr_1fr] mt-18 items-center">
 <!-- Left: What Dify Abstracts (The Dirty Work) -->
@@ -85,14 +91,26 @@ layout: default
 </div>
 
 <!--
-最后，我们用一张图来总结 Dify 在整个 AI 技术栈里的位置。
+如果把大模型比作**CPU**，把我们的业务比作**APP**，那么 Dify 是什么？
 
-（点击 1）中间这一层，就是 Dify。它是一个“应用开发平台”。
-（点击 2）它的下面，连接的是各种大模型（Infrastructure）。你不需要关心底层是 OpenAI 还是文心一言，Dify 帮你连好了。
-（点击 3）它的上面，支撑的是各种业务应用（Applications）。无论是网页版机器人，还是集成到钉钉/飞书里，都由它提供服务。
+**Dify 就是 AI 时代的“Windows 操作系统”。**
 
-（点击 4）对开发者来说，Dify 帮我们挡掉了最烦人的脏活（Shield Complexity）：比如怎么切分文档、怎么算 Token、怎么适配接口。
-（点击 5）对外交付时，它直接给了我们成品（Deliver Value）：现成的 WebApp 和标准的 API。
+（点击 1）它位于正中间，起到了**承上启下**的作用。
 
-这就是 Dify：连接模型能力与业务价值的桥梁。
+（点击 2）**向下兼容（Infrastructure）**：它帮你搞定了所有硬件适配。你是用 Intel（GPT）还是 AMD（Claude），对上层应用来说没区别，Dify 帮你抹平了差异。
+
+（点击 3）**向上支撑（Application）**：你想开发网页版、手机版还是钉钉机器人，Dify 提供了统一的开发环境。
+
+（点击 4）**屏蔽复杂（Shield Complexity）**：最重要的是，它帮你干了所有**脏活累活**。怎么切分文档、怎么算 Token、怎么管理上下文，这些底层的技术细节，你都不用管。
+
+（点击 5）**交付价值（Deliver Value）**：你只需要专注于业务逻辑，Dify 直接给你生成可用的成品。
+
+**一句话：Dify 让开发 AI 应用，变得像装软件一样简单。**
 -->
+
+
+---
+layout: center
+---
+
+# 👋 动手：认识 Dify 的页面

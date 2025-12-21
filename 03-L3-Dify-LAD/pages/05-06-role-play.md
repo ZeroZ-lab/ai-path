@@ -1,4 +1,11 @@
 ---
+layout: center
+---
+
+# 👋 如果你无法理解，可以举手
+
+
+---
 layout: default
 ---
 
