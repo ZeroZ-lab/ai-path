@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.1 结构化数据之美：JSON 与 Markdown
+## 3.1 结构化数据之美：JSON 与 Markdown
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 <!-- JSON Card -->

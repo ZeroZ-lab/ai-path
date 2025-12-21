@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 04 小试牛刀：三节点对话流
+# 02 小试牛刀：三节点对话流
 
 <div class="mt-4 text-slate-500">Building a Basic Chatflow App</div>
 

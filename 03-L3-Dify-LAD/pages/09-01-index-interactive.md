@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.1.4 实战模拟：Keyword vs Vector
+## 7.2.4 实战模拟：Keyword vs Vector
 
 <div class="h-[400px] w-full mt-6">
   <SearchComparison />

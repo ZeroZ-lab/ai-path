@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.0.2 知识库搭建全景图：从上传到落地
+## 7.0.3 知识库搭建全景图：从上传到落地
 
 <div class="mt-4 text-xs text-slate-500 mb-6 font-bold uppercase tracking-widest text-center">
     知识库配置的三个关键环节

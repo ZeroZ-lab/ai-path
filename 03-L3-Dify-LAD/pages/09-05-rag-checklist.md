@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.5 避坑指南：RAG 调优黄金清单
+## 7.5 避坑指南：RAG 调优黄金清单
 
 <div class="mt-6 grid gap-6 md:grid-cols-2 items-stretch">
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.2.6 实战 C：全文模式 (Full Doc)
+## 7.1.8 实战 C：全文模式 (Full Doc)
 
 <div class="h-[400px] w-full mt-6">
   <ChunkingDemoFullDoc />

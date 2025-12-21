@@ -26,8 +26,8 @@ const chunks = [
         class="absolute inset-y-0 w-1 bg-rose-500 shadow-[0_0_20px_#f43f5e] z-50 transition-all duration-1000 ease-in-out pointer-events-none" 
         :style="{ left: isSliced ? '100%' : '0%', opacity: isSliced ? 0 : 1 }"
       >
-        <div class="absolute -top-10 -left-12 bg-rose-600 text-white text-[8px] px-2 py-0.5 rounded shadow-xl font-black animate-pulse whitespace-nowrap">
-          ✂️ SLICING...
+        <div class="absolute top-2 left-2 bg-rose-600 text-white text-[8px] px-2 py-0.5 rounded shadow-xl font-black animate-pulse whitespace-nowrap">
+          ✂️ CUT
         </div>
       </div>
 

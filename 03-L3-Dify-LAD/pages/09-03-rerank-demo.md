@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.3.2 实战演示：Rerank 如何拯救结果？
+## 7.3.2 实战演示：Rerank 如何拯救结果？
 
 <div class="h-[400px] w-full mt-6">
   <RerankDemo />

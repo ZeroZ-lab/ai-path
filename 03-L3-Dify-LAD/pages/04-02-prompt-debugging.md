@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 4.2 提示词编排：赋予灵魂
+## 2.2 提示词编排：赋予灵魂
 
 <div class="grid gap-6 md:grid-cols-2 mt-6 items-stretch">
 

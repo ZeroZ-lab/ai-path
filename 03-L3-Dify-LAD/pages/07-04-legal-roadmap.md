@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.4.0 演进路线：从“写作文”到“写合同”
+## 5.4.0 演进路线：从“写作文”到“写合同”
 
 <div class="mt-2 flex flex-col gap-2 max-w-3xl mx-auto h-full justify-center">
 

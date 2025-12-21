@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 4.1 创建应用：从简单开始
+## 2.1 创建应用：从简单开始
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 

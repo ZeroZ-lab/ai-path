@@ -9,7 +9,7 @@ layout: center
 layout: default
 ---
 
-## 5.6 现场互动：真人扮演 Workflow
+## 3.4 现场互动：真人扮演 Workflow
 
 <div class="mt-4 text-center text-slate-500 text-sm mb-8">
   请 4 位同学上台，我们来“演”一遍数据是怎么流转的。

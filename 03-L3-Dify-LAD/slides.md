@@ -17,7 +17,7 @@ mdc: true
 -->
 ---
 src: ./pages/01-intro.md
-hide: false
+hide: true
 ---
 
 ---
@@ -296,15 +296,17 @@ src: ./pages/09-00-why-rag-solution.md
 hide: false
 ---
 
----
-src: ./pages/09-00-kb-workflow-overview.md
-hide: false
----
 
 ---
 src: ./pages/09-00-rag-mechanism.md
 hide: false
 ---
+
+---
+src: ./pages/09-00-kb-workflow-overview.md
+hide: false
+---
+
 
 ---
 src: ./pages/09-00-slicing-animation.md

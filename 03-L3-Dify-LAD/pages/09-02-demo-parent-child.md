@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.2.5 实战 B：父子索引 (Parent-Child)
+## 7.1.7 实战 B：父子索引 (Parent-Child)
 
 <div class="h-[400px] w-full mt-6">
   <ChunkingDemoParentChild />
