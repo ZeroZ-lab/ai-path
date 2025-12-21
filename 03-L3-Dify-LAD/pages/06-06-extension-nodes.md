@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.6 扩展能力：Knowledge, HTTP, Tools
+## 4.6 扩展能力：Knowledge, HTTP, Tools
 
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 

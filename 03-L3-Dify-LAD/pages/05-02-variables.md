@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.2 变量：数据的“搬运工”
+## 3.1 变量：数据的“搬运工”
 
 <div class="grid gap-4 md:grid-cols-2 mt-4 items-stretch">
 

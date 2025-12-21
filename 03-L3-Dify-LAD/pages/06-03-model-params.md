@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.3++ 模型调优：掌控律师的“性格”
+## 4.3++ 模型调优：掌控律师的“性格”
 
 <ModelParamsVisual />
 

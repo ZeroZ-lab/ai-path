@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.3 Node (节点)：流水线上的工位
+## 3.2 节点全接触：Workflow 的零件库
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 

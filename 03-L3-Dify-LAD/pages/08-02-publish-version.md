@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 8.2 版本管理与发布
+## 6.2 版本管理与发布
 
 <div class="grid gap-6 md:grid-cols-3 mt-8 items-stretch">
 

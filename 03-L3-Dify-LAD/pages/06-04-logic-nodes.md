@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.4 逻辑三剑客：If, Iteration, Loop
+## 4.4 逻辑三剑客：If, Iteration, Loop
 
 <div class="grid gap-6 md:grid-cols-3 mt-8 mb-6 items-stretch">
 

@@ -297,8 +297,63 @@ hide: false
 ---
 
 ---
+src: ./pages/09-00-kb-workflow-overview.md
+hide: false
+---
+
+---
 src: ./pages/09-00-rag-mechanism.md
 hide: false
+---
+
+---
+src: ./pages/09-00-slicing-animation.md
+hide: false
+---
+
+---
+src: ./pages/09-02-chunking-strategy.md
+hide: false
+---
+
+---
+src: ./pages/09-02-basic-chunking-animation.md
+hide: false
+---
+
+---
+src: ./pages/09-02-parent-child-modes.md
+hide: false
+---
+
+---
+src: ./pages/09-02-parent-child-animation.md
+hide: false
+---
+
+---
+src: ./pages/09-02-chunking-scenarios.md
+hide: false
+---
+
+---
+src: ./pages/09-02-chunking-visuals.md
+hide: true
+---
+
+---
+src: ./pages/09-02-demo-qa.md
+hide: true
+---
+
+---
+src: ./pages/09-02-demo-parent-child.md
+hide: true
+---
+
+---
+src: ./pages/09-02-demo-full-doc.md
+hide: true
 ---
 
 ---
@@ -318,41 +373,6 @@ hide: false
 
 ---
 src: ./pages/09-01-index-interactive.md
-hide: false
----
-
----
-src: ./pages/09-02-chunking-strategy.md
-hide: false
----
-
----
-src: ./pages/09-02-parent-child-modes.md
-hide: false
----
-
----
-src: ./pages/09-02-chunking-scenarios.md
-hide: false
----
-
----
-src: ./pages/09-02-chunking-visuals.md
-hide: false
----
-
----
-src: ./pages/09-02-demo-qa.md
-hide: false
----
-
----
-src: ./pages/09-02-demo-parent-child.md
-hide: false
----
-
----
-src: ./pages/09-02-demo-full-doc.md
 hide: false
 ---
 

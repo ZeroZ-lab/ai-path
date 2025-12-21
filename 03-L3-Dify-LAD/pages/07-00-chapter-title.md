@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 05 工作流实战
+# 05 工作流实战（一）
 
 <div class="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
   
@@ -16,13 +16,13 @@ layout: center
   </div>
 
   <!-- Part 2 -->
-  <div v-click class="bg-purple-50/50 border border-purple-100 p-4 rounded-xl flex items-center gap-4 transition-all duration-500 hover:-translate-y-1">
+  <!-- <div v-click class="bg-purple-50/50 border border-purple-100 p-4 rounded-xl flex items-center gap-4 transition-all duration-500 hover:-translate-y-1">
     <div class="bg-purple-600 text-white px-3 py-1 rounded text-xs font-bold shrink-0">Part 2</div>
     <div class="text-left">
       <div class="text-sm font-bold text-purple-900">深度演练：法律文书生成</div>
       <div class="text-[10px] text-slate-500 mt-0.5">60 min · 复杂逻辑与 JSON 提取</div>
     </div>
-  </div>
+  </div> -->
 
 </div>
 

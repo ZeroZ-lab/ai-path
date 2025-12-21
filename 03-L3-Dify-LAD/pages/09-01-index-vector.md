@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.1.2 高质量模式：Vector Index (向量索引)
+## 7.2.2 高质量模式：Vector Index (向量索引)
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 
@@ -48,23 +48,23 @@ layout: default
         <!-- Query Point -->
         <div class="absolute left-[30%] top-[40%] flex flex-col items-center group text-sm">
             <div class="w-4 h-4 bg-blue-600 rounded-full shadow-lg ring-4 ring-blue-100"></div>
-            <span class="font-bold text-blue-700 mt-1">Query: "喵星人"</span>
+            <span class="font-bold text-blue-700 mt-1">Query: "甲方违约"</span>
         </div>
         <!-- Target Match -->
         <div class="absolute left-[35%] top-[35%] flex flex-col items-center group animate-pulse text-sm">
             <div class="w-4 h-4 bg-emerald-500 rounded-full shadow-lg"></div>
-            <span class="font-bold text-emerald-700 mt-1">Doc: "猫"</span>
+            <span class="font-bold text-emerald-700 mt-1">Doc: "发包方赔偿责任"</span>
             <!-- Connection Line -->
             <div class="absolute -z-10 w-16 h-0.5 bg-emerald-200 -rotate-45 top-4 -left-4"></div>
         </div>
         <!-- Distant Point -->
         <div class="absolute right-[20%] bottom-[20%] flex flex-col items-center opacity-50 text-sm">
             <div class="w-3 h-3 bg-slate-400 rounded-full"></div>
-            <span class="text-slate-500 mt-1">Doc: "狗"</span>
+            <span class="text-slate-500 mt-1">Doc: "乙方义务"</span>
         </div>
     </div>
     <div class="mt-4 text-xs text-slate-500 text-center font-bold">
-        Distance(喵星人, 猫) = 0.98 (High Similarity)
+        Sim(甲方违约, 发包方赔偿) = 0.95 (Semantic Match)
     </div>
 </div>
 
@@ -78,7 +78,7 @@ layout: default
 *   **语义理解**：你说“怎么付钱”，它虽然没对上字，但它发现“支付流程”和这句话的“脾气”最像，都在讨论钱的事，所以能搜到。
 *   **跨语言**：它甚至知道中文的“苹果”和英文的“Apple”是同一个意思。
 
-（点击 2）看右边的空间图：在 AI 的眼里，“喵星人”和“猫”就像两个住对门的邻居，**距离极近**；而“狗”虽然也是动物，但它住在另外一条街。
+（点击 2）看右边的空间图：在 AI 的眼里，“甲方违约”和“发包方赔偿责任”虽然字面不同，但在法律语义空间里**距离极近**；而“乙方义务”虽然也是合同条款，但它住在另外一条街。
 
 **缺点**：这种“找知音”的过程是要付小费的（消耗 Token），而且有时候它太“发散”了，容易找错人。
 -->

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.1.1 经济模式：Keyword Index (关键词索引)
+## 7.2.1 经济模式：Keyword Index (关键词索引)
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 

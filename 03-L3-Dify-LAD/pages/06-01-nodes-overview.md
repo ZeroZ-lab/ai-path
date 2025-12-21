@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.1 节点全景图：5 大核心阵营
+## 4.1 节点全景图：5 大核心阵营
 
 <div class="grid grid-cols-5 gap-4 mt-10 items-stretch">
 

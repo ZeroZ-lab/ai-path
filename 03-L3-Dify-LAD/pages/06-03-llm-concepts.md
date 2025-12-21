@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.3+ 深入理解 LLM：和律师沟通的“行话”
+## 4.3+ 深入理解 LLM：和律师沟通的“行话”
 
 <LLMConceptsInteractive />
 

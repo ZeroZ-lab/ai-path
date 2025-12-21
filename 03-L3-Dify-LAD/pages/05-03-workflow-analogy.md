@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.4 Workflow：自动化流水线
+## 3.3 生活中的 Workflow：从菜谱到官司
 
 <div v-click class="relative mt-8 h-[320px] w-full rounded-[32px] bg-slate-100 border border-slate-200 overflow-hidden shadow-inner flex items-center justify-center transition-all duration-500">
     <!-- Background Conveyor Belt -->

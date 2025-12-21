@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 8.1 开发闭环：调试与预览
+## 6.1 开发闭环：调试与预览
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 

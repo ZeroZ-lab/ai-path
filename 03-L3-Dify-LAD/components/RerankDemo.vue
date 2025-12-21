@@ -4,19 +4,19 @@ import { ref } from 'vue'
 const isReranked = ref(false)
 
 const initialList = [
-  { id: 1, text: "iPhone 15 价格 (¥5999)", score: 0.88, type: 'wrong' },
-  { id: 2, text: "iPhone 15 Pro Max 价格 (¥9999)", score: 0.86, type: 'wrong' },
-  { id: 3, text: "iPhone 14 Pro 价格 (¥6999)", score: 0.85, type: 'wrong' },
-  { id: 4, text: "iPhone 15 Pro 价格 (¥7999)", score: 0.82, type: 'correct' }, // 正确答案排在第4
-  { id: 5, text: "iPad Pro 价格", score: 0.75, type: 'wrong' }
+  { id: 1, text: "甲方有权单方解除合同 (因乙方违约)", score: 0.89, type: 'wrong' },
+  { id: 2, text: "乙方无权单方解除合同", score: 0.87, type: 'wrong' },
+  { id: 3, text: "协议终止条款及后果说明", score: 0.85, type: 'wrong' },
+  { id: 4, text: "甲方无权单方解除合同 (除非不可抗力)", score: 0.84, type: 'correct' }, // 正确答案排在第4
+  { id: 5, text: "合同解除后的赔偿责任", score: 0.78, type: 'wrong' }
 ]
 
 const rerankedList = [
-  { id: 4, text: "iPhone 15 Pro 价格 (¥7999)", score: 0.99, type: 'correct' }, // 逆袭到第1
-  { id: 2, text: "iPhone 15 Pro Max 价格 (¥9999)", score: 0.45, type: 'wrong' },
-  { id: 1, text: "iPhone 15 价格 (¥5999)", score: 0.42, type: 'wrong' },
-  { id: 3, text: "iPhone 14 Pro 价格 (¥6999)", score: 0.38, type: 'wrong' },
-  { id: 5, text: "iPad Pro 价格", score: 0.12, type: 'wrong' }
+  { id: 4, text: "甲方无权单方解除合同 (除非不可抗力)", score: 0.98, type: 'correct' }, // 逆袭到第1
+  { id: 1, text: "甲方有权单方解除合同 (因乙方违约)", score: 0.45, type: 'wrong' },
+  { id: 2, text: "乙方无权单方解除合同", score: 0.41, type: 'wrong' },
+  { id: 3, text: "协议终止条款及后果说明", score: 0.35, type: 'wrong' },
+  { id: 5, text: "合同解除后的赔偿责任", score: 0.22, type: 'wrong' }
 ]
 
 function toggle() {
@@ -32,7 +32,7 @@ function toggle() {
       <div class="flex items-center gap-3">
         <span class="text-xs font-bold text-slate-400 uppercase">User Query</span>
         <div class="bg-blue-50 text-blue-800 text-sm px-4 py-2 rounded-xl font-bold border border-blue-100 shadow-sm">
-          🔍 iPhone 15 <span class="text-rose-600">Pro</span> 价格
+          🔍 甲方 <span class="text-rose-600">无权</span> 单方解除合同
         </div>
       </div>
       

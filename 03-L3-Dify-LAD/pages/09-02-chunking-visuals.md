@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 9.2.3 案例图解：切分前 vs 切分后
+## 7.1.5 案例图解：切分前 vs 切分后
 
 <div class="grid gap-8 md:grid-cols-2 mt-6 items-stretch">
 
