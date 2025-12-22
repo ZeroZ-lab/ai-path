@@ -67,7 +67,7 @@ layout: default
             </div>
             <div class="text-[10px] text-slate-500 mb-0.5">Prompt:</div>
             <div class="bg-slate-50 p-1.5 rounded text-xs font-mono text-slate-600 border border-slate-100">
-                Please help me <span class="bg-purple-100 text-purple-700 px-1 rounded">{{ user_query }}</span>...
+                Please help me <span class="bg-purple-100 text-purple-700 px-1 rounded">[[user_query]]</span>...
             </div>
         </div>
     </div>

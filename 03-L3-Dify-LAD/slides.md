@@ -250,6 +250,11 @@ hide: false
 ---
 
 ---
+src: ./pages/07-04-demo-v1-structured.md
+hide: false
+---
+
+---
 src: ./pages/07-04-demo-v2.md
 hide: false
 ---
@@ -258,6 +263,8 @@ hide: false
 src: ./pages/07-04-demo-v3.md
 hide: false
 ---
+
+
 
 <!-- Chapter 08: Ops -->
 ---

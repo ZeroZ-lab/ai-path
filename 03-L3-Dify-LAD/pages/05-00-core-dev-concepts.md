@@ -4,7 +4,7 @@ layout: center
 
 # 03 Workflow 必备知识
 
-<div class="mt-4 text-slate-500">JSON · Markdown · Variables · Workflow</div>
+<div class="mt-4 text-slate-500"> Variables · Workflow</div>
 
 <!--
 第二节课开始
