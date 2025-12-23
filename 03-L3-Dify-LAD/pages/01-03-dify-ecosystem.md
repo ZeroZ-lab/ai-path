@@ -110,6 +110,68 @@ layout: default
 
 
 ---
+layout: default
+---
+
+## 选型指南：什么时候用 Chatbot？什么时候造 Dify 应用？
+
+<div class="grid grid-cols-2 gap-10 mt-16 px-4">
+
+<!-- Left: Chatbot -->
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-white border-2 border-slate-100 hover:border-slate-300 transition-all shadow-sm">
+    <div class="text-2xl font-bold text-slate-700 flex items-center gap-3">
+        <span class="text-4xl text-slate-400">🤖</span>
+        <span>通用 Chatbot</span>
+    </div>
+    <div class="text-sm font-medium text-slate-400 uppercase tracking-widest">Personal Assistant</div>
+    <div class="my-2 text-base text-slate-600 leading-relaxed">
+        适合<span class="font-bold text-slate-800">低频、通用、一次性</span>的任务。
+    </div>
+    <ul class="space-y-3 text-sm text-slate-600 flex-1">
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark text-green-500 text-lg"></div>
+            <span><strong>简单的文书润色/翻译</strong><br><span class="text-xs text-slate-400">"帮我把这段邮件翻译成英文"</span></span>
+        </li>
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark text-green-500 text-lg"></div>
+            <span><strong>法律概念快速查询</strong><br><span class="text-xs text-slate-400">"解释一下什么是'不可抗力'"</span></span>
+        </li>
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark text-green-500 text-lg"></div>
+            <span><strong>灵感激发/头脑风暴</strong><br><span class="text-xs text-slate-400">"给我 5 个合同谈判的切入点"</span></span>
+        </li>
+    </ul>
+</div>
+
+<!-- Right: Dify App -->
+<div class="flex flex-col gap-4 p-6 rounded-2xl bg-indigo-50 border-2 border-indigo-200 shadow-md">
+    <div class="text-2xl font-bold text-indigo-700 flex items-center gap-3">
+        <span class="text-4xl">🚀</span>
+        <span>Dify 智能应用</span>
+    </div>
+    <div class="text-sm font-medium text-indigo-400 uppercase tracking-widest">Professional Workflow</div>
+    <div class="my-2 text-base text-indigo-900 leading-relaxed">
+        适合<span class="font-bold text-indigo-700">高频、专业、流程化</span>的业务。
+    </div>
+    <ul class="space-y-3 text-sm text-indigo-800 flex-1">
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark-filled text-indigo-600 text-lg"></div>
+            <span><strong>基于私有数据的回答 (RAG)</strong><br><span class="text-xs text-indigo-500">"根据《公司法》和公司过往案例，回答..."</span></span>
+        </li>
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark-filled text-indigo-600 text-lg"></div>
+            <span><strong>复杂流程自动化 (Workflow)</strong><br><span class="text-xs text-indigo-500">"读取合同 -> 提取风险点 -> 生成审核报告"</span></span>
+        </li>
+        <li class="flex gap-2">
+            <div class="i-carbon-checkmark-filled text-indigo-600 text-lg"></div>
+            <span><strong>团队协作与标准化</strong><br><span class="text-xs text-indigo-500">固化资深律师的经验，供全团队复用</span></span>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+---
 layout: center
 ---
 
