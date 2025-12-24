@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 05 工作流实战（二）
+# 05 法律场景下的知识库构建
 
 <div class="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
   
@@ -41,7 +41,7 @@ layout: center
 layout: center
 ---
 
-# Part 2：深度演练
+# 深度演练
 
 <div class="mt-4 text-slate-500 text-lg">
 </div>

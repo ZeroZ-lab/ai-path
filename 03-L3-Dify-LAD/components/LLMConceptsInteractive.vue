@@ -1,13 +1,13 @@
 <template>
   <div class="flex gap-6 h-[450px] mt-8">
     <!-- Menu -->
-    <div class="w-1/3 flex flex-col gap-3 h-full overflow-y-auto pr-1">
+    <div class="w-1/3 flex flex-col gap-3 h-full overflow-y-auto p-2 custom-scrollbar">
       <div 
         v-for="item in items" 
         :key="item.key"
         @click="active = item.key"
-        class="p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 flex items-center gap-4"
-        :class="active === item.key ? 'bg-blue-600 border-blue-600 text-white shadow-lg scale-105' : 'bg-white border-slate-100 text-slate-600 hover:border-blue-200 hover:bg-blue-50/50'"
+        class="p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 flex items-center gap-4 mx-1"
+        :class="active === item.key ? 'bg-blue-600 border-blue-600 text-white shadow-lg scale-105 z-10' : 'bg-white border-slate-100 text-slate-600 hover:border-blue-200 hover:bg-blue-50/50'"
       >
         <div class="text-3xl filter drop-shadow-sm">{{ item.icon }}</div>
         <div>

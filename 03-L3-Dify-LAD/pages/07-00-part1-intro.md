@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# Part 1：随堂小练
+# 随堂小练
 
 <div class="mt-4 text-slate-500">
   20 分钟上手：从零搭建智能写作助手

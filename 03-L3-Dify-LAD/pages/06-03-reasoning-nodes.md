@@ -5,7 +5,6 @@ layout: default
 ## 4.3 核心推理：大脑与分流器
 
 <div class="grid gap-8 md:grid-cols-[1.4fr_1fr] mt-8 items-stretch">
-
 <!-- LLM Node -->
 <div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1 relative overflow-hidden group">
     <!-- Core Badge -->
@@ -30,7 +29,6 @@ layout: default
         </div>
     </div>
 </div>
-
 <!-- Classifier Node -->
 <div v-click class="rounded-3xl border border-indigo-100 bg-indigo-50/80 p-6 shadow-sm flex flex-col transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-4 mb-4 border-b border-indigo-200 pb-3">
@@ -60,10 +58,15 @@ layout: default
 <!--
 这里是律所的**核心办公区**，坐着最资深的大律师们。
 
-1.  **LLM (大模型)**：这是我们的**资深合伙人**。你把复杂的案子交给他，他负责查法条、分析逻辑、撰写文书。
-    *   **Model**：就是指派哪位律师（比如擅长逻辑的 DeepSeek 还是通用的 GPT-4）。
-    *   **Prompt**：就是你给律师的**案情摘要和办案要求**。
-    *   **Context**：就是你提供给律师的**案件卷宗**（知识库）。
+1.  **LLM (大模型)**：很多人以为 LLM 只能"聊天"，其实它是一把**瑞士军刀**，能干的活远不止回答问题：
+    *   🗣️ **回答**：你问它法条，它给你解释。
+    *   🏷️ **分类**：你扔给它一段话，它告诉你属于"劳动纠纷"还是"合同违约"。
+    *   📦 **提取**：你给它一份合同，它帮你把甲方乙方、金额日期提取成 JSON。
+    *   ✅ **判断**：你让它当审核员，判断内容是否合规，输出 True / False。
+    *   🌐 **翻译**：中译英、英译中，不在话下。
+    *   ✍️ **改写**：把口语变书面语，把长句变短句。
+    
+    所以在 Dify 里，一个 Workflow 往往会有**多个 LLM 节点**，每一个执行不同的任务——这才是生产级的用法。
 
-2.  **问题分类器**：这是**前台导诉员**。当事人来了说“我要告老板”，他知道这归“劳动法团队”管；当事人说“我被骗了”，他知道这归“刑辩团队”管。他专门负责把杂乱的咨询分流到对应的专业团队。
+2.  **问题分类器**：这是**前台导诉员**。当事人来了说"我要告老板"，他知道这归"劳动法团队"管；当事人说"我被骗了"，他知道这归"刑辩团队"管。他专门负责把杂乱的咨询分流到对应的专业团队。
 -->
