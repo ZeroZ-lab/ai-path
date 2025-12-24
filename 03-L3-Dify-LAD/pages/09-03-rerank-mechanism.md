@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.3.1 Rerank 原理：速读 vs 精读
+## 7.3.3 Rerank 原理：速读 vs 精读
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 

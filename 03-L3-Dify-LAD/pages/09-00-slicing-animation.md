@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.0.4 视觉直观：什么是“切片”？
+## 7.0.4 观察：什么是“切片”？
 
 <div class="mt-4 h-[420px] w-full">
   <FileSlicingVisual />

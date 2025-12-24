@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1.1 交互演示：切分规则的差异
+## 7.1.1 演示：切分规则的差异
 
 <div class="mt-8 h-[400px] w-full">
   <BasicChunkingVisual />

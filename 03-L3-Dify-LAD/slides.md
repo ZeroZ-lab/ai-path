@@ -366,6 +366,11 @@ hide: true
 ---
 
 ---
+src: ./pages/09-02-to-index-transition.md
+hide: false
+---
+
+---
 src: ./pages/09-01-index-keyword.md
 hide: false
 ---
@@ -382,6 +387,16 @@ hide: false
 
 ---
 src: ./pages/09-01-index-interactive.md
+hide: false
+---
+
+---
+src: ./pages/09-01-to-rerank-transition.md
+hide: false
+---
+
+---
+src: ./pages/09-03-topk-threshold.md
 hide: false
 ---
 

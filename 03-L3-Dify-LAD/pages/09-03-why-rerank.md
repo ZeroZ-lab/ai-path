@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.3 为什么需要 Rerank (重排序)？
+## 7.3.2 为什么需要 Rerank (重排序)？
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 
