@@ -51,7 +51,7 @@ class: px-14
       <h3 class="text-base font-bold text-rose-900">4. 窗口限制 (Context Limit)</h3>
     </div>
     <p class="text-sm text-rose-900/80 leading-relaxed">
-      虽然模型支持长文本，但一次性塞入整本《民法典》或几十兆的技术手册，不仅费用昂贵（Token Cost），而且检索精度会显著下降。
+虽然模型支持长文本，但一次性塞入整本《民法典》或几十兆的技术手册，不仅费用昂贵（Token Cost），而且检索精度会显著下降。
     </p>
   </div>
 

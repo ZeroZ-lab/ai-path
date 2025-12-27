@@ -26,7 +26,7 @@
     </div>
     <ul class="text-sm text-emerald-900/80 leading-relaxed list-disc pl-4 space-y-1">
       <li><strong>严选依据：</strong> 每一句法律意见都能标注“引用自《XX 合同》第 5 条第 2 款”。</li>
-      <li><strong>拒绝幻觉：</strong> 让 AI 的每一句话都有据可查，从源头上解决模型“胡说”的问题。</li>
+      <li><strong>减少幻觉：</strong> 让 AI 的每一句话都有据可查，从源头上降低模型“胡说”的问题。</li>
     </ul>
   </div>
 
@@ -55,7 +55,6 @@
   </div>
 
 </div>
-
 
 <!--
 这个“法律数字图书馆”有四个非常实在的用处：

@@ -17,7 +17,7 @@ mdc: true
 -->
 ---
 src: ./pages/01-intro.md
-hide: true
+hide: false
 ---
 
 ---
@@ -62,11 +62,6 @@ hide: true
 
 ---
 src: ./pages/01-01-selection.md
-hide: true
----
-
----
-src: ./pages/01-02-why-dify.md
 hide: true
 ---
 

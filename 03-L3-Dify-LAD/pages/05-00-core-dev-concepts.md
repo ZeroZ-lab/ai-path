@@ -4,7 +4,7 @@ layout: center
 
 # 03 Workflow 必备知识
 
-<div class="mt-4 text-slate-500"> Variables · Workflow</div>
+<div class="mt-4 text-slate-500"> Variables · Nodes · Workflow</div>
 
 <!--
 第二节课开始
@@ -15,7 +15,7 @@ layout: center
 
 别担心，不需要你会写代码。
 我们只需要理解三个核心概念：
-1. 数据怎么传？（JSON/Markdown）
+1. 数据怎么传？node
 2. 数据存在哪？（变量）
 3. 流程怎么走？（Workflow）
 

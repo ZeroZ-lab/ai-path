@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1.2 进阶：父子索引 (Parent-Child)
+## 7.1.2 进阶：父子分段 (Parent-Child)
 
 <div class="mt-4 text-xs text-slate-500 mb-6 text-center">
     <strong>核心理念：</strong> 用“小切片”做精准检索，用“大切片”做完整上下文。

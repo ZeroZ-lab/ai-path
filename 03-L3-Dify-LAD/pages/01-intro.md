@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 01 自我介绍
+# 自我介绍
 
 <div class="flex items-center gap-16 mt-16 px-12">
 
@@ -17,8 +17,8 @@ layout: center
         <div class="text-2xl font-bold text-slate-800 mb-2">关木</div>
         <ul class="space-y-4 text-slate-600 list-disc list-inside">
             <li v-click class="text-lg"><strong>大型上市科技集团</strong> AI 专家 / 讲师</li>
-            <li v-click class="text-lg"><strong>Dify.ai</strong> 核心贡献者 / 布道师</li>
-            <li v-click class="text-lg"><strong>Milvus & Cherry Studio</strong> 布道师 / 讲师</li>
+            <li v-click class="text-lg"><strong>Dify.ai</strong> 社区核心贡献者 / 布道师</li>
+            <li v-click class="text-lg"><strong>Milvus & Cherry Studio</strong> 布道师</li>
         </ul>
     </div>
 </div>

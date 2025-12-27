@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 05 法律场景下的知识库构建
+# 05 专题课：法律智能体工作流
 
 <div class="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
   
@@ -35,7 +35,6 @@ layout: center
 
 准备好了吗？打开电脑，我们开始。
 -->
-
 
 ---
 layout: center

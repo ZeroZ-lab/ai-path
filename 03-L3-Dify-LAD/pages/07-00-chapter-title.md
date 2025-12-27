@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 05 工作流实战
+# 05 随堂练习：打造 AI 编辑部
 
 <div class="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
   
