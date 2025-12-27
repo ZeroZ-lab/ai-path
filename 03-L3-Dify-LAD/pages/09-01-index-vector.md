@@ -46,25 +46,25 @@ layout: default
     <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#64748b_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <div class="relative w-full h-64 border-l-2 border-b-2 border-slate-300">
         <!-- Query Point -->
-        <div class="absolute left-[30%] top-[40%] flex flex-col items-center group text-sm">
+        <div class="absolute left-[28%] top-[38%] flex flex-col items-center group text-sm">
             <div class="w-4 h-4 bg-blue-600 rounded-full shadow-lg ring-4 ring-blue-100"></div>
-            <span class="font-bold text-blue-700 mt-1">Query: "甲方违约"</span>
+            <span class="font-bold text-blue-700 mt-1">"老板拖欠工资怎么办"</span>
         </div>
         <!-- Target Match -->
-        <div class="absolute left-[35%] top-[35%] flex flex-col items-center group animate-pulse text-sm">
+        <div class="absolute left-[38%] top-[32%] flex flex-col items-center group animate-pulse text-sm">
             <div class="w-4 h-4 bg-emerald-500 rounded-full shadow-lg"></div>
-            <span class="font-bold text-emerald-700 mt-1">Doc: "发包方赔偿责任"</span>
+            <span class="font-bold text-emerald-700 mt-1">"劳动报酬争议处理"</span>
             <!-- Connection Line -->
             <div class="absolute -z-10 w-16 h-0.5 bg-emerald-200 -rotate-45 top-4 -left-4"></div>
         </div>
         <!-- Distant Point -->
-        <div class="absolute right-[20%] bottom-[20%] flex flex-col items-center opacity-50 text-sm">
+        <div class="absolute right-[15%] bottom-[15%] flex flex-col items-center opacity-50 text-sm">
             <div class="w-3 h-3 bg-slate-400 rounded-full"></div>
-            <span class="text-slate-500 mt-1">Doc: "乙方义务"</span>
+            <span class="text-slate-500 mt-1">"员工入职流程"</span>
         </div>
     </div>
     <div class="mt-4 text-xs text-slate-500 text-center font-bold">
-        Sim(甲方违约, 发包方赔偿) = 0.95 (Semantic Match)
+        字面不同，语义相近 → 向量距离 = 0.92 ✅
     </div>
 </div>
 
