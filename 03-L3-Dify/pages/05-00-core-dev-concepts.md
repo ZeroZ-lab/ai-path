@@ -2,6 +2,22 @@
 layout: center
 ---
 
-# 05 核心开发概念
+# 03 Workflow 必备知识
 
-<div class="mt-4 text-slate-500">JSON · Markdown · Variables · Workflow</div>
+<div class="mt-4 text-slate-500"> Variables · Nodes · Workflow</div>
+
+<!--
+第二节课开始
+
+做出了第一个聊天助手，感觉不错吧？
+但如果要做出像“法律文书生成”那样复杂的应用，光靠聊天就不够了。
+我们需要掌握一些“开发者的黑话”。
+
+别担心，不需要你会写代码。
+我们只需要理解三个核心概念：
+1. 数据怎么传？node
+2. 数据存在哪？（变量）
+3. 流程怎么走？（Workflow）
+
+这一章，我们用十分钟，把这些概念通通拿下。
+-->

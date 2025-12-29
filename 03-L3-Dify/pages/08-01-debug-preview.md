@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 8.1 开发闭环：调试与预览
+## 6.1 开发闭环：调试与预览
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-center">
 
 <!-- Left: Preview & Debug -->
-<div class="rounded-3xl border border-blue-100 bg-blue-50/80 p-6 shadow-sm flex flex-col h-full">
+<div v-click class="rounded-3xl border border-blue-100 bg-blue-50/80 p-6 shadow-sm flex flex-col h-full transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4 pb-2 border-b border-blue-200">
         <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl">▶️</div>
         <div>
@@ -30,7 +30,7 @@ layout: default
 </div>
 
 <!-- Right: Run History -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col h-full">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-6 shadow-sm flex flex-col h-full transition-all duration-500 hover:-translate-y-1">
     <div class="flex items-center gap-3 mb-4 pb-2 border-b border-purple-200">
         <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl">📜</div>
         <div>
@@ -55,3 +55,12 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）**调试预览 (Preview)** 就像是工厂里的“单步试运行”。
+这里的核心功能是 **Tracing (追踪)**。如果你的流水线有 10 个工位，它会像 **CT 扫描**一样告诉你：哪个工位磨洋工了（耗时太长）？哪个环节浪费材料了（Token 太多）？甚至哪个工位把零件装反了（报错）。哪里堵了一目了然。
+
+（点击 2）**运行历史 (Run History)** 则是我们的“时光机”。
+大家肯定遇到过：改了一个 Prompt，结果发现还不如原来的好，但原来的写了啥已经忘了。在这里，你的每一次点击运行都会被记录快照。
+别怕改错，因为你可以随时回溯，找回那个最完美的“历史版本”。
+-->

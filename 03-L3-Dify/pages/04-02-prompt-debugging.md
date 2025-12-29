@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 4.2 提示词编排：赋予灵魂
+## 2.2 提示词编排：赋予灵魂
 
 <div class="grid gap-6 md:grid-cols-2 mt-6 items-stretch">
 
 <!-- Left: Configuration -->
-<div class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-purple-100 bg-purple-50/80 p-5 shadow-sm flex flex-col transition-all duration-500">
     <div class="flex items-center gap-2 mb-3 pb-2 border-b border-purple-200">
         <span class="text-xl">⚙️</span>
         <h3 class="text-sm font-bold text-purple-900">编排 (Orchestrate)</h3>
@@ -35,7 +35,7 @@ layout: default
 </div>
 
 <!-- Right: Debugging -->
-<div class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-5 shadow-sm flex flex-col">
+<div v-click class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-5 shadow-sm flex flex-col transition-all duration-500">
     <div class="flex items-center gap-2 mb-3 pb-2 border-b border-emerald-200">
         <span class="text-xl">🐞</span>
         <h3 class="text-sm font-bold text-emerald-900">调试 (Debug)</h3>
@@ -63,3 +63,17 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）进入工作室后，界面分左右两栏。
+左边是**“编排区”**。这里最重要的就是 Pre-prompt（提示词）。
+你在这里写下的话，就是给 AI 注入的“灵魂”。
+比如告诉它：“你是一个幽默的写作助手”，它说话就会变得风趣。
+还可以开启一些增强功能，比如“开场白”、“下一步问题建议”。
+
+（点击 2）右边是**“调试区”**。
+你左边改完，右边立刻就能测。
+比如输入“写个周五文案”，看它生成的怎么样。
+如果不满意，回左边改 Prompt，再测。
+直到满意为止，点击右上角的“发布”，你的应用就上线了！
+-->

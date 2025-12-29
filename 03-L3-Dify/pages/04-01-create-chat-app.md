@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 4.1 创建应用：从简单开始
+## 2.1 创建应用：从简单开始
 
 <div class="grid gap-8 md:grid-cols-[1.2fr_1fr] mt-8 items-center">
 
 <!-- Left: The Creation Modal Visual -->
-<div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl relative overflow-hidden">
+<div v-click class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl relative overflow-hidden transition-all duration-500">
     <div class="absolute top-0 left-0 w-full h-8 bg-slate-100 border-b border-slate-200 flex items-center px-4 gap-2">
         <div class="w-3 h-3 rounded-full bg-red-400"></div>
         <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
@@ -50,24 +50,24 @@ layout: default
 
 <!-- Right: Steps -->
 <div class="space-y-6">
-    <div class="flex gap-4">
+    <div v-click class="flex gap-4 transition-all duration-500">
         <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm shrink-0">1</div>
         <div>
             <h4 class="font-bold text-slate-800 text-sm">创建空白应用</h4>
             <p class="text-xs text-slate-500 mt-1">点击主页的 "Create from Blank" 按钮。</p>
         </div>
     </div>
-    <div class="flex gap-4">
+    <div v-click class="flex gap-4 transition-all duration-500">
         <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0">2</div>
         <div>
             <h4 class="font-bold text-blue-700 text-sm">选择类型：Chat App</h4>
             <p class="text-xs text-slate-600 mt-1">
                 我们要构建一个连续对话的助手，而不是单次任务。<br>
-                <strong>注意：</strong> 编排方式选择 <strong>Basic</strong> (非 Workflow)。
+                <strong>注意：</strong> 编排方式先选 <strong>Basic</strong>，还没到 Workflow。
             </p>
         </div>
     </div>
-    <div class="flex gap-4">
+    <div v-click class="flex gap-4 transition-all duration-500">
         <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-sm shrink-0">3</div>
         <div>
             <h4 class="font-bold text-slate-800 text-sm">命名与图标</h4>
@@ -77,3 +77,16 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）回到 Dify 主页，点击蓝色的“创建应用”按钮。
+我们会看到这个弹窗。
+
+（点击 2）这里有两个关键选择：
+第一，应用类型选 **Chat App**（聊天助手）。
+第二，编排方式选 **Basic**（基础编排）。
+Workflow 我们留到下午再讲，上午先用 Basic 熟悉界面。
+
+（点击 3）给它起个名字，选个图标，点击创建，你就拥有了第一个 AI 应用。
+（点击 4）填好之后，点击 Create，我们就进入了“工作室”。
+-->

@@ -2,12 +2,12 @@
 layout: default
 ---
 
-## 9.4 进阶：Knowledge Pipeline (数据流水线)
+## 7.4 进阶：Knowledge Pipeline (数据流水线)
 
 <div class="flex flex-col justify-center h-full gap-8">
 
 <!-- The Pipeline Visualization -->
-<div class="rounded-[32px] border border-indigo-100 bg-indigo-50/50 p-6 relative overflow-hidden">
+<div v-click class="rounded-[32px] border border-indigo-100 bg-indigo-50/50 p-6 relative overflow-hidden transition-all duration-500">
     <div class="absolute top-0 left-0 bg-indigo-600 text-white px-4 py-1.5 rounded-br-2xl text-xs font-bold">ETL Workflow</div>
     <div class="flex items-center justify-between mt-4 gap-2 relative z-10">
         <!-- 1. Source -->
@@ -54,7 +54,7 @@ layout: default
 
 <!-- Why Enhance? -->
 <div class="grid gap-6 md:grid-cols-2">
-    <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <div v-click class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-500 hover:-translate-y-1">
         <h3 class="text-sm font-bold text-slate-800 mb-2 flex items-center gap-2">
             <span class="text-lg">🐢</span> 传统切片痛点
         </h3>
@@ -62,7 +62,7 @@ layout: default
             切片往往导致<strong>上下文丢失</strong>。例如切片只包含 "他同意了"，但检索时不知道 "他" 是谁，导致无法召回。
         </p>
     </div>
-    <div class="rounded-2xl border border-purple-100 bg-purple-50/50 p-5 shadow-sm">
+    <div v-click class="rounded-2xl border border-purple-100 bg-purple-50/50 p-5 shadow-sm transition-all duration-500 hover:-translate-y-1">
         <h3 class="text-sm font-bold text-purple-900 mb-2 flex items-center gap-2">
             <span class="text-lg">🚀</span> LLM 增强威力
         </h3>
@@ -73,3 +73,11 @@ layout: default
 </div>
 
 </div>
+
+<!--
+（点击 1）最后，我们把所有步骤串起来，这就是知识库的“数据流水线 (Pipeline)”。
+数据进来 -> 清洗切片 -> **LLM 增强** -> 存入向量库。
+
+（点击 2）特别是这个 **LLM 增强**，它是 Dify 的独门绝技。
+如果一段话很难搜，我们让 AI 帮它写个“摘要”或“假设性问题”，把这些容易搜的词存进去，命中率直接翻倍。
+-->

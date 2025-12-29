@@ -29,34 +29,35 @@ layout: default
 
 <div>
 
-<div class="text-[10px] font-bold uppercase tracking-widest text-blue-500 mb-1">方案 A：代码仓库加速</div>
-
-```bash {monaco}
-# 使用 Gitee 镜像
-git clone https://gitee.com/mirrors/dify.git
-```
-<div class="my-6 border-t border-slate-100"></div>
-
-<div class="text-[10px] font-bold uppercase tracking-widest text-blue-500 mb-1">方案 B：Docker 镜像加速</div>
-<p class="text-[10px] text-slate-600 mb-1">编辑 <code>/etc/docker/daemon.json</code>：</p>
-
-```json {monaco}
-{
-  "registry-mirrors": [
-    "https://docker.1panel.live",
-    "https://hub.rat.dev"
-  ]
-}
-```
-
-<div class="mt-1 text-[10px] text-slate-500">
-修改后重启：
+<div v-click class="rounded-3xl border border-blue-100 bg-white p-4 shadow-sm mb-4 transition-all duration-500">
+    <div class="text-[10px] font-bold uppercase tracking-widest text-blue-500 mb-1">方案 A：代码仓库加速</div>
+    <div class="bg-slate-900 rounded-lg p-3 text-[10px] font-mono text-emerald-400">
+        git clone https://gitee.com/mirrors/dify.git
+    </div>
 </div>
 
-```bash {monaco}
-sudo systemctl restart docker
-```
+<div v-click class="rounded-3xl border border-blue-100 bg-white p-4 shadow-sm transition-all duration-500">
+    <div class="text-[10px] font-bold uppercase tracking-widest text-blue-500 mb-1">方案 B：Docker 镜像加速</div>
+    <p class="text-[10px] text-slate-600 mb-1">编辑 <code>/etc/docker/daemon.json</code>：</p>
+    <div class="bg-slate-900 rounded-lg p-3 text-[10px] font-mono text-emerald-400 mb-2">
+        { "registry-mirrors": [ "https://docker.1panel.live" ] }
+    </div>
+    <div class="mt-1 text-[10px] text-slate-500 flex justify-between items-center">
+        <span>修改后重启：</span>
+        <code class="bg-slate-100 px-1 rounded text-slate-600">sudo systemctl restart docker</code>
+    </div>
+</div>
 
 </div>
 
 </div>
+
+<!--
+但在国内网络环境下，大家很可能会遇到这两个拦路虎：
+GitHub 连不上，Docker 镜像拉不动。
+
+（点击 1）如果代码拉不下来，别死磕 GitHub，直接用 Gitee 的镜像仓库，速度飞快。
+
+（点击 2）如果 `docker compose up` 卡在下载进度条不动了，说明你需要配置 Docker 镜像加速。
+这里给了一份 `daemon.json` 的配置模板，加上国内的加速源，重启 Docker，问题解决。
+-->
