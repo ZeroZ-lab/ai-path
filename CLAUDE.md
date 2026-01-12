@@ -57,9 +57,18 @@ npm run screenshot        # Generate PNG previews
 - `dist/` - Build output (generated)
 
 #### `03-L3-Dify-LAD/` Notes
+- `slides.md` - LAD deck entry file (imports `pages/` with `hide: true/false`)
+- `pages/` - LAD course pages (chapters, legal case study, RAG section)
+- `components/` - Vue demo components (chunking/rerank/workflow visuals, etc.)
+- `public/` - LAD static assets (images, PDFs, etc.)
 - `knowledge_dataset/` - Sample documents/CSVs used for knowledge base (RAG) demos
-- `resource/` - Extra teaching materials (e.g., prompt templates, dataset copies)
+- `resource/` - Extra teaching materials (e.g., `legal-prompt-template.md`, dataset copies)
+- `snippets/` - Reusable snippet files referenced by slides (if used)
 - `setup/` - Slidev setup hooks/config (e.g., Monaco editor options)
+- `export.md` - Slidev starter/export template reference (not necessarily part of LAD deck)
+- `lad-course-slide-outline.md` - Condensed outline of the “关木核心段” slides
+- `node_modules/` - Installed dependencies (generated)
+- `dist/` - Build output (generated)
 - `slides-export/` - Export artifacts (generated)
 
 ### Slide Architecture
