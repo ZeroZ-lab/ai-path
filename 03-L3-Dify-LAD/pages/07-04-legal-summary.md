@@ -2,64 +2,83 @@
 layout: center
 ---
 
-## 6.6 总结：从“调教 AI”到“雇佣 AI”
+## 6.6 总结：从业务痛点到 Dify 节点
 
-<div class="mt-8 grid grid-cols-2 gap-12 text-left max-w-4xl mx-auto">
+<div class="mt-8 grid grid-cols-1 gap-4 max-w-5xl mx-auto">
 
-  <!-- Left: Old Mindset -->
-  <div class="opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-    <div class="text-xl font-bold text-slate-500 mb-4 border-b border-slate-300 pb-2">Previous: Prompt Engineering</div>
-    <ul class="space-y-4 text-sm text-slate-500">
-      <li class="flex items-center gap-2">
-        <span>❌</span> 试图用一个超级 Prompt 解决所有问题
-      </li>
-      <li class="flex items-center gap-2">
-        <span>❌</span> AI 像个“黑盒”，输出不可控
-      </li>
-      <li class="flex items-center gap-2">
-        <span>❌</span> 需要人去适应 AI 的怪脾气
-      </li>
-    </ul>
+  <!-- Row 1: Classifier -->
+  <div v-click="1" class="grid grid-cols-12 gap-4 items-center bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+    <div class="col-span-4 border-r border-slate-100 pr-4">
+      <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Business Pain</div>
+      <div class="text-slate-700 font-bold text-sm">"客户问题太杂，不知道怎么回"</div>
+    </div>
+    <div class="col-span-4 border-r border-slate-100 pr-4 pl-4">
+      <div class="text-[10px] text-blue-400 font-bold uppercase mb-1">Workflow Logic</div>
+      <div class="text-blue-700 text-sm">先识别意图，再分流处理</div>
+    </div>
+    <div class="col-span-4 pl-4 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center text-xl">🔀</div>
+      <div>
+        <div class="text-[10px] text-rose-400 font-bold uppercase">Core Node</div>
+        <div class="text-rose-700 font-bold text-sm">Question Classifier</div>
+      </div>
+    </div>
   </div>
 
-  <!-- Right: New Mindset -->
-  <div v-click class="transform scale-110">
-    <div class="text-xl font-bold text-blue-600 mb-4 border-b border-blue-200 pb-2">Now: Agent Architecture</div>
-    <ul class="space-y-4 text-sm text-slate-800">
-      <li class="flex items-center gap-2">
-        <span class="text-blue-500 text-lg">✅</span>
-        <span><strong>拆解分工</strong>：分类、搜索、写作各司其职</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="text-blue-500 text-lg">✅</span>
-        <span><strong>工具赋能</strong>：用 Search 解决幻觉</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="text-blue-500 text-lg">✅</span>
-        <span><strong>标准交付</strong>：用 Template Node 锁定输出格式</span>
-      </li>
-    </ul>
+  <!-- Row 2: Search -->
+  <div v-click="2" class="grid grid-cols-12 gap-4 items-center bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+    <div class="col-span-4 border-r border-slate-100 pr-4">
+      <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Business Pain</div>
+      <div class="text-slate-700 font-bold text-sm">"不仅要法律知识，还要查企业"</div>
+    </div>
+    <div class="col-span-4 border-r border-slate-100 pr-4 pl-4">
+      <div class="text-[10px] text-blue-400 font-bold uppercase mb-1">Workflow Logic</div>
+      <div class="text-blue-700 text-sm">引入外部工具，补充实时信息</div>
+    </div>
+    <div class="col-span-4 pl-4 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center text-xl">🔍</div>
+      <div>
+        <div class="text-[10px] text-amber-400 font-bold uppercase">Core Node</div>
+        <div class="text-amber-700 font-bold text-sm">Tool / Search</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3: Template -->
+  <div v-click="3" class="grid grid-cols-12 gap-4 items-center bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+    <div class="col-span-4 border-r border-slate-100 pr-4">
+      <div class="text-[10px] text-slate-400 font-bold uppercase mb-1">Business Pain</div>
+      <div class="text-slate-700 font-bold text-sm">"合同格式必须严谨，不能瞎编"</div>
+    </div>
+    <div class="col-span-4 border-r border-slate-100 pr-4 pl-4">
+      <div class="text-[10px] text-blue-400 font-bold uppercase mb-1">Workflow Logic</div>
+      <div class="text-blue-700 text-sm">控制输出结构，填空式生成</div>
+    </div>
+    <div class="col-span-4 pl-4 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center text-xl">📝</div>
+      <div>
+        <div class="text-[10px] text-teal-400 font-bold uppercase">Core Node</div>
+        <div class="text-teal-700 font-bold text-sm">Template Node</div>
+      </div>
+    </div>
   </div>
 
 </div>
 
-<div v-click class="mt-12 bg-slate-900 text-white p-6 rounded-2xl shadow-xl text-center">
-  <div class="text-lg font-bold">
-    "未来的律师事务所，可能只有 10 个合伙人，和 1000 个 Dify Agent。"
-  </div>
+<div v-click="4" class="mt-8 text-center bg-slate-50 p-4 rounded-lg border border-slate-200 mx-auto max-w-3xl border-dashed">
+  <p class="text-slate-600 italic">
+    "Agent 开发的核心心法：<strong>拆解</strong>业务流程 (Decompose) -> <strong>映射</strong>合适节点 (Map)。"
+  </p>
 </div>
 
 <!--
-最后做个总结。
+总结一下这章的核心逻辑。我们不是在堆砌功能，而是在解决实际问题：
 
-今天我们讲了三个场景，其实核心思想只有一个：
-**不要试图去“调教”一个全能的 AI，而是要去“雇佣”一组专业的 Agent。**
+1.  **意图识别 (Classifier)**：解决的是**“入口分流”**的问题。客户需求千奇百怪，先分清楚他是要咨询离婚还是查公司，别把所有问题都塞给同一个 Prompt。
 
-以前我们写 Prompt，是在教 AI 怎么说话。
-现在我们搭 Dify，是在给 AI 发 Offer：
-- 你负责分类，给你个分类器节点。
-- 你负责查案，给你个搜索节点。
-- 你负责写文书，给你个模板节点。
+2.  **工具调用 (Tools)**：解决的是**“信息茧房”**的问题。大模型只知道以前的事，不知道今天谁破产了。必须给它配上搜索工具。
 
-当这套系统跑通的时候，你拥有的就不再是一个聊天机器人，而是一支**7x24小时待命的数字律师军团**。
+3.  **模板转换 (Template)**：解决的是**“出口风控”**的问题。法律文书错一个字可能赔几百万，不能让 AI 自由发挥，必须用模板限制它的输出边界。
+
+学会这三招：**分流、补全、风控**，你就能把 80% 的法律业务搬到 Dify 上来。
 -->
