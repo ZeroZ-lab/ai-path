@@ -2,66 +2,81 @@
 layout: default
 ---
 
-## 5.4.0 演进路线：从“写作文”到“写合同”
+## 5.4.2 解决方案：你的三位“数字助理”
 
-<div class="mt-2 flex flex-col gap-2 max-w-3xl mx-auto h-full justify-center">
+<div class="mt-8 flex gap-4 h-[400px]">
 
-  <!-- Level 1 -->
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border-2 border-slate-200 bg-slate-50 flex items-center justify-center text-sm font-bold text-slate-500 shrink-0">1</div>
-    <div class="flex-1 bg-white border border-slate-200 p-3 rounded-xl shadow-sm">
-      <div class="flex justify-between items-center mb-1">
-        <h3 class="text-sm font-bold text-slate-700">v1.0 暴力生成 (MVP)</h3>
-        <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded text-slate-500 font-bold">不可用</span>
+  <!-- Assistant 1: Receptionist -->
+  <div v-click="1" class="flex-1 bg-gradient-to-br from-rose-50 to-white border border-rose-100 rounded-3xl p-6 relative group hover:shadow-lg transition-all duration-500">
+    <div class="absolute top-4 right-4 text-4xl opacity-20 group-hover:opacity-100 transition-opacity">🤖</div>
+    <div class="h-full flex flex-col">
+      <div class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant A</div>
+      <h3 class="text-xl font-bold text-slate-800 mb-2">案源分流</h3>
+      <p class="text-xs text-slate-500 mb-6">"离婚？合规？合同？自动归类派单。"</p>
+      <div class="mt-auto bg-white/80 p-4 rounded-xl border border-rose-100">
+        <div class="text-[10px] uppercase font-bold text-rose-400 mb-2">Power Skill</div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-rose-500 text-white flex items-center justify-center text-lg">🔀</div>
+          <div>
+            <div class="text-xs font-bold text-slate-700">意图识别</div>
+            <div class="text-[10px] text-slate-400">Question Classifier</div>
+          </div>
+        </div>
       </div>
-      <p class="text-xs text-slate-500 leading-tight">
-        Input -> LLM -> Output。AI 容易写成“散文”，条款缺失，逻辑混乱。
-      </p>
     </div>
   </div>
 
-  <div class="ml-5 h-2 w-0.5 bg-slate-200"></div>
-
-  <!-- Level 2 -->
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border-2 border-blue-500 bg-blue-50 flex items-center justify-center text-sm font-bold text-blue-600 shrink-0">2</div>
-    <div class="flex-1 bg-white border-2 border-blue-100 p-3 rounded-xl shadow-md">
-      <div class="flex justify-between items-center mb-1">
-        <h3 class="text-sm font-bold text-blue-900">v2.0 大纲先行 (Structure)</h3>
-        <span class="text-[10px] bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded font-bold">结构稳</span>
+  <!-- Assistant 2: Investigator -->
+  <div v-click="2" class="flex-1 bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-3xl p-6 relative group hover:shadow-lg transition-all duration-500">
+    <div class="absolute top-4 right-4 text-4xl opacity-20 group-hover:opacity-100 transition-opacity">🕵️</div>
+    <div class="h-full flex flex-col">
+      <div class="bg-amber-100 text-amber-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant B</div>
+      <h3 class="text-xl font-bold text-slate-800 mb-2">背景调查</h3>
+      <p class="text-xs text-slate-500 mb-6">"这家公司有涉诉吗？老板是老赖吗？"</p>
+      <div class="mt-auto bg-white/80 p-4 rounded-xl border border-amber-100">
+        <div class="text-[10px] uppercase font-bold text-amber-400 mb-2">Power Skill</div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-amber-500 text-white flex items-center justify-center text-lg">🌐</div>
+          <div>
+            <div class="text-xs font-bold text-slate-700">联网搜索</div>
+            <div class="text-[10px] text-slate-400">Search Tool</div>
+          </div>
+        </div>
       </div>
-      <p class="text-xs text-slate-600 leading-tight">
-        引入 <strong>Outliner</strong> 节点。先生成 JSON 大纲（条款列表），再喂给 AI 生成全文。
-      </p>
     </div>
   </div>
 
-  <div class="ml-5 h-2 w-0.5 bg-slate-200"></div>
-
-  <!-- Level 3 -->
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border-2 border-purple-500 bg-purple-50 flex items-center justify-center text-sm font-bold text-purple-600 shrink-0">3</div>
-    <div class="flex-1 bg-white border-2 border-purple-100 p-3 rounded-xl shadow-md">
-      <div class="flex justify-between items-center mb-1">
-        <h3 class="text-sm font-bold text-purple-900">v3.0 分段精写 (Professional)</h3>
-        <span class="text-[10px] bg-purple-100 text-purple-700 px-1.5 py-0.5 rounded font-bold">质量高</span>
+  <!-- Assistant 3: Drafter -->
+  <div v-click="3" class="flex-1 bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-3xl p-6 relative group hover:shadow-lg transition-all duration-500">
+    <div class="absolute top-4 right-4 text-4xl opacity-20 group-hover:opacity-100 transition-opacity">✍️</div>
+    <div class="h-full flex flex-col">
+      <div class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant C</div>
+      <h3 class="text-xl font-bold text-slate-800 mb-2">合同生成</h3>
+      <p class="text-xs text-slate-500 mb-6">"拟一份北京租房合同，押一付三。"</p>      
+      <div class="mt-auto bg-white/80 p-4 rounded-xl border border-blue-100">
+        <div class="text-[10px] uppercase font-bold text-blue-400 mb-2">Power Skill</div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-blue-500 text-white flex items-center justify-center text-lg">📄</div>
+          <div>
+            <div class="text-xs font-bold text-slate-700">文书撰写</div>
+            <div class="text-[10px] text-slate-400">HTTP / DocGen</div>
+          </div>
+        </div>
       </div>
-      <p class="text-xs text-slate-600 leading-tight">
-        引入 <strong>Iteration (迭代)</strong>。针对大纲里的每一个条款，分别调用 LLM 进行精细化撰写，最后拼装。
-      </p>
     </div>
   </div>
 
 </div>
 
 <!--
-为什么我们要学 Workflow？看这张图你就明白了。如果我们只是把 AI 当 Chatbot 用，那永远写不出专业合同。
+针对律师面临的三大痛点，我们用 Dify 雇佣了三位免费的“数字助理”：
 
-1.  **v1.0 暴力生成 (野路子)**：这就像盖房子不打地基，直接堆砖。最后盖出来的不是房子，是**一堆乱砖头**。AI 会把合同写成一篇“我今天要租个房”的读后感，这在法务眼里就是废纸。
+1.  **Assistant A (案源分流)**：利用 **Question Classifier** 意图分类。
+    面对海量咨询，自动识别是“离婚”、“合规”还是“合同审核”，然后精准派单给对应的专业律师，不再需要人工手动分拣。
 
-2.  **v2.0 大纲先行 (打地基)**：我们引入了 Outliner 节点。就像盖房子前先搭个**钢筋骨架**。骨架在，房子就不会塌，至少第一条、第二条清清楚楚，不会漏掉违约责任。
+2.  **Assistant B (背景调查)**：利用 **Search Tool** 联网搜索。
+    输入公司名，自动调用企查查/裁判文书网数据，一键生成风险报告。不用你自己去百度搜半天。
 
-3.  **v3.0 分段精写 (精装修)**：这是最专业的做法。我们针对每一个房间（条款）单独找最好的装修工（Iteration）来干。这样出来的合同，每一个条款都是经得起推敲的。
-
-今天的实战，我们就要带大家从 1.0 进化到 3.0。
+3.  **Assistant C (合同生成)**：利用 **HTTP Request** 和逻辑节点。
+    比如“生成租房合同”，它不是瞎写，而是基于最新法规和你的要求（押一付三、维修责任），生成结构严谨的专业文书，甚至直接导出 Word 文档。
 -->

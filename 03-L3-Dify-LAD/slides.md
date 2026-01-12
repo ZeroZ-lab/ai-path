@@ -1,7 +1,7 @@
 ---
 theme: ../guan-theme
 title: Dify - 下一代 AI 应用开发平台
-info: Dify Docker 部署与实战指南
+info: Dify Docker 部署 with Legal Case Study
 transition: slide-left
 mdc: true
 ---
@@ -15,6 +15,7 @@ mdc: true
 <!--
 各位好，欢迎来到今天的 Dify 实战课程。在过去的一段时间里，我们可能都尝试过直接使用 ChatGPT 或 Claude 进行对话，但如何将这些强大的模型真正变成我们手中的“数字员工”，甚至是一个自动化的法务专家？这就是 Dify 要解决的问题。今天我将带大家从零开始，不仅学会部署，更要学会如何搭建属于你自己的 AI 应用。
 -->
+
 ---
 src: ./pages/01-intro.md
 hide: false
@@ -157,6 +158,29 @@ src: ./pages/05-06-role-play.md
 hide: false
 ---
 
+---
+src: ./pages/07-00-chapter-title.md
+hide: false
+---
+
+---
+src: ./pages/07-00-part1-intro.md
+hide: false
+---
+
+
+
+
+---
+src: ./pages/07-01-workflow-goal.md
+hide: false
+---
+
+---
+src: ./pages/07-02-node-config.md
+hide: false
+---
+
 <!-- Chapter 06: Node Details (Swapped from 07) -->
 ---
 src: ./pages/06-00-chapter-title.md
@@ -205,32 +229,17 @@ hide: false
 
 <!-- Chapter 07: Workflow Practice (Swapped from 06) -->
 ---
-src: ./pages/07-00-chapter-title.md
-hide: false
----
-
----
-src: ./pages/07-00-part1-intro.md
-hide: false
----
-
----
-src: ./pages/07-01-workflow-goal.md
-hide: false
----
-
----
-src: ./pages/07-02-node-config.md
-hide: false
----
-
----
 src: ./pages/07-03-debug-publish.md
-hide: false
+hide: true
 ---
 
 ---
 src: ./pages/07-04-legal-agent-intro.md
+hide: false
+---
+
+---
+src: ./pages/07-04-legal-case-study.md
 hide: false
 ---
 
@@ -240,22 +249,24 @@ hide: false
 ---
 
 ---
-src: ./pages/07-04-demo-v1.md
+src: ./pages/07-04-demo-logic.md
 hide: false
 ---
 
 ---
-src: ./pages/07-04-demo-v1-structured.md
+src: ./pages/07-04-demo-search.md
+hide: false
+---
+
+
+
+---
+src: ./pages/07-04-legal-demo-v3.md
 hide: false
 ---
 
 ---
-src: ./pages/07-04-demo-v2.md
-hide: false
----
-
----
-src: ./pages/07-04-demo-v3.md
+src: ./pages/07-04-legal-summary.md
 hide: false
 ---
 
@@ -424,4 +435,3 @@ hide: false
 src: ./pages/99-qa.md
 hide: false
 ---
-

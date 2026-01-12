@@ -55,7 +55,7 @@ layout: default
             <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-3xl shadow-md">
                 🏁
             </div>
-            <span class="text-xs font-bold text-slate-600">End</span>
+            <span class="text-xs font-bold text-slate-600">文章与评审建议</span>
             <span class="text-[10px] text-slate-400">Output: Report</span>
         </div>
     </div>

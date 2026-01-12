@@ -14,7 +14,7 @@ layout: default
   <!-- Mission Card -->
   <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-3xl shadow-lg w-full max-w-2xl text-center relative overflow-hidden">
     <div class="absolute -right-4 -top-4 text-6xl opacity-20">🏆</div>
-    <h3 class="text-2xl font-bold mb-2 !text-white">任务：搭建最简单的三节点工作流</h3>
+    <h3 class="text-2xl font-bold mb-2 !text-white">任务：搭建最简单的三节点对话流</h3>
     <p class="text-sm opacity-90 !text-slate-200">不要光看不练，现在就打开 Dify！</p>
   </div>
   <!-- Steps -->
