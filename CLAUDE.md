@@ -36,6 +36,32 @@ npm run screenshot        # Generate PNG previews
 
 ## Project Structure
 
+### Folder Guide (Quick Map)
+
+#### Repository Root
+- `01-L1-AI-Fundamentals/` - Level 1 course: AI basics and fundamentals (Slidev deck)
+- `02-L2-CherryStudio/` - Level 2 course: Cherry Studio tool training (Slidev deck)
+- `03-L3-Dify/` - Level 3 course: Dify platform training + workflow examples (Slidev deck)
+- `03-L3-Dify-LAD/` - Level 3 (LAD track): Dify Docker deployment + legal case study + RAG demos (Slidev deck)
+- `guan-theme/` - Custom Slidev theme (glassmorphism design system)
+- `STYLE_GUIDE_01.md` - Visual/style specification for slides
+- `GEMINI.md` - Project memory + additional technical constraints
+
+#### Typical Layout Inside a Course Module
+- `slides.md` - Main entry file (frontmatter + `src:` imports for pages)
+- `pages/` - Slide pages, usually ordered by numeric prefixes
+- `components/` - Custom Vue components used by slides
+- `public/` - Static assets (images, PDFs, etc.) referenced by slides
+- `package.json` / `pnpm-lock.yaml` - Module-local dependencies and scripts
+- `node_modules/` - Installed dependencies (generated)
+- `dist/` - Build output (generated)
+
+#### `03-L3-Dify-LAD/` Notes
+- `knowledge_dataset/` - Sample documents/CSVs used for knowledge base (RAG) demos
+- `resource/` - Extra teaching materials (e.g., prompt templates, dataset copies)
+- `setup/` - Slidev setup hooks/config (e.g., Monaco editor options)
+- `slides-export/` - Export artifacts (generated)
+
 ### Slide Architecture
 Each course follows a modular structure:
 - `slides.md` - Main entry file with frontmatter config and page imports
