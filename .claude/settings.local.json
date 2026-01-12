@@ -4,7 +4,9 @@
       "Bash(find . -type f -name README* -o -name package.json -o -name *.config.js -o -name *.config.ts -o -name .cursorrules -o -name tsconfig.json)",
       "Bash(find 01-L1-AI-Fundamentals/pages 02-L2-CherryStudio/pages 03-L3-Dify/pages -name *.md)",
       "Bash(ls:*)",
-      "Edit"
+      "Edit",
+      "Bash(python3:*)",
+      "Bash(grep:*)"
     ]
   }
 }
