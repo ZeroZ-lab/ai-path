@@ -12,7 +12,12 @@ layout: default
     <div class="h-full flex flex-col">
       <div class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant A</div>
       <h3 class="text-xl font-bold text-slate-800 mb-2">案源分流</h3>
-      <p class="text-xs text-slate-500 mb-6">"离婚？合规？合同？自动归类派单。"</p>
+      <p class="text-sm text-slate-500 mb-2">"离婚？合规？合同？自动归类派单。"</p>
+      <ul class="mb-6 space-y-1">
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-rose-300"></span>邮件智能分发</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-rose-300"></span>咨询预处理</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-rose-300"></span>简历初筛</li>
+      </ul>
       <div class="mt-auto bg-white/80 p-4 rounded-xl border border-rose-100">
         <div class="text-[10px] uppercase font-bold text-rose-400 mb-2">Power Skill</div>
         <div class="flex items-center gap-2">
@@ -32,7 +37,12 @@ layout: default
     <div class="h-full flex flex-col">
       <div class="bg-amber-100 text-amber-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant B</div>
       <h3 class="text-xl font-bold text-slate-800 mb-2">背景调查</h3>
-      <p class="text-xs text-slate-500 mb-6">"这家公司有涉诉吗？老板是老赖吗？"</p>
+      <p class="text-sm text-slate-500 mb-2">"这家公司有涉诉吗？老板是老赖吗？"</p>
+      <ul class="mb-6 space-y-1">
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-amber-300"></span>法规精准检索</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-amber-300"></span>竞品动态分析</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-amber-300"></span>尽职调查报告</li>
+      </ul>
       <div class="mt-auto bg-white/80 p-4 rounded-xl border border-amber-100">
         <div class="text-[10px] uppercase font-bold text-amber-400 mb-2">Power Skill</div>
         <div class="flex items-center gap-2">
@@ -52,7 +62,12 @@ layout: default
     <div class="h-full flex flex-col">
       <div class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Assistant C</div>
       <h3 class="text-xl font-bold text-slate-800 mb-2">合同生成</h3>
-      <p class="text-xs text-slate-500 mb-6">"拟一份北京租房合同，押一付三。"</p>      
+      <p class="text-sm text-slate-500 mb-2">"拟一份北京租房合同，押一付三。"</p>      
+      <ul class="mb-6 space-y-1">
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-blue-300"></span>案件结案小结</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-blue-300"></span>法律意见书</li>
+        <li class="text-sm text-slate-400 flex items-center gap-1"><span class="w-1 h-1 rounded-full bg-blue-300"></span>诉讼标准文书</li>
+      </ul>      
       <div class="mt-auto bg-white/80 p-4 rounded-xl border border-blue-100">
         <div class="text-[10px] uppercase font-bold text-blue-400 mb-2">Power Skill</div>
         <div class="flex items-center gap-2">
