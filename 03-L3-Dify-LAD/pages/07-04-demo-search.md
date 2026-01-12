@@ -3,7 +3,7 @@ layout: default
 transition: slide-left
 ---
 
-## 5.4.4 助理 B (调查员)：背景调查 (Search + LLM)
+## 6.4 助理 B (调查员)：背景调查 (Search + LLM)
 
 <div class="mt-8 flex justify-between items-center px-4">
 

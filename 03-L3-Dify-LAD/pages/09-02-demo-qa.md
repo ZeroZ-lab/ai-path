@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1.6 实战 A：QA 问答对 (QA Split)
+## 8.1.6 实战 A：QA 问答对 (QA Split)
 
 <div class="h-[400px] w-full mt-6">
   <ChunkingDemoQA />

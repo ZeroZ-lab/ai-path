@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.4.1 场景还原：律师的“周一早高峰”
+## 6.1 场景还原：律师的“周一早高峰”
 
 <div class="mt-8 grid grid-cols-3 gap-6">
 

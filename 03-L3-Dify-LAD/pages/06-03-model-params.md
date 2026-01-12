@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 4.3.2 LLM节点：掌控LLM的“性格” (Temperature)
+## 5.3.2 LLM节点：掌控LLM的“性格” (Temperature)
 
 <div class="mt-8 mb-6">
   <TemperatureSlider />

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.1 实战目标：打造 "AI 编辑部"
+## 4.1 实战目标：智能写作助手
 
 <div class="flex flex-col items-center justify-center h-full mt-4 gap-8">
 

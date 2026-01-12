@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1.4 选型指南：什么文档用什么策略？
+## 8.1.4 选型指南：什么文档用什么策略？
 
 <div class="h-[420px] w-full mt-6">
   <ChunkingScenarioSelector />

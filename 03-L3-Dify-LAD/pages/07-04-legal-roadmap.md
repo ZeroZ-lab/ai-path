@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.4.2 解决方案：你的三位“数字助理”
+## 6.2 解决方案：你的三位“数字助理”
 
 <div class="mt-8 flex gap-4 h-[400px]">
 

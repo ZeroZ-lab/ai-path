@@ -128,6 +128,7 @@ src: ./pages/05-00-core-dev-concepts.md
 hide: false
 ---
 
+<!-- Chapter 03: Core Concepts -->
 ---
 src: ./pages/05-01-json-markdown.md
 hide: true
@@ -158,6 +159,7 @@ src: ./pages/05-06-role-play.md
 hide: false
 ---
 
+<!-- Chapter 04: Writing Assistant (Practice) -->
 ---
 src: ./pages/07-00-chapter-title.md
 hide: false
@@ -165,11 +167,8 @@ hide: false
 
 ---
 src: ./pages/07-00-part1-intro.md
-hide: false
+hide: true
 ---
-
-
-
 
 ---
 src: ./pages/07-01-workflow-goal.md
@@ -181,7 +180,12 @@ src: ./pages/07-02-node-config.md
 hide: false
 ---
 
-<!-- Chapter 06: Node Details (Swapped from 07) -->
+---
+src: ./pages/07-03-debug-publish.md
+hide: false
+---
+
+<!-- Chapter 05: Node Details -->
 ---
 src: ./pages/06-00-chapter-title.md
 hide: false
@@ -227,12 +231,7 @@ src: ./pages/06-06-extension-nodes.md
 hide: false
 ---
 
-<!-- Chapter 07: Workflow Practice (Swapped from 06) -->
----
-src: ./pages/07-03-debug-publish.md
-hide: true
----
-
+<!-- Chapter 06: Legal Agent Workflow -->
 ---
 src: ./pages/07-04-legal-agent-intro.md
 hide: false
@@ -261,7 +260,7 @@ hide: false
 
 
 ---
-src: ./pages/07-04-legal-demo-v3.md
+src: ./pages/07-04-demo-generation.md
 hide: false
 ---
 
@@ -272,7 +271,7 @@ hide: false
 
 
 
-<!-- Chapter 08: Ops -->
+<!-- Chapter 07: Ops & Monitoring -->
 ---
 src: ./pages/08-00-chapter-title.md
 hide: false
@@ -293,7 +292,7 @@ src: ./pages/08-03-ops-monitoring.md
 hide: false
 ---
 
-<!-- Chapter 09: Knowledge Base -->
+<!-- Chapter 08: Knowledge Base -->
 ---
 src: ./pages/09-00-chapter-title.md
 hide: false

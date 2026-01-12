@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1.3 交互演示：父子索引的逻辑
+## 8.1.3 交互演示：父子索引的逻辑
 
 <div class="mt-8 h-[400px] w-full">
   <ParentChildVisual />

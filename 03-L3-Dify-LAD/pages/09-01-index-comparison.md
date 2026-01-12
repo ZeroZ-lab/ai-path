@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.2.3 终极对决：我该怎么选？
+## 8.2.3 终极对决：我该怎么选？
 
 <div v-click class="mt-6 mb-8 transition-all duration-500">
     <table class="w-full text-base text-left border-collapse rounded-2xl overflow-hidden shadow-md">

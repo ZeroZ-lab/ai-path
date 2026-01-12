@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.3.1 召回配置：Top K 与 Score Threshold
+## 8.3.1 召回配置：Top K 与 Score Threshold
 
 <div class="grid gap-8 md:grid-cols-2 mt-8 items-stretch">
 <!-- Top K -->

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.1 基础分段：怎么切才合理？
+## 8.1 基础分段：怎么切才合理？
 
 <div class="mt-4 grid gap-8 md:grid-cols-2 items-stretch">
 

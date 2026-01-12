@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.4.3 助理 A (案源分流)：意图识别 (Question Classifier)
+## 6.3 助理 A (案源分流)：意图识别 (Question Classifier)
 
 <div class="mt-8 grid grid-cols-2 gap-8 items-center h-[400px]">
 

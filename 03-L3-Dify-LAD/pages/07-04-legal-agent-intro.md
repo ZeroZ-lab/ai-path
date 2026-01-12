@@ -3,10 +3,9 @@ layout: center
 ---
 
 # 06 专题课：法律智能体工作流
-
+<!-- 
 <div class="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
   
-  <!-- Part 2 -->
   <div v-click class="bg-purple-50/50 border border-purple-100 p-4 rounded-xl flex items-center gap-4 transition-all duration-500 hover:-translate-y-1">
     <div class="bg-purple-600 text-white px-3 py-1 rounded text-xs font-bold shrink-0">Part 2</div>
     <div class="text-left">
@@ -15,7 +14,7 @@ layout: center
     </div>
   </div>
 
-</div>
+</div> -->
 
 <!--
 各位同学，终于到了最激动人心的环节。就像学开车，光背交规没用，得上车摸方向盘。

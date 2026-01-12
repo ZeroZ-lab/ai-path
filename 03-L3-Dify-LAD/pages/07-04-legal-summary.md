@@ -2,7 +2,7 @@
 layout: center
 ---
 
-# 总结：从“调教 AI”到“雇佣 AI”
+## 6.6 总结：从“调教 AI”到“雇佣 AI”
 
 <div class="mt-8 grid grid-cols-2 gap-12 text-left max-w-4xl mx-auto">
 
