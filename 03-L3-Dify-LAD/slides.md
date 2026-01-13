@@ -43,7 +43,7 @@ hide: true
 
 ---
 src: ./pages/01-01-workflow-workshop.md
-hide: true
+hide: false
 ---
 
 ---
@@ -156,6 +156,11 @@ hide: true
 
 ---
 src: ./pages/05-06-role-play.md
+hide: false
+---
+
+---
+src: ./pages/05-07-role-play-legal.md
 hide: false
 ---
 

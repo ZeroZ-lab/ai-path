@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.3 助理 A (案源分流)：意图识别 (Question Classifier)
+## 6.3 助理 A (案源分流)：意图识别
 
 <div class="mt-8 grid grid-cols-2 gap-8 items-center h-[400px]">
 
@@ -21,7 +21,7 @@ layout: default
     <!-- The Node -->
     <div v-click class="bg-rose-50 border-2 border-rose-400 rounded-3xl p-6 shadow-md text-center">
       <div class="text-xs font-bold text-rose-500 uppercase mb-2">Dify Node</div>
-      <div class="text-xl font-bold text-rose-800">Question Classifier</div>
+      <div class="text-xl font-bold text-rose-800">问题分类器</div>
       <div class="text-[10px] text-rose-600 mt-1">Classify based on user intent</div>
     </div>
   </div>

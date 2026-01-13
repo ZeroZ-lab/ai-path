@@ -6,7 +6,9 @@
       "Bash(ls:*)",
       "Edit",
       "Bash(python3:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Skill(commit)",
+      "Skill(commit:*)"
     ]
   }
 }

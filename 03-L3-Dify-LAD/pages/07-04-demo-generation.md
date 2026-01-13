@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.5 助理 C (文书专员)：模板化生成 (Template Node)
+## 6.5 助理 C (文书专员)：模板化生成
 
 <div class="mt-8 flex items-center justify-between gap-6 max-w-5xl mx-auto">
 

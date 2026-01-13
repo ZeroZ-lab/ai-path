@@ -2,13 +2,13 @@
 layout: center
 ---
 
-# 02 👋 动手时刻：5 分钟挑战
+# 02 👋 动手时刻：5 分钟搭建个人助手
 
 ---
 layout: default
 ---
 
-## 02 👋 动手时刻：5 分钟挑战
+## 02 👋 动手时刻：5 分钟搭建个人助手
 
 <div class="mt-6 flex flex-col items-center gap-6">
   <!-- Mission Card -->
