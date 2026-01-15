@@ -15,7 +15,7 @@ layout: default
             <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-3xl shadow-md">
                 🚦
             </div>
-            <span class="text-xs font-bold text-slate-600">Start</span>
+            <span class="text-xs font-bold text-slate-600">开始</span>
             <span class="text-[10px] text-slate-400">Input: Topic</span>
         </div>
         <!-- Arrow -->
@@ -25,8 +25,8 @@ layout: default
             <div class="w-16 h-16 rounded-2xl bg-blue-100 border border-blue-200 flex items-center justify-center text-3xl shadow-md">
                 📑
             </div>
-            <span class="text-xs font-bold text-blue-700">LLM: 大纲</span>
-            <span class="text-[10px] text-slate-400">GPT-4o</span>
+            <span class="text-xs font-bold text-blue-700">策划师</span>
+            <span class="text-[10px] text-slate-400">LLM 节点</span>
         </div>
         <!-- Arrow -->
         <div v-click="2" class="i-carbon-arrow-right text-slate-300 text-2xl transition-all duration-500"></div>
@@ -35,8 +35,8 @@ layout: default
             <div class="w-16 h-16 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center text-3xl shadow-md">
                 ✍️
             </div>
-            <span class="text-xs font-bold text-purple-700">LLM: 初稿</span>
-            <span class="text-[10px] text-slate-400">Claude 3.5</span>
+            <span class="text-xs font-bold text-purple-700">AI 写手</span>
+            <span class="text-[10px] text-slate-400">LLM 节点</span>
         </div>
         <!-- Arrow -->
         <div v-click="3" class="i-carbon-arrow-right text-slate-300 text-2xl transition-all duration-500"></div>
@@ -45,8 +45,8 @@ layout: default
             <div class="w-16 h-16 rounded-2xl bg-amber-100 border border-amber-200 flex items-center justify-center text-3xl shadow-md">
                 🧐
             </div>
-            <span class="text-xs font-bold text-amber-700">LLM: 评审</span>
-            <span class="text-[10px] text-slate-400">DeepSeek-V3</span>
+            <span class="text-xs font-bold text-amber-700">AI 主编</span>
+            <span class="text-[10px] text-slate-400">LLM 节点</span>
         </div>
         <!-- Arrow -->
         <div v-click="4" class="i-carbon-arrow-right text-slate-300 text-2xl transition-all duration-500"></div>

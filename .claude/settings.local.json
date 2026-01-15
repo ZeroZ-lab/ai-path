@@ -8,7 +8,12 @@
       "Bash(python3:*)",
       "Bash(grep:*)",
       "Skill(commit)",
-      "Skill(commit:*)"
+      "Skill(commit:*)",
+      "Bash(find:*)",
+      "Bash(bun install)",
+      "Bash(bun pm ls:*)",
+      "Bash(bun --filter 03-l3-dify-lad run dev:*)",
+      "Bash(bun run:*)"
     ]
   }
 }

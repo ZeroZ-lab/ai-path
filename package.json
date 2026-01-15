@@ -1,0 +1,18 @@
+{
+  "name": "ai-grow-paths",
+  "private": true,
+  "workspaces": [
+    "01-L1-AI-Fundamentals",
+    "02-L2-CherryStudio",
+    "03-L3-Dify",
+    "03-L3-Dify-LAD",
+    "guan-theme"
+  ],
+  "scripts": {
+    "dev:l1": "cd 01-L1-AI-Fundamentals && bun run dev",
+    "dev:l2": "cd 02-L2-CherryStudio && bun run dev",
+    "dev:l3": "cd 03-L3-Dify && bun run dev",
+    "dev:l3-lad": "cd 03-L3-Dify-LAD && bun run dev",
+    "dev:theme": "cd guan-theme && bun run dev"
+  }
+}

@@ -12,7 +12,7 @@ layout: default
     <div>
       <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">场景一：案源分流</div>
       <div class="bg-slate-50 p-3 rounded-xl text-sm text-slate-600 italic border border-dashed border-slate-300">
-        “王律师，我想咨询下离婚财产分割...顺便问下你们谁做企业合规？我有几十个合同要审。”
+        “王律师，我想咨询下离婚财产分割的事情”
       </div>
     </div>
     <div class="text-xs text-rose-600 font-bold bg-rose-50 px-3 py-2 rounded-lg">
@@ -25,13 +25,13 @@ layout: default
   <div class="absolute -top-3 -left-3 w-10 h-10 bg-amber-500 text-white rounded-full flex items-center justify-center text-xl shadow-lg z-10 border-2 border-white">🔍</div>
   <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm h-64 flex flex-col justify-between group-hover:-translate-y-1 transition-all duration-300">
     <div>
-      <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">场景二：背景调查</div>
+      <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">场景二：观点提取</div>
       <div class="bg-slate-50 p-3 rounded-xl text-sm text-slate-600 italic border border-dashed border-slate-300">
-        “快帮我查查‘北京虚构科技公司’有没有涉诉？老板是不是老赖？我要在 10 分钟内决定签不签。”
+        “这份判决书有 50 页，快帮我把‘本院认为’部分提取出来，我要分析法官的裁判思路。”
       </div>
     </div>
     <div class="text-xs text-amber-600 font-bold bg-amber-50 px-3 py-2 rounded-lg">
-      😓 痛点：企查查/裁判文书网一个个搜？10分钟根本来不及。
+      😓 痛点：肉眼翻几十页 PDF 找关键段落，看得头昏眼花，复制出来格式还全是乱码。
     </div>
   </div>
 </div>
