@@ -50,8 +50,25 @@ hide: false
 
 ---
 layout: default
-class: flex flex-col items-center justify-center
 src: ./pages/01-03-history.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/01-12-what-is-llm.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/01-10-ai-vs-llm.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/01-11-why-different.md
 hide: false
 ---
 
@@ -144,17 +161,6 @@ hide: false
 
 ---
 layout: default
-src: ./pages/01-10-ai-vs-llm.md
-hide: false
----
-
----
-layout: default
-src: ./pages/01-11-why-different.md
-hide: false
----
-
----
 layout: center
 src: ./pages/02-00-chapter-intro.md
 hide: false
@@ -283,6 +289,12 @@ hide: false
 ---
 layout: default
 src: ./pages/04-05-prompt-interface.md
+hide: false
+---
+
+---
+layout: default
+src: ./pages/04-06-system-prompt.md
 hide: false
 ---
 

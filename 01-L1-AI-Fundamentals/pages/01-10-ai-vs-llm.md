@@ -1,4 +1,4 @@
-## 1.10 传统 AI vs 大模型：断层级差异
+## 1.5 传统 AI vs 大模型：断层级差异
 
 <div class="grid grid-cols-[1fr_auto_1fr] gap-5 mt-6 items-start">
   <section class="rounded-2xl bg-white bg-opacity-90 p-4 shadow-xl text-[0.92rem] leading-relaxed">

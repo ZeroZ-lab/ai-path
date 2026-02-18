@@ -1,4 +1,4 @@
-## 4.6 垃圾提示词长这样
+## 4.7 垃圾提示词长这样
 
 <div class="mt-8 rounded-[40px] border border-rose-200 bg-rose-50/90 px-6 py-12 text-center shadow-[0_25px_60px_rgba(190,18,60,0.15)]">
   <div class="text-xs font-bold uppercase tracking-[0.4em] text-rose-400">课堂示例</div>

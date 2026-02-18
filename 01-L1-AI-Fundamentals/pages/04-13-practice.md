@@ -1,4 +1,4 @@
-## 4.13 课堂训练：写出提示词骨架
+## 4.14 课堂训练：写出提示词骨架
 
 <div class="mt-4 rounded-[32px] border border-slate-100 bg-white/90 p-6 shadow-[0_20px_45px_rgba(15,23,42,0.12)]">
   <div class="text-sm font-semibold text-slate-800">

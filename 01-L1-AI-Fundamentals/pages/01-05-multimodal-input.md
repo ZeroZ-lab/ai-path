@@ -1,4 +1,4 @@
-## 1.5 多模态输入——视觉案例
+## 1.8 多模态输入——视觉案例
 
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
   <figure class="bg-white bg-opacity-80 rounded-2xl shadow-lg p-6 flex flex-col gap-4">

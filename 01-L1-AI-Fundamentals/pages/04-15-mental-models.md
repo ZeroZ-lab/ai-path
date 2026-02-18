@@ -1,4 +1,4 @@
-## 4.15 高阶迁移：复用人类的思维模型
+## 4.16 高阶迁移：复用人类的思维模型
 
 <div class="mt-6 rounded-3xl border border-slate-100 bg-white/95 p-8 shadow-[0_20px_50px_rgba(15,23,42,0.12)]">
   <div class="flex items-center gap-4 mb-6">

@@ -9,7 +9,7 @@
     </div>
   </div>
 </GlassQuote>
-
+<div class="mt-3 text-xs text-slate-500">类比提醒：这是帮助理解的“类比”，不等于模型像人一样有意识地思考。</div>
 </div>
 
 <!--

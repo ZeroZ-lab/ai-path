@@ -1,15 +1,31 @@
-## 4.1 提示词即编程
+## 4.1 提示词即“环境搭建”
 
-<v-click>
-<div class="flex flex-col items-center justify-center pt-10">
-  <div class="flex flex-col items-center justify-center gap-6 rounded-[48px] border border-slate-100 bg-gradient-to-b from-white/95 to-slate-50/90 px-8 py-20 text-center shadow-[0_30px_80px_rgba(15,23,42,0.2)] backdrop-blur">
-    <div class="text-xl font-semibold text-slate-600">🧾 Prompt = Task Definition（任务定义）</div>
-    <p class="mt-4 max-w-2xl text-xl font-semibold text-slate-800">
-      “提示词不是技巧，是你在给 AI 定义任务。”
-    </p>
-  </div>
+> Prompt = Context Builder（构建上下文）= Task Definition（任务定义）
+
+<div class="mt-8 rounded-[48px] border border-slate-100 bg-gradient-to-b from-white/95 to-slate-50/90 px-8 py-10 shadow-[0_30px_80px_rgba(15,23,42,0.16)] backdrop-blur">
+<div class="text-center">
+<div class="text-xl font-semibold text-slate-700">你写的不是“咒语”，而是在搭建一个虚拟工作场景</div>
+<div class="mt-3 text-sm text-slate-500">让模型在这个场景里预测下一句话，但更像是在“按你的条件交付”。</div>
 </div>
-</v-click>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm leading-6">
+<div v-click class="rounded-3xl border border-slate-200 bg-white/70 p-5 shadow-lg shadow-blue-300/15">
+<div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Role</div>
+<div class="mt-2 text-lg font-bold text-slate-900">你让它“扮演谁”</div>
+<div class="mt-2 text-slate-700">身份/视角/标准，决定它优先关注什么。</div>
+</div>
+<div v-click class="rounded-3xl border border-slate-200 bg-white/70 p-5 shadow-lg shadow-blue-300/15">
+<div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Context</div>
+<div class="mt-2 text-lg font-bold text-slate-900">你把“环境”补多全</div>
+<div class="mt-2 text-slate-700">背景、素材、约束、边界，减少它瞎猜。</div>
+</div>
+<div v-click class="rounded-3xl border border-slate-200 bg-white/70 p-5 shadow-lg shadow-blue-300/15">
+<div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Output</div>
+<div class="mt-2 text-lg font-bold text-slate-900">你要它“交付什么”</div>
+<div class="mt-2 text-slate-700">格式、长度、质量标准、检查点，让结果可验收。</div>
+</div>
+</div>
+<div v-click class="mt-6 text-xs text-slate-500">一句话：Prompt 写得越像“任务说明书/场景设定”，模型越不需要靠运气。</div>
+</div>
 
 <!--
 
@@ -23,7 +39,7 @@
 
 
 
-这一页所要传达的核心观点，凝练成一句话就是：提示词不是某种奇技淫巧，它本质上是对任务的清晰定义。
+这一页的核心观点：提示词不是技巧，本质是“搭建上下文 + 定义任务”，让模型不用靠猜。
 
 
 

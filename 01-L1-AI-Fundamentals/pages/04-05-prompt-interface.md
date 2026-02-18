@@ -1,5 +1,5 @@
-## 4.5 提示词是编程接口
->  “提示词是一种可阅读、可组合、可复用的低代码语言。”
+## 4.5 提示词是可复用的任务接口
+> “提示词是一种可阅读、可组合、可复用的接口语言。”
 
 <div class="mt-8 overflow-hidden border border-slate-100 bg-white/90 text-xs text-slate-700 shadow-[0_20px_45px_rgba(15,23,42,0.1)] md:text-sm">
   <div class="grid grid-cols-5 bg-slate-50 text-[10px] font-semibold uppercase text-slate-500 md:grid-cols-5 md:text-xs">

@@ -1,62 +1,35 @@
 ## 2.1 为什么大模型可以做到？
-
-<div class="h-full flex flex-col py-6">
-过去一年，硅谷发生一个怪事：
-
-<div class="py-3">
-<v-clicks>
-
-- Youtube 视频被自动剪得比人工快
-- 律所开始让 GPT 读案例并生成“案件路线图”
-- 华尔街让模型直接读 SEC 文档并做估值
-- 医院让 GPT 做初步问诊分诊
-- 游戏公司让 GPT 自动生成整个任务系统
-
-</v-clicks>
+<div class="h-full flex flex-col justify-center py-6">
+<div class="text-slate-700 text-lg">同一个模型，为什么能<strong>跨任务</strong>、<strong>跨领域</strong>？</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-sm leading-6">
+<div v-click class="bg-white/70 rounded-2xl p-4 shadow-lg shadow-blue-300/20 border border-slate-200">
+<h3 class="text-base font-semibold mb-2 text-slate-900">1) 统一接口：语言</h3>
+<p>很多任务都能被“说清楚”：</p>
+<p class="text-slate-700">输入是文字描述或文本材料，输出也是文字（答案、摘要、步骤、代码）。</p>
 </div>
-<div v-click class="question-callout mt-6">
-  <p>这些事原本需要不同职业的人类，但现在几乎同一种智能系统都能做。</p>
-  <p>一个系统，怎么可能跨这么多领域？</p>
+<div v-click class="bg-white/70 rounded-2xl p-4 shadow-lg shadow-blue-300/20 border border-slate-200">
+<h3 class="text-base font-semibold mb-2 text-slate-900">2) 统一目标：预测</h3>
+<p>LLM 的核心训练目标很单一：</p>
+<p class="text-slate-700">在给定上下文时，预测下一个 token 的概率分布。</p>
+</div>
+<div v-click class="bg-white/70 rounded-2xl p-4 shadow-lg shadow-blue-300/20 border border-slate-200">
+<h3 class="text-base font-semibold mb-2 text-slate-900">3) 规模化：数据与算力</h3>
+<p>当数据、算力、训练流程规模足够大时：</p>
+<p class="text-slate-700">模型会学到更通用的语言规律，从而泛化到新任务。</p>
 </div>
 </div>
-
-
-
-<style scoped>
-.question-callout {
-  @apply border border-slate-200 rounded-3xl bg-white/70 p-4 text-slate-800 shadow-lg;
-}
-.question-label {
-  @apply text-xs uppercase tracking-widest font-semibold text-slate-500 mb-1 inline-block;
-}
-.question-callout p {
-  @apply text-base font-medium;
-}
-</style>
+<div v-click class="mt-6 border border-slate-200 rounded-3xl bg-white/70 p-4 text-slate-800 shadow-lg text-base font-medium"><p>问题来了：如果“预测下一句话”，为什么会变成翻译、总结、写作，甚至写代码？</p></div>
+<div v-click class="mt-3 text-xs text-slate-500">注：能做不等于可信（会错、会编）。交付需要验证与约束，常用手段是 RAG 和工具调用。</div>
+</div>
 
 <!--
-过去一年里，硅谷发生了一件相当反直觉的现象。
-我们原本的认知是：
-视频剪辑是专业的视频剪辑师的职责，
-研读法律案例是律师的专长，
-分析 SEC 财报是金融分析师的核心工作，
-初步问诊和分诊属于医生的范畴，
-而设计复杂的任务系统则是游戏策划的创意领域。
+2.1 的目标是把“跨领域”这个现象收束成一个可解释的问题，而不是堆案例。
 
-然而，令人惊讶的是——
-现在你却会发现，几乎同一种 AI，正在同时处理所有这些原本属于不同专业的工作。
+讲法（1 分钟以内）：
+1) 统一接口：很多任务都能转写成语言的输入输出；
+2) 统一目标：训练时一直在做“预测下一个 token”；
+3) 规模化：当数据/算力/流程规模足够大，就会出现泛化与涌现。
 
-这是因为，传统 AI 的设计逻辑是高度专一化的：
-“一个模型 = 一项任务”。
-这意味着，你需要为视频剪辑开发一套特定的模型，
-为法律分析构建一套专门的模型，
-医疗、金融、游戏等各个领域，都需要重新开发一套专属的 AI 系统。
-
-那么现在，一个核心问题摆在我们面前：
-为什么同一个智能系统，竟然能够横跨如此多的专业领域？
-
-它究竟学习到了什么？
-仅仅是知识的累积吗？
-是特定技能的掌握吗？
-还是，它学习到了某种更根本、更底层的逻辑？
+然后抛出承接 2.2 的问题：
+“预测下一句话”这件事，为什么能产生这么多能力？
 -->

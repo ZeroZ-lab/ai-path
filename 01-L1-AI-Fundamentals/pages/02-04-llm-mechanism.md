@@ -1,5 +1,7 @@
 ## 2.4 大模型的运行原理
 
+> 类比提醒：我们用“人类预测”帮助理解，但模型本质是 token 概率计算与采样生成。
+
 <div class="flex items-center justify-center mt-5">
   <LlmTokenFlow />
 </div>

@@ -1,4 +1,4 @@
-## 4.7 这条提示词哪里“垃圾”？
+## 4.8 这条提示词哪里“垃圾”？
 
 <div class="mt-6 grid gap-5 rounded-[32px] border border-slate-100 bg-white/95 p-6 shadow-[0_20px_45px_rgba(15,23,42,0.12)]">
   <div class="rounded-2xl border border-slate-200 bg-slate-50/80 px-5 py-4 text-sm text-slate-700">

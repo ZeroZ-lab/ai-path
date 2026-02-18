@@ -1,4 +1,4 @@
-## 4.14 进阶心法：当 AI 听不懂时——给例子
+## 4.15 进阶心法：当 AI 听不懂时——给例子
 
 <div class="mt-6 grid gap-6 md:grid-cols-2 h-[75%] items-center">
   <!-- 左侧：痛点与原理 -->
