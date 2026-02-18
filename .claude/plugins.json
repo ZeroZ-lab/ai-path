@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "lastUpdated": 1770706081090,
+  "plugins": [
+    {
+      "filename": "create-slide",
+      "type": "skill",
+      "metadata": {
+        "sourcePath": "skills/create-slide",
+        "filename": "create-slide",
+        "name": "create-slide",
+        "description": "Standardized workflow for creating and registering new Slidev slides (Markdown/Vue) with strict formatting rules.",
+        "category": "skills",
+        "type": "skill",
+        "size": 7216,
+        "contentHash": "c97dfa9f4c2aee51e5eeb230e645d13f24362976b9e3a33248b9eb1d83969171"
+      }
+    }
+  ]
+}

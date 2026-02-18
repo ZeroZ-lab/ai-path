@@ -6,6 +6,14 @@ transition: slide-left
 mdc: true
 ---
 
+<style>
+@media print {
+  * {
+    box-shadow: none !important;
+  }
+}
+</style>
+
 # Dify 实战指南
 
 <template #graphic>
@@ -18,27 +26,33 @@ mdc: true
 
 ---
 src: ./pages/01-intro.md
+hide: true
+---
+
+
+---
+src: ./pages/01-intro-wx.md
 hide: false
 ---
 
 ---
 src: ./pages/01-00-opening-poll.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-00-pain-points-poll.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-00-pain.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-01-workflow-need.md
-hide: true
+hide: false
 ---
 
 ---
@@ -48,22 +62,22 @@ hide: false
 
 ---
 src: ./pages/01-01-workflow-translator.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-01-multi-model.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-01-tool-action.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/01-01-selection.md
-hide: true
+hide: false
 ---
 
 ---
@@ -74,47 +88,47 @@ hide: false
 
 ---
 src: ./pages/02-installation.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/02-00-deploy-options.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/02-01-installation-mirror.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/03-00-chapter-title.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/03-01-model-config.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/03-02-plugins-intro.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/04-00-chapter-title.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/04-01-create-chat-app.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/04-02-prompt-debugging.md
-hide: true
+hide: false
 ---
 
 ---
@@ -131,7 +145,7 @@ hide: false
 <!-- Chapter 03: Core Concepts -->
 ---
 src: ./pages/05-01-json-markdown.md
-hide: true
+hide: false
 ---
 
 ---
@@ -151,7 +165,7 @@ hide: false
 
 ---
 src: ./pages/05-05-chatflow-vs-workflow.md
-hide: true
+hide: false
 ---
 
 ---
@@ -172,7 +186,7 @@ hide: false
 
 ---
 src: ./pages/07-00-part1-intro.md
-hide: true
+hide: false
 ---
 
 ---
@@ -357,22 +371,22 @@ hide: false
 
 ---
 src: ./pages/09-02-chunking-visuals.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/09-02-demo-qa.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/09-02-demo-parent-child.md
-hide: true
+hide: false
 ---
 
 ---
 src: ./pages/09-02-demo-full-doc.md
-hide: true
+hide: false
 ---
 
 ---

@@ -6,3 +6,4 @@ dist
 *.pptx
 bun.lockb
 bun.lock
+.alma-snapshots
