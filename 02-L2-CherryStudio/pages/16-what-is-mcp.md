@@ -2,13 +2,13 @@
 layout: center
 ---
 
-# 07 进阶扩展：MCP 协议
+# 08 进阶扩展：MCP 协议
 
 ---
 layout: default
 ---
 
-## 7.1 什么是 MCP？(Model Context Protocol)
+## 8.1 什么是 MCP？(Model Context Protocol)
 
 <div class="grid gap-6 md:grid-cols-2 mt-4 items-stretch">
 

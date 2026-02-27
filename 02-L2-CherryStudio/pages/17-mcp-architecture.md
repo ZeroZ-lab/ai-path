@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.2 MCP 架构：它是如何工作的？
+## 8.2 MCP 架构：它是如何工作的？
 
 <div class="flex flex-col items-center justify-center mt-4 gap-8">
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.2 RAG 机制：生活化类比
+## 6.2 RAG 机制：生活化类比
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center items-start">
 

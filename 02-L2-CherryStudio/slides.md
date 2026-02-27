@@ -3,7 +3,7 @@
 theme: ../guan-theme
 
 title: Cherry Studio
-info: 
+info:
 # https://sli.dev/features/drawing
 drawings:
   persist: false
@@ -89,6 +89,11 @@ hide: false
 
 ---
 src: ./pages/15-model-config-strategy.md
+hide: false
+---
+
+---
+src: ./pages/15-01-advanced-ocr.md
 hide: false
 ---
 

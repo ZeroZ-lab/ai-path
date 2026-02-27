@@ -2,13 +2,13 @@
 layout: center
 ---
 
-# 05 高阶功能：知识库
+# 06 高阶功能：知识库
 
 ---
 layout: default
 ---
 
-## 5.1 为什么需要知识库？
+## 6.1 为什么需要知识库？
 
 <div class="grid gap-8 md:grid-cols-2 mt-10 items-stretch h-[380px]">
 

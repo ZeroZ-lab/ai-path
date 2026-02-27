@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.3 什么是 RAG (检索增强生成)
+## 6.3 什么是 RAG (检索增强生成)
 
 <div class="grid gap-6 md:grid-cols-2 mt-4 items-stretch">
 

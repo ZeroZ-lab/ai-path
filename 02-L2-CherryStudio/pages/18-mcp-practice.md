@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 7.3 实战：在 Cherry Studio 中配置 MCP
+## 8.3 实战：在 Cherry Studio 中配置 MCP
 
 <div class="grid gap-6 md:grid-cols-[1.2fr_1fr] mt-4 items-start">
 

@@ -2,14 +2,14 @@
 layout: center
 ---
 
-# 06 实操：三步构建知识库
+# 07 实操：三步构建知识库
 
 
 ---
 layout: default
 ---
 
-## 6.1 实操：三步构建知识库
+## 7.1 实操：三步构建知识库
 
 <div class="grid gap-6 md:grid-cols-3 mt-10 items-stretch">
 

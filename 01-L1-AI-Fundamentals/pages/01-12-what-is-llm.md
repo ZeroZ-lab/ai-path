@@ -1,6 +1,6 @@
 ## 1.4 什么是（文本）大模型（LLM）？
 
-> 一句话：用海量文本做预训练的“通用语言引擎”，核心目标是预测下一个 token。
+> 用海量文本做预训练的“通用语言引擎”，核心目标是预测下一个 token。
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 text-sm leading-6">
   <div class="bg-white bg-opacity-60 rounded-2xl p-5 shadow-lg shadow-blue-300/20">

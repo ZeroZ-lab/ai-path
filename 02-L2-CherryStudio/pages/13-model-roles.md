@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.6 模型分工：谁在干什么？
+## 6.6 模型分工：谁在干什么？
 
 <div class="grid gap-6 md:grid-cols-2 mt-4 items-stretch">
 

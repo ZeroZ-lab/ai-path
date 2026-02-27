@@ -129,7 +129,7 @@ layout: default
 <div class="space-y-6">
   <div class="rounded-3xl border border-emerald-100 bg-emerald-50/80 p-6 shadow-lg">
     <div class="text-xs font-bold uppercase tracking-[0.3em] text-emerald-600 mb-2">Live Action</div>
-    <h3 class="text-2xl font-bold text-emerald-900 mb-4">讲师现场演示</h3>
+    <h3 class="text-2xl font-bold text-emerald-900 mb-4">现场演示</h3>
     <p class="text-slate-700 mb-4">请观察讲师如何操作 Cherry Studio 完成以下任务：</p>
     <div class="space-y-3 text-sm text-slate-600">
       <div class="flex items-center gap-2">

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 6.2 模型配置策略 (Configuration Strategy)
+## 7.2 模型配置策略 (Configuration Strategy)
 
 <div class="grid gap-6 md:grid-cols-2 mt-8 items-stretch">
 

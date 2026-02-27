@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 5.5 核心概念：向量与数据库
+## 6.5 核心概念：向量与数据库
 
 <div class="grid gap-6 md:grid-cols-2 mt-4 items-stretch">
 
