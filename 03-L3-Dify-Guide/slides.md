@@ -15,12 +15,6 @@ mdc: true
 <!--
 各位好，欢迎来到今天的 Dify 实战课程。我们会从 Dify 的基础认知开始，一路走到工作流、节点、综合案例和知识库，最终让大家看到它如何从“能聊天的工具”变成“能交付的 AI 应用”。
 -->
----
-src: ./pages/01-intro.md
-hide: false
----
-
----
 src: ./pages/01-00-opening-poll.md
 hide: true
 ---
