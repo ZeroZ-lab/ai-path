@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 dist
+.next
 *.local
 .npmrc
 *.pptx
@@ -8,3 +9,4 @@ bun.lockb
 bun.lock
 .alma-snapshots
 .playwright-mcp
+.gstack

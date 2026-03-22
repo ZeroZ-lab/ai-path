@@ -8,7 +8,7 @@ This is a multi-level AI training course repository built with **Slidev** (Vue-p
 
 - **L1 (01-L1-AI-Fundamentals)**: AI basics and fundamentals
 - **L2 (02-L2-CherryStudio)**: Cherry Studio tool training
-- **L3 (03-L3-Dify / 03-L3-Dify-LAD)**: Dify platform courses with workflow examples
+- **L3 (03-L3-Dify-Guide)**: Dify platform formal course with workflow examples
 - **guan-theme**: Custom Slidev theme with glassmorphism design
 
 Target audience: Legal/white-collar professionals (non-technical).
@@ -89,7 +89,7 @@ Courses use numerical prefixes for ordering:
 Each course module is independent. Navigate to the specific course directory first:
 
 ```bash
-cd 01-L1-AI-Fundamentals  # or 02-L2-CherryStudio, 03-L3-Dify-LAD, etc.
+cd 01-L1-AI-Fundamentals  # or 02-L2-CherryStudio, 03-L3-Dify-Guide, etc.
 pnpm install              # Install dependencies
 pnpm dev                  # Start dev server (usually at http://localhost:3030)
 pnpm build                # Build for production
@@ -169,4 +169,4 @@ theme: ../guan-theme
 Reference existing files for consistent styling:
 - `STYLE_GUIDE_01.md` - Detailed style specifications
 - `AGENTS.md` - This file: project memory and technical constraints
-- Sample pages in `03-L3-Dify-LAD/pages/` - Well-structured examples
+- Sample pages in `03-L3-Dify-Guide/pages/` - Current formal L3 examples

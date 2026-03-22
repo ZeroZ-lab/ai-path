@@ -6,7 +6,7 @@ This file provides Claude Code-specific guidance. For general project informatio
 
 ```bash
 # Development
-cd 01-L1-AI-Fundamentals  # or 02-L2-CherryStudio, 03-L3-Dify-LAD, etc.
+cd 01-L1-AI-Fundamentals  # or 02-L2-CherryStudio, 03-L3-Dify-Guide, etc.
 pnpm install
 pnpm dev                    # http://localhost:3030
 
@@ -20,8 +20,7 @@ npm run dev
 ```
 01-L1-AI-Fundamentals/    # AI basics
 02-L2-CherryStudio/       # Cherry Studio tool
-03-L3-Dify/               # Dify basics
-03-L3-Dify-LAD/           # Dify legal track
+03-L3-Dify-Guide/         # Dify formal course
 guan-theme/               # Custom Slidev theme
 ```
 
@@ -35,7 +34,7 @@ guan-theme/               # Custom Slidev theme
    - Style guide and design system
    - Content tone guidelines
 
-2. **Check existing pages** in `03-L3-Dify-LAD/pages/` for reference implementations
+2. **Check existing pages** in `03-L3-Dify-Guide/pages/` for reference implementations
 
 3. **Run dev server** to verify changes: `pnpm dev`
 
