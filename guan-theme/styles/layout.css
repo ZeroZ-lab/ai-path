@@ -127,6 +127,32 @@ body {
   font-weight: 600;
 }
 
+.slidev-layout pre,
+.slidev-layout .shiki {
+  background: #f8fafc !important;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.slidev-layout pre {
+  padding: 1rem 1.1rem !important;
+  overflow: auto;
+}
+
+.slidev-layout .shiki {
+  font-size: 0.78rem !important;
+  line-height: 1.65 !important;
+  font-weight: 600 !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.slidev-layout .shiki span,
+.slidev-layout .shiki .line {
+  opacity: 1 !important;
+}
+
 .slidev-layout.cover {
   display: grid;
   grid-template-columns: minmax(320px, 1fr) minmax(280px, 0.9fr);

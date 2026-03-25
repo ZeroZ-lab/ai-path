@@ -121,17 +121,6 @@ img {
   padding: 34px 0 56px;
 }
 
-.hero {
-  display: grid;
-  gap: 22px;
-  padding: 34px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 32px;
-  box-shadow: var(--shadow);
-}
-
-.hero__eyebrow,
 .section-label {
   font-size: 12px;
   font-weight: 700;
@@ -139,23 +128,6 @@ img {
   text-transform: uppercase;
   color: #64748b;
 }
-
-.hero__title {
-  margin: 0;
-  font-size: clamp(34px, 6vw, 60px);
-  line-height: 1.05;
-}
-
-.hero__body {
-  margin: 0;
-  max-width: 760px;
-  font-size: 18px;
-  line-height: 1.75;
-  color: var(--muted);
-}
-
-.hero__actions,
-.hero__stats,
 .action-row {
   display: flex;
   flex-wrap: wrap;
@@ -189,19 +161,6 @@ img {
   background: rgba(255, 255, 255, 0.7);
   border-color: rgba(148, 163, 184, 0.22);
   color: #0f172a;
-}
-
-.stat-chip {
-  padding: 14px 18px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.16);
-}
-
-.stat-chip strong {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 4px;
 }
 
 .section {
@@ -256,7 +215,8 @@ img {
 }
 
 .course-card__cover {
-  aspect-ratio: 16 / 10;
+  position: relative;
+  aspect-ratio: 16 / 9;
   border-radius: 24px;
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.18);
@@ -265,10 +225,25 @@ img {
     linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.9));
 }
 
+.course-card__cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(15, 23, 42, 0.08));
+  pointer-events: none;
+}
+
+.course-card__cover iframe,
 .course-card__cover img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: block;
+}
+
+.course-card__cover iframe {
+  border: 0;
+  pointer-events: none;
+  background: white;
 }
 
 .course-card__meta {
@@ -327,25 +302,6 @@ img {
   background: rgba(15, 23, 42, 0.06);
   color: #334155;
   font-size: 13px;
-}
-
-.path-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-.path-card {
-  padding: 18px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(148, 163, 184, 0.18);
-}
-
-.path-card strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 18px;
 }
 
 .viewer-layout {
@@ -428,7 +384,6 @@ img {
     padding: 14px 0;
   }
 
-  .hero,
   .section,
   .viewer-panel {
     padding: 20px;

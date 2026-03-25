@@ -1,0 +1,90 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - heading "10 Agent Loop 的工程本质" [level=2] [ref=e9]
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - generic [ref=e13]: 核心本质
+              - paragraph [ref=e14]: Agent 不是魔法，而是一个带有 Feedback Loop 的 While 循环。
+            - generic [ref=e15]:
+              - generic [ref=e16]: 执行逻辑
+              - generic [ref=e17]:
+                - generic [ref=e18]:
+                  - generic [ref=e19]: "1"
+                  - generic [ref=e20]:
+                    - generic [ref=e21]: LLM 决策
+                    - generic [ref=e22]: 输出具体的工具调用指令
+                - generic [ref=e23]:
+                  - generic [ref=e24]: "2"
+                  - generic [ref=e25]:
+                    - generic [ref=e26]: 本地执行
+                    - code [ref=e28]: invoke_tool()
+                - generic [ref=e29]:
+                  - generic [ref=e30]: "3"
+                  - generic [ref=e31]:
+                    - generic [ref=e32]: 结果喂回
+                    - generic [ref=e33]: 将 Observation 追加进上下文
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - generic [ref=e36]: 示意代码
+              - generic [ref=e37]: agent_core.py
+            - generic [ref=e39]:
+              - code [ref=e41]:
+                - generic [ref=e42]: "def run_agent(prompt):"
+                - generic [ref=e43]: "# 初始化上下文"
+                - generic [ref=e44]: "ctx = [{\"role\": \"user\", \"content\": prompt}]"
+                - generic [ref=e45]: "while True:"
+                - generic [ref=e46]: "# 1. 思考与决策"
+                - generic [ref=e47]: msg = llm.chat(ctx, tools=my_tools)
+                - generic [ref=e48]: ctx.append(msg)
+                - generic [ref=e49]: "if not msg.tool_calls:"
+                - generic [ref=e50]: "return msg.content # ✅ 达成目标"
+                - generic [ref=e51]: "# 2. 依次执行请求的工具"
+                - generic [ref=e52]: "for call in msg.tool_calls:"
+                - generic [ref=e53]: res = invoke(call.func, call.args)
+                - generic [ref=e54]: "# 3. 最关键：将结果喂回 Loop"
+                - generic [ref=e55]: "ctx.append({\"role\": \"tool\", \"content\": res})"
+              - button "Copy" [ref=e56] [cursor=pointer]:
+                - img [ref=e57]
+      - img
+    - navigation [ref=e60]:
+      - generic [ref=e61]:
+        - button "Enter fullscreen" [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]: Enter fullscreen
+        - button "Go to previous slide" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Go to previous slide
+        - button "Go to next slide" [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: Go to next slide
+        - button "Show slide overview" [ref=e71] [cursor=pointer]:
+          - generic [ref=e72]: Show slide overview
+        - button "Switch to dark mode theme" [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]: Switch to dark mode theme
+          - img [ref=e76]
+        - button "Toggle camera view" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]: Toggle camera view
+        - button "Record video" [ref=e82] [cursor=pointer]:
+          - generic [ref=e83]: Record video
+        - button "Select recording device" [ref=e86] [cursor=pointer]:
+          - button "Select recording device" [ref=e87]:
+            - generic [ref=e88]: Select recording device
+        - button "Show drawing toolbar" [ref=e91] [cursor=pointer]:
+          - generic [ref=e92]: Show drawing toolbar
+        - button "Presenter Mode" [ref=e95] [cursor=pointer]:
+          - generic [ref=e96]: Presenter Mode
+        - button "Show editor" [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: Show editor
+        - link "Browser Exporter" [ref=e101] [cursor=pointer]:
+          - /url: /export
+          - generic [ref=e102]: Browser Exporter
+        - button "Show info" [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]: Show info
+        - button "Change sync settings" [ref=e109] [cursor=pointer]:
+          - button "Change sync settings" [ref=e110]:
+            - generic [ref=e111]: Change sync settings
+        - button "More Options" [ref=e115] [cursor=pointer]:
+          - button "More Options" [ref=e116]:
+            - generic [ref=e117]: More Options
+        - generic [ref=e120]: 14 / 28
+  - textbox "Goto..." [disabled] [ref=e123]

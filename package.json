@@ -18,6 +18,7 @@
     "build:course:l1": "cd 01-L1-AI-Fundamentals && bun run build -- --base /slides/l1/ --out ../courses/l1/dist-platform && cd .. && bun run sync:course l1",
     "build:course:l2": "cd 02-L2-CherryStudio && bun run build -- --base /slides/l2/ --out ../courses/l2/dist-platform && cd .. && bun run sync:course l2",
     "build:course:l3": "cd 03-L3-Dify-Guide && bun run build -- --base /slides/l3/ --out ../courses/l3/dist-platform && cd .. && bun run sync:course l3",
+    "build:course:l4": "cd 04-L4-Agent && bun run build -- --base /slides/l4/ --out ../courses/l4/dist-platform && cd .. && bun run sync:course l4",
     "dev:course:l1": "cd 01-L1-AI-Fundamentals && bun run dev",
     "dev:course:l2": "cd 02-L2-CherryStudio && bun run dev",
     "dev:course:l3": "cd 03-L3-Dify-Guide && bun run dev",

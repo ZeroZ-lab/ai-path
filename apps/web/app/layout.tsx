@@ -24,14 +24,6 @@ export default function RootLayout({
                 <span className="site-brand__title">课程聚合站</span>
               </span>
             </Link>
-            <nav className="site-nav" aria-label="主导航">
-              <Link href="/" className="site-nav__link">
-                首页
-              </Link>
-              <Link href="/courses" className="site-nav__link site-nav__link--primary">
-                课程展馆
-              </Link>
-            </nav>
           </div>
         </header>
         <main className="page">{children}</main>

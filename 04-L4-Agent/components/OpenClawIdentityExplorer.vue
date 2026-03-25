@@ -1,0 +1,118 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+type Key = 'local' | 'tools' | 'agency'
+
+const selected = ref<Key>('agency')
+
+const items: Array<{
+  key: Key
+  step: string
+  title: string
+  summary: string
+  detail: string
+  color: string
+  border: string
+  bg: string
+}> = [
+  {
+    key: 'local',
+    step: 'Point 1',
+    title: '本地优先',
+    summary: '它不只是一个网页上的 Agent，而是更接近你的真实工作环境。',
+    detail:
+      '它能靠近你的文件、终端、浏览器和本地上下文，所以不是“在远处替你回答”，而是“在你的环境里替你做事”。',
+    color: 'text-rose-700',
+    border: 'border-rose-200',
+    bg: 'bg-rose-50/80',
+  },
+  {
+    key: 'tools',
+    step: 'Point 2',
+    title: '真实工具链',
+    summary: '它连的不是抽象能力，而是终端、文件、浏览器、消息通道这些真工具。',
+    detail:
+      '很多产品看起来都像“会自动化”，但 OpenClaw 的强烈冲击感来自你能直接看到它碰环境、读文件、跑命令、开页面、继续推进任务。',
+    color: 'text-blue-700',
+    border: 'border-blue-200',
+    bg: 'bg-blue-50/80',
+  },
+  {
+    key: 'agency',
+    step: 'Point 3',
+    title: '高自主权',
+    summary: '它最厉害的地方，不是会不会说，而是能不能持续观察、持续决策、持续执行。',
+    detail:
+      '这也是它和普通聊天产品最大的差异。你感受到的不是“一个更会回答的模型”，而是“一个会自己往下走的代理系统”。',
+    color: 'text-emerald-700',
+    border: 'border-emerald-200',
+    bg: 'bg-emerald-50/80',
+  },
+]
+
+const current = () => items.find((item) => item.key === selected.value) ?? items[2]
+</script>
+
+<template>
+  <div class="mt-8 grid gap-6 md:grid-cols-[1fr_280px_1fr] items-center">
+    <button
+      class="rounded-[28px] border p-5 text-left shadow-[0_15px_35px_rgba(15,23,42,0.08)] transition duration-200"
+      :class="selected === 'local' ? 'border-rose-300 bg-rose-50/90 -translate-y-1' : 'border-slate-200 bg-white/85'"
+      @click="selected = 'local'"
+    >
+      <div class="text-xs font-bold uppercase tracking-[0.3em]" :class="selected === 'local' ? 'text-rose-500' : 'text-slate-400'">
+        Point 1
+      </div>
+      <div class="mt-3 text-2xl font-bold text-slate-900">本地优先</div>
+      <p class="mt-3 text-base leading-7 text-slate-600">它不只是活在云端，而是更接近你的真实工作环境。</p>
+    </button>
+
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex h-52 w-52 items-center justify-center rounded-full border border-slate-200 bg-white/75 shadow-[0_20px_45px_rgba(15,23,42,0.10)]">
+        <div class="text-[7rem] leading-none">🦞</div>
+      </div>
+      <div class="mt-4 text-sm font-bold uppercase tracking-[0.35em] text-slate-400">OpenClaw</div>
+    </div>
+
+    <button
+      class="rounded-[28px] border p-5 text-left shadow-[0_15px_35px_rgba(15,23,42,0.08)] transition duration-200"
+      :class="selected === 'tools' ? 'border-blue-300 bg-blue-50/90 -translate-y-1' : 'border-slate-200 bg-white/85'"
+      @click="selected = 'tools'"
+    >
+      <div class="text-xs font-bold uppercase tracking-[0.3em]" :class="selected === 'tools' ? 'text-blue-500' : 'text-slate-400'">
+        Point 2
+      </div>
+      <div class="mt-3 text-2xl font-bold text-slate-900">真实工具链</div>
+      <p class="mt-3 text-base leading-7 text-slate-600">它连的是终端、文件、浏览器、消息通道这些真的能做事的工具。</p>
+    </button>
+  </div>
+
+  <div class="mt-6 flex justify-center">
+    <button
+      class="w-full max-w-[560px] rounded-[28px] border p-5 text-left shadow-[0_15px_35px_rgba(15,23,42,0.08)] transition duration-200"
+      :class="selected === 'agency' ? 'border-emerald-300 bg-emerald-50/90 -translate-y-1' : 'border-slate-200 bg-white/85'"
+      @click="selected = 'agency'"
+    >
+      <div class="text-xs font-bold uppercase tracking-[0.3em]" :class="selected === 'agency' ? 'text-emerald-500' : 'text-slate-400'">
+        Point 3
+      </div>
+      <div class="mt-3 text-2xl font-bold text-slate-900">高自主权</div>
+      <p class="mt-3 text-base leading-7 text-slate-600">它能持续观察、持续决策、持续执行，而不是只回答一轮。</p>
+    </button>
+  </div>
+
+  <div class="mt-8 rounded-[30px] border bg-white/90 px-6 py-6 shadow-[0_15px_35px_rgba(15,23,42,0.08)]" :class="[current().border, current().bg]">
+    <div class="text-sm font-bold uppercase tracking-[0.25em]" :class="current().color">
+      {{ current().step }}
+    </div>
+    <div class="mt-3 text-2xl font-bold text-slate-900">
+      {{ current().title }}
+    </div>
+    <div class="mt-3 text-lg font-medium leading-8 text-slate-800">
+      {{ current().summary }}
+    </div>
+    <p class="mt-3 text-base leading-7 text-slate-700">
+      {{ current().detail }}
+    </p>
+  </div>
+</template>

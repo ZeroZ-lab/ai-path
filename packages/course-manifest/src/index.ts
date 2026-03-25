@@ -64,6 +64,19 @@ const courses: CourseManifestItem[] = [
     sourceDir: "03-L3-Dify-Guide",
     status: "ready",
   },
+  {
+    id: "l4",
+    title: "Agent 开发与 OpenClaw 实战",
+    level: "L4",
+    track: "Agent",
+    summary: "围绕 Agent 的核心循环、技能系统、记忆分层与安全边界，系统理解现代 Coding Agent 的工作方式。",
+    audience: "面向已经完成基础认知、工具与工作流课程，准备进一步理解 Agent 架构与实际产品能力的人群。",
+    tags: ["Agent", "OpenClaw", "Skills", "Memory"],
+    cover: "/slides/l4/imgs/cover.png",
+    entry: "/slides/l4/index.html",
+    sourceDir: "04-L4-Agent",
+    status: "ready",
+  },
 ]
 
 export function getAllCourses(): CourseView[] {

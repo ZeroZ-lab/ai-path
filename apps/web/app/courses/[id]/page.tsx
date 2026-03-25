@@ -28,8 +28,8 @@ export default async function CoursePage({ params }: CoursePageProps) {
             <p className="section__body">{course.summary}</p>
           </div>
           <div className="action-row">
-            <Link href="/courses" className="button button--ghost">
-              返回展馆
+            <Link href="/" className="button button--ghost">
+              返回首页
             </Link>
             <a href={course.entry} className="button button--dark" target="_blank" rel="noreferrer">
               全屏 / 新窗口打开

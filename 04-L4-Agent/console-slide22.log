@@ -1,0 +1,6 @@
+Total messages: 97 (Errors: 3, Warnings: 0)
+Returning 3 messages for level "error"
+
+[ERROR] slide failed to load SyntaxError: Invalid or unexpected token @ chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js:0
+[ERROR] slide failed to load SyntaxError: Invalid or unexpected token @ chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js:0
+[ERROR] slide failed to load SyntaxError: Invalid or unexpected token @ chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/installHook.js:0

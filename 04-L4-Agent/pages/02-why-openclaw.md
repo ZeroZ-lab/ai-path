@@ -2,38 +2,19 @@
 layout: default
 ---
 
-## 03 为什么 OpenClaw 值得拿来讲
+## 06 OpenClaw 到底是什么
 
-<div class="grid gap-6 md:grid-cols-[1.2fr_1fr] mt-6 items-stretch">
-  <section class="rounded-3xl border border-slate-200 bg-white p-6 shadow-md">
-    <div class="text-sm font-bold text-slate-900">它代表了什么</div>
-    <div class="mt-4 space-y-3 text-sm text-slate-600 leading-6">
-      <p>OpenClaw 不是一个“多一个按钮的聊天框”，而是一个让模型真正接入本地环境的 Agent 外壳。</p>
-      <p>它能把模型接到 Shell、文件系统、浏览器、消息平台和记忆系统上。</p>
-      <p>所以它特别适合用来理解 Agent 的完整结构，而不是只理解 Prompt。</p>
-    </div>
-  </section>
-  <section class="rounded-3xl border border-rose-100 bg-rose-50/80 p-6 shadow-md">
-    <div class="text-sm font-bold text-rose-900">它引发的争议</div>
-    <div class="mt-4 space-y-3 text-sm text-slate-600 leading-6">
-      <p>权限很大，意味着能力强。</p>
-      <p>权限很大，也意味着风险更大。</p>
-      <p>所以 OpenClaw 既是一个产品案例，也是一个安全案例。</p>
-    </div>
-  </section>
-</div>
+<OpenClawIdentityExplorer />
 
-<div class="mt-8 grid gap-4 md:grid-cols-3">
-  <div class="rounded-2xl border border-blue-100 bg-blue-50/80 p-4 shadow-sm">
-    <div class="text-xs font-bold uppercase tracking-[0.25em] text-blue-500">Local First</div>
-    <div class="mt-2 text-sm font-bold text-slate-900">本地优先</div>
-  </div>
-  <div class="rounded-2xl border border-purple-100 bg-purple-50/80 p-4 shadow-sm">
-    <div class="text-xs font-bold uppercase tracking-[0.25em] text-purple-500">High Agency</div>
-    <div class="mt-2 text-sm font-bold text-slate-900">高自主权</div>
-  </div>
-  <div class="rounded-2xl border border-emerald-100 bg-emerald-50/80 p-4 shadow-sm">
-    <div class="text-xs font-bold uppercase tracking-[0.25em] text-emerald-500">Real Tool Use</div>
-    <div class="mt-2 text-sm font-bold text-slate-900">真实工具链</div>
-  </div>
-</div>
+<!--
+逐字稿：
+这一页我不先讲抽象定义，我先讲 OpenClaw 最厉害的地方到底是什么。
+
+第一，本地优先。它不是只活在网页里，而是更接近你的真实工作环境，所以它能碰到你的文件、终端、浏览器和本地上下文。
+
+第二，真实工具链。它连的不是抽象能力，而是终端、文件、浏览器、消息通道这些真的能做事的工具。所以大家看到它时，会很容易产生“这个东西真的在干活”的冲击感。
+
+第三，高自主权。它最厉害的地方，不是会不会说，而是能不能持续观察、持续决策、持续执行。这也是它和普通聊天产品最大的差异。
+
+所以这页真正要带走的不是一句定义，而是三个最容易记住的特征：本地优先、真实工具链、高自主权。
+-->

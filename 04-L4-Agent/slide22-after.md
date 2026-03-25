@@ -1,0 +1,84 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e8]:
+        - heading "22 进阶：Agent 自动化调度 (心跳与定时)" [level=2] [ref=e9]
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - generic [ref=e13]:
+              - generic [ref=e14]: 01. 心跳探活 (HEARTBEAT)
+              - generic [ref=e15]: 解决长任务的“假死”与卡顿
+              - paragraph [ref=e16]: 系统定期向执行中的 Agent 发送心跳信号。若推理卡死或工具响应超时，心跳机制会自动触发 Restart，确保自动化任务不会因单次意外而终结。
+            - generic [ref=e17]:
+              - generic [ref=e18]: 02. 定时 Job (CRONJOB)
+              - generic [ref=e19]: 赋予 Agent“生物钟”
+              - paragraph [ref=e20]: Agent 不再是被动等待指令。通过 Cron 触发，它可以在每天凌晨自动巡检代码库、每周五下午自动生成项目周报，像数字员工一样定期完成例行公事。
+            - generic [ref=e21]:
+              - generic [ref=e22]: 03. 状态快照 (STATE)
+              - generic [ref=e23]: 支持跨重启的“断点续传”
+              - paragraph [ref=e24]: 长周期任务中，Agent 会将每一步的 Job State 实时持久化。即使系统重启，Agent 也能从数据库加载快照，接着上一次的进度继续工作。
+          - generic [ref=e25]:
+            - generic [ref=e26]: Agent Scheduler Dashboard
+            - generic [ref=e27]:
+              - generic [ref=e28]:
+                - generic [ref=e31]: 每日全量安全巡检
+                - generic [ref=e32]: 0 2 * * *
+              - generic [ref=e33]:
+                - generic [ref=e34]:
+                  - generic [ref=e35]: "Running Job #104"
+                  - generic [ref=e36]: "Progress: 18 / 30 Steps"
+                - generic [ref=e39]:
+                  - generic [ref=e40]:
+                    - generic [ref=e41]: "[09:42:01]"
+                    - generic [ref=e42]: HEARTBEAT OK
+                    - text: "- System Healthy"
+                  - generic [ref=e43]:
+                    - generic [ref=e44]: "[09:42:15]"
+                    - text: "Executing: analyze_threat_vector()"
+                  - generic [ref=e45]:
+                    - generic [ref=e46]: "[09:42:40]"
+                    - generic [ref=e47]: STATE SAVED
+                    - text: "- Snapshot created in Redis"
+              - generic [ref=e48]:
+                - generic [ref=e51]: 周五项目总结报告
+                - generic [ref=e52]: "STATUS: WAITING"
+      - img
+    - navigation [ref=e54]:
+      - generic [ref=e55]:
+        - button "Enter fullscreen" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: Enter fullscreen
+        - button "Go to previous slide" [ref=e59] [cursor=pointer]:
+          - generic [ref=e60]: Go to previous slide
+        - button "Go to next slide" [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]: Go to next slide
+        - button "Show slide overview" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Show slide overview
+        - button "Switch to dark mode theme" [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: Switch to dark mode theme
+          - img [ref=e70]
+        - button "Toggle camera view" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: Toggle camera view
+        - button "Record video" [ref=e76] [cursor=pointer]:
+          - generic [ref=e77]: Record video
+        - button "Select recording device" [ref=e80] [cursor=pointer]:
+          - button "Select recording device" [ref=e81]:
+            - generic [ref=e82]: Select recording device
+        - button "Show drawing toolbar" [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]: Show drawing toolbar
+        - button "Presenter Mode" [ref=e89] [cursor=pointer]:
+          - generic [ref=e90]: Presenter Mode
+        - button "Show editor" [ref=e92] [cursor=pointer]:
+          - generic [ref=e93]: Show editor
+        - link "Browser Exporter" [ref=e95] [cursor=pointer]:
+          - /url: /export
+          - generic [ref=e96]: Browser Exporter
+        - button "Show info" [ref=e98] [cursor=pointer]:
+          - generic [ref=e99]: Show info
+        - button "Change sync settings" [ref=e103] [cursor=pointer]:
+          - button "Change sync settings" [ref=e104]:
+            - generic [ref=e105]: Change sync settings
+        - button "More Options" [ref=e109] [cursor=pointer]:
+          - button "More Options" [ref=e110]:
+            - generic [ref=e111]: More Options
+        - generic [ref=e114]: 22 / 33
+  - textbox "Goto..." [disabled] [ref=e117]
