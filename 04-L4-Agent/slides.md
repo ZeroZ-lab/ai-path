@@ -20,6 +20,16 @@ hide: false
 ---
 
 ---
+src: ./pages/00-openclaw-cases-2.md
+hide: false
+---
+
+---
+src: ./pages/00-openclaw-question.md
+hide: false
+---
+
+---
 src: ./pages/00-part-1-title.md
 hide: false
 ---
@@ -45,7 +55,17 @@ hide: false
 ---
 
 ---
+src: ./pages/03-agent-evolution.md
+hide: false
+---
+
+---
 src: ./pages/00-part-2-title.md
+hide: false
+---
+
+---
+src: ./pages/00-part-2-define-title.md
 hide: false
 ---
 
@@ -60,12 +80,17 @@ hide: false
 ---
 
 ---
-src: ./pages/08-runtime-assembly.md
+src: ./pages/00-part-2-system-title.md
 hide: false
 ---
 
 ---
 src: ./pages/03-architecture-overview.md
+hide: false
+---
+
+---
+src: ./pages/00-part-2-execution-title.md
 hide: false
 ---
 
@@ -80,7 +105,22 @@ hide: false
 ---
 
 ---
+src: ./pages/08-runtime-assembly.md
+hide: false
+---
+
+---
+src: ./pages/00-part-2-ecosystem-title.md
+hide: false
+---
+
+---
 src: ./pages/05-skills-and-mcp.md
+hide: false
+---
+
+---
+src: ./pages/05-01-1-openclaw-on-pi.md
 hide: false
 ---
 
@@ -90,9 +130,20 @@ hide: false
 ---
 
 ---
+src: ./pages/05-02-0-why-skills-win.md
+hide: false
+---
+
+---
+src: ./pages/05-02-0-1-skills-vs-mcp-loading.md
+hide: false
+---
+
+---
 src: ./pages/05-02-skills-anatomy.md
 hide: false
 ---
+
 
 ---
 src: ./pages/05-03-skills-writing.md
@@ -106,7 +157,7 @@ hide: false
 
 ---
 src: ./pages/06-01-memory-conceptual.md
-hide: false
+hide: true
 ---
 
 ---
@@ -130,12 +181,22 @@ hide: false
 ---
 
 ---
+src: ./pages/07-security-risks.md
+hide: false
+---
+
+---
 src: ./pages/00-part-3-title.md
 hide: false
 ---
 
 ---
 src: ./pages/09-framework-comparison.md
+hide: false
+---
+
+---
+src: ./pages/20-openclaw-future.md
 hide: false
 ---
 

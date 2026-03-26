@@ -2,72 +2,79 @@
 layout: default
 ---
 
-## 20 安全：为“数字员工”修筑防御围栏
+## 25 安全：一旦 Agent 真能“动手”，风险就不再只是说错话
 
-<div class="px-8 pt-2">
-<div class="grid grid-cols-[1fr_1.5fr] gap-8 mt-6 items-stretch">
-<!-- 左侧：三大致命风险 -->
-<div class="flex flex-col gap-3">
-<div class="bg-rose-50/80 border-2 border-rose-200 p-4 rounded-2xl shadow-sm relative overflow-hidden">
-<div class="absolute -top-2 -right-2 text-4xl opacity-10 font-black">01</div>
-<div class="text-[10px] font-black text-rose-600 uppercase mb-1 tracking-widest">指令注入 (INJECTION)</div>
-<div class="text-[13px] font-black text-slate-800 mb-1">“藏在文档里的木马”</div>
-<p class="text-[11px] text-slate-600 leading-relaxed">Agent 读取含有恶意指令的网页或邮件后，可能被其误导，执行如“导出所有私钥”等违规操作。</p>
+
+<div class="mt-6 grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
+  <section class="rounded-[28px] border border-rose-100 bg-rose-50/80 p-5 shadow-[0_15px_35px_rgba(244,63,94,0.10)]">
+    <div class="text-xs font-bold uppercase tracking-[0.3em] text-rose-500">Why Risk Gets Bigger</div>
+    <div class="mt-3 space-y-3">
+      <div class="rounded-2xl bg-white/80 px-4 py-3">
+        <div class="text-[13px] font-bold text-slate-900">1. 它开始读不可信内容</div>
+        <div class="mt-1 text-[13px] leading-5 text-slate-600">网页、邮件、文档、issue 评论都可能夹带恶意指令，模型会把“看到的内容”当成输入的一部分。</div>
+      </div>
+      <div class="rounded-2xl bg-white/80 px-4 py-3">
+        <div class="text-[13px] font-bold text-slate-900">2. 它开始碰真实权限</div>
+        <div class="mt-1 text-[13px] leading-5 text-slate-600">一旦接到终端、数据库、浏览器账号、API token，幻觉就不再只是胡说，而可能真的执行坏事。</div>
+      </div>
+      <div class="rounded-2xl bg-white/80 px-4 py-3">
+        <div class="text-[13px] font-bold text-slate-900">3. 它开始跨多轮持续运行</div>
+        <div class="mt-1 text-[13px] leading-5 text-slate-600">任务一长，约束就可能被压缩、遗忘、覆盖，系统也更容易在多轮里慢慢偏离原始边界。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rounded-[28px] border border-slate-200 bg-white/90 p-5 shadow-[0_15px_35px_rgba(15,23,42,0.08)]">
+    <div class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">Three Defenses</div>
+    <div class="mt-4 space-y-4">
+      <div class="flex items-start gap-3 rounded-2xl border border-blue-100 bg-blue-50/70 px-4 py-3">
+        <div class="text-xl leading-none">🛡️</div>
+        <div>
+          <div class="text-[13px] font-bold text-slate-900">拦截器 / Policy Filtering</div>
+          <div class="mt-1 text-[13px] leading-5 text-slate-600">先拦截明显危险的动作、命令和调用，不要把所有判断都交给模型自己。</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-3 rounded-2xl border border-purple-100 bg-purple-50/70 px-4 py-3">
+        <div class="text-xl leading-none">📦</div>
+        <div>
+          <div class="text-[13px] font-bold text-slate-900">沙盒 / 权限隔离</div>
+          <div class="mt-1 text-[13px] leading-5 text-slate-600">让 Agent 在受限环境里运行，默认低权限，再按任务逐步放权。</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-3 rounded-2xl border border-emerald-100 bg-emerald-50/70 px-4 py-3">
+        <div class="text-xl leading-none">👨‍💻</div>
+        <div>
+          <div class="text-[13px] font-bold text-slate-900">Human-in-the-Loop</div>
+          <div class="mt-1 text-[13px] leading-5 text-slate-600">涉及写操作、外部发送、金钱和生产环境时，必须保留人工确认点。</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-<div class="bg-rose-50/80 border-2 border-rose-200 p-4 rounded-2xl shadow-sm relative overflow-hidden">
-<div class="absolute -top-2 -right-2 text-4xl opacity-10 font-black">02</div>
-<div class="text-[10px] font-black text-rose-600 uppercase mb-1 tracking-widest">越权执行 (EXPLOITATION)</div>
-<div class="text-[13px] font-black text-slate-800 mb-1">“给错权限的灾难”</div>
-<p class="text-[11px] text-slate-600 leading-relaxed">一旦 Agent 拥有宿主机 Root 权限或直接访问生产数据库，一个小小的推理幻觉就可能导致不可挽回的删库事故。</p>
-</div>
-<div class="bg-rose-50/80 border-2 border-rose-200 p-4 rounded-2xl shadow-sm relative overflow-hidden">
-<div class="absolute -top-2 -right-2 text-4xl opacity-10 font-black">03</div>
-<div class="text-[10px] font-black text-rose-600 uppercase mb-1 tracking-widest">关键遗忘 (FORGETTING)</div>
-<div class="text-[13px] font-black text-slate-800 mb-1">“压缩掉的安全约束”</div>
-<p class="text-[11px] text-slate-600 leading-relaxed">在长周期任务的上下文压缩中，Agent 可能丢失掉 System Prompt 中定义的“绝对禁止”规则。</p>
-</div>
-</div>
-<!-- 右侧：OpenClaw 防御矩阵可视化 -->
-<div class="bg-[#0f172a] rounded-3xl p-6 border border-slate-700 shadow-2xl flex flex-col relative overflow-hidden">
-<div class="text-[11px] font-mono text-slate-400 mb-6 uppercase tracking-[0.2em] text-center border-b border-slate-800 pb-2">Defense-in-Depth Architecture</div>
-<div class="space-y-5">
-<!-- Defense Line 1 -->
-<div class="flex items-center gap-4 bg-blue-500/10 p-3 rounded-xl border border-blue-500/30 relative">
-<div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-xl">🛡️</div>
-<div class="flex-1">
-<div class="text-[12px] font-black text-blue-300">INTERCEPTORS (拦截器)</div>
-<div class="text-[10px] text-slate-400 font-mono">实时扫描 Shell 指令，自动拦截 rm -rf, drop table 等。</div>
-</div>
-</div>
-<!-- Defense Line 2 -->
-<div class="flex items-center gap-4 bg-purple-500/10 p-3 rounded-xl border border-purple-500/30">
-<div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-xl">📦</div>
-<div class="flex-1">
-<div class="text-[12px] font-black text-purple-300">SANDBOXING (沙盒环境)</div>
-<div class="text-[10px] text-slate-400 font-mono">所有执行动作均在独立的 Docker 容器内完成，物理隔离。</div>
-</div>
-</div>
-<!-- Defense Line 3 -->
-<div class="flex items-center gap-4 bg-emerald-500/10 p-3 rounded-xl border border-emerald-500/30">
-<div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-xl">👨‍💻</div>
-<div class="flex-1">
-<div class="text-[12px] font-black text-emerald-300">HUMAN-IN-THE-LOOP</div>
-<div class="text-[10px] text-slate-400 font-mono">针对敏感 API 或写操作，设置必须由人类点击确认的物理开关。</div>
-</div>
-</div>
-</div>
-<!-- 底部警告 -->
-<div class="mt-auto pt-6 border-t border-slate-800 flex items-center gap-3">
-<div class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></div>
-<div class="text-[10px] font-mono text-rose-400 uppercase tracking-widest">Warning: Treat Agent Output as Untrusted Data</div>
-</div>
-</div>
-</div>
+
+<div class="mt-5 rounded-[24px] border border-amber-200 bg-amber-50/80 px-5 py-4 text-[15px] leading-6 text-amber-900 shadow-[0_12px_30px_rgba(245,158,11,0.10)]">
+  核心原则只有一句：<b>永远不要假设模型是安全的。真正的安全，来自工程上的约束、隔离和审计。</b>
 </div>
 
 <!--
-讲解要点：
-1. 风险放大器：Agent 能执行命令，这意味着幻觉的代价从“说错话”变成了“做错事”。
-2. 三道防线：通过拦截、沙盒、人工审批构建完整的安全闭环。
-3. 核心原则：永远不要假设模型是安全的，要通过工程手段约束模型。
+逐字稿：
+这一页我想讲一个很关键的变化：一旦 Agent 真能动手，风险就不再只是说错话。
+
+普通聊天产品出错，很多时候只是文本层的问题，比如解释错了、总结偏了。但高自主性 Agent 一旦接上浏览器、终端、文件系统和自动化，错误的代价会升级到执行层。
+
+为什么风险会突然变大？主要是三个原因。
+
+第一，它开始读不可信内容。网页、邮件、文档、issue 评论都可能夹带恶意指令，模型会把“看到的内容”当成输入的一部分。
+
+第二，它开始碰真实权限。一旦接到终端、数据库、浏览器账号、API token，幻觉就不再只是胡说，而可能真的执行坏事。
+
+第三，它开始跨多轮持续运行。任务一长，约束就可能被压缩、遗忘、覆盖，系统也更容易在多轮里慢慢偏离原始边界。
+
+所以真正的安全，不能靠“希望模型自己足够聪明”，而要靠三道防线。
+
+第一，拦截器和策略过滤。先把明显危险的动作拦住。
+第二，沙盒和权限隔离。默认低权限，不要一上来就把生产环境交出去。
+第三，Human-in-the-Loop。涉及写操作、外部发送、金钱和生产系统时，必须保留人工确认点。
+
+所以最后带走一句话：永远不要假设模型是安全的。真正的安全，来自工程上的约束、隔离和审计。
 -->

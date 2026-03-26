@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 13 一个 Skill 目录到底长什么样
+## 17 一个 Skill 目录到底长什么样
 
 <div class="mt-4 grid gap-4">
   <section class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-md">
@@ -73,3 +73,18 @@ layout: default
     </div>
   </section>
 </div>
+
+<!--
+逐字稿：
+这一页我想回答一个非常具体的问题：一个 Skill 目录到底长什么样？
+
+很多人一听 Skill，会以为那就是一大段很长的 Prompt。但更自然的理解方式其实是：Skill 是一个目录，不只是一个文本块。
+
+这个目录通常有一个主入口，也就是 SKILL.md。它负责告诉 Agent 这是什么、什么时候该用、先做什么。
+
+然后旁边会挂一组辅助文件。比如 examples、scripts、references、template。它们不是默认全部塞进上下文，而是按需要逐步展开。
+
+所以 Skill 的关键，不是把所有知识都一口气塞给模型，而是把主入口做轻，把细节拆到目录里，按需加载。
+
+这也是为什么 Skill 更像一个可复用的工作流单元，而不是一个超长 Prompt。
+-->

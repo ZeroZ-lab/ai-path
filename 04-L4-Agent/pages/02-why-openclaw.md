@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 06 OpenClaw 到底是什么
+## 07 OpenClaw 到底是什么
 
 <OpenClawIdentityExplorer />
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 19 OpenClaw 已明确支持的自动化能力
+## 24 OpenClaw 已明确支持的自动化能力
 
 <div class="px-8 pt-1">
 <div class="grid grid-cols-[1fr_1.5fr] gap-8 mt-4 items-stretch">
@@ -74,8 +74,16 @@ layout: default
 </div>
 
 <!--
-讲解要点：
-1. 这页只讲 OpenClaw 官方文档明确支持的自动化能力，不讲泛化想象。
-2. 真正的关键不是“有个很酷的 dashboard”，而是 Gateway 是否内建 scheduler，以及作业是否可持久化。
-3. 需要带走的理解：OpenClaw 已经不只是一次性对话，它有 cron、heartbeat、session target、delivery 这些长期运行机制。
+逐字稿：
+这一页我想讲一个特别关键的变化：OpenClaw 已经不只是一次性对话了，它开始具备长期运行能力。
+
+这里我只讲官方文档明确支持的自动化能力，不讲泛化想象。
+
+真正关键的点不是“有没有一个酷炫 dashboard”，而是 Gateway 这一层是不是内建了 scheduler，作业能不能持久化，运行结果能不能被交付出去。
+
+所以你可以把这一页记成四个词：cron、heartbeat、session target、delivery。
+
+它们合在一起的意义是，OpenClaw 不再只是你问一句它答一句，而是可以被定时唤醒、跑在指定 session、按策略执行、再把结果发出去。
+
+所以这页真正要带走的不是某个产品界面，而是一个判断：高自主性 Agent 一旦具备自动化能力，它就开始更像一个长期运行的系统。
 -->

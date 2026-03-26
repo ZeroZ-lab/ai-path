@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 28 参考资料
+## 27 参考资料
 
 <div class="grid gap-6 md:grid-cols-2 mt-6 text-left">
   <section class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-md">
@@ -37,3 +37,12 @@ layout: default
     </ul>
   </section>
 </div>
+
+<!--
+逐字稿：
+最后这一页不需要展开讲很久，它更像一张路标。
+
+如果你想继续往下挖，原理和架构可以去看官方文档和 OpenClaw Book；工程实践可以看 OpenAI、Anthropic、LangChain 这些关于 agent engineering 的资料；安全部分也有专门的公开文章可以继续追。
+
+这一页的意义不是让大家当场读完，而是告诉你：这门课背后不是空口判断，每一部分都有公开资料可以继续往下追。
+-->

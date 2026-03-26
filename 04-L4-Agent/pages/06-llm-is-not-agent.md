@@ -2,28 +2,21 @@
 layout: default
 ---
 
-## 05 为什么 LLM 本身不等于 Agent
+## 06 为什么 LLM 本身不等于 Agent
 
-<div class="grid gap-6 md:grid-cols-2 mt-6 items-stretch">
-  <section class="rounded-3xl border border-slate-200 bg-white p-6 shadow-md">
-    <div class="text-sm font-bold text-slate-900">LLM 的本质</div>
-    <div class="mt-4 space-y-3 text-sm text-slate-600 leading-6">
-      <p>从工程上看，LLM 的核心工作仍然是基于上下文做下一段 token 预测。</p>
-      <p>它本身没有手、没有长期状态、也不会自动接触真实环境。</p>
-      <p>如果外部系统不给它工具、记忆和调度，它就只能“继续说下去”。</p>
-    </div>
-  </section>
-  <section class="rounded-3xl border border-blue-100 bg-blue-50/80 p-6 shadow-md">
-    <div class="text-sm font-bold text-blue-900">为什么不能把它直接等同于 Agent</div>
-    <div class="mt-4 space-y-3 text-sm text-slate-600 leading-6">
-      <p>它受限于上下文窗口，看不到的内容等于不存在。</p>
-      <p>它像一个住在黑盒房间里的人，只能通过狭窄缝隙接收信息并吐出文字。</p>
-      <p>Agent 之所以成立，是因为外部系统把“感知、行动、记忆、调度”补给了它。</p>
-    </div>
-  </section>
+<div class="mt-3 text-sm text-slate-500">
+  你可以把 LLM 理解成“大脑核心”。真正把它变成 Agent 的，不是多一段提示词，而是外部系统把感知、行动、记忆、调度一项项接上去。
 </div>
 
-<div class="mt-8 rounded-3xl border border-amber-200 bg-amber-50/80 p-5 shadow-md">
-  <div class="text-sm font-bold text-amber-900">一句翻译</div>
-  <p class="mt-2 text-sm text-amber-800 leading-6">LLM 更像会说话的大脑，Agent 则是给这个大脑接上身体、记忆和外部世界接口的完整系统。</p>
-</div>
+<LlmVsAgentBuilder />
+
+<!--
+逐字稿：
+这一页我不想再用静态定义去讲“LLM 不等于 Agent”，因为那样很容易听成一句抽象口号。
+
+更直接的理解方式是：先把 LLM 看成一个大脑核心。它会基于上下文继续预测，但它本身没有眼睛、没有手、没有长期记忆，也不会自己安排下一步。
+
+所以真正把它变成 Agent 的，不是提示词突然变高级了，而是外部系统把感知、行动、记忆、调度这些部件，一项项补给它。
+
+你可以现场点这四个模块来看。每补上一项，它就离“完整 Agent”更近一步。
+-->

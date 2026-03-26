@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 12 能力分层：基础、工具、Skill、MCP 不是一回事
+## 14 能力分层：基础、工具、Skill、MCP 不是一回事
 
 <div class="mt-6 grid gap-4">
   <section class="rounded-3xl border border-slate-200 bg-white/85 p-5 shadow-md">
@@ -35,3 +35,22 @@ layout: default
     <p class="mt-2 text-sm leading-6 text-blue-800">基础动作是手，工具是接口，Skill 是说明书，MCP 是接线标准，编排决定这些东西怎么一起工作。</p>
   </section>
 </div>
+
+<!--
+逐字稿：
+这一页我想把最容易混淆的一层东西分清。
+
+很多人会把 Browser、Skill、MCP 全都叫工具，但其实它们根本不在同一层。
+
+最底层是基础动作，比如 read、write、edit、bash。它们更像最原始的手部动作。
+
+再往上一层是工具。工具比原语更完整，更接近一个具体任务，比如浏览器操作、搜索、HTTP 调用。
+
+再往上是 Skill。Skill 不一定亲自执行动作，它更像写给模型看的说明书和工作流封装，告诉模型何时用哪些工具、按什么顺序做。
+
+MCP 则更像接线标准。它解决的是“外部能力怎么标准化接进来”，不是“模型具体该怎么完成任务”。
+
+最上面还有编排。也就是任务拆解、并行协作、sub-agent 这些系统怎么组织多个动作的方式。
+
+所以这一页的带走点很简单：基础动作是手，工具是接口，Skill 是说明书，MCP 是接线标准，编排决定它们怎么一起工作。
+-->

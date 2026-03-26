@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 25 OpenClaw 不是唯一答案，它只是 landscape 里最醒目的一个样本
+## 26 OpenClaw 不是唯一答案，它只是 Agent 里最醒目的一个样本
 
 <div class="mt-6 overflow-hidden rounded-3xl border border-slate-200 shadow-md">
   <table class="w-full border-collapse bg-white text-sm">
@@ -47,3 +47,18 @@ layout: default
   <div class="text-sm font-bold text-amber-900">最重要的判断</div>
   <p class="mt-2 text-sm text-amber-800 leading-6">不要先问“哪个框架最先进”，而要先问“你的任务更像聊天、编排、代码协作，还是高自主权代理”。Agent 世界的误判，很多都始于把不同层级的东西放在同一张榜单里比较。</p>
 </div>
+
+<!--
+逐字稿：
+这一页我想把视角重新拉回全局。
+
+OpenClaw 当然很醒目，但它不是唯一答案。真正重要的是把不同框架和产品重新放回各自的位置。
+
+比如 OpenClaw 更像本地优先的高自主权 Agent；LangGraph 更像可编排的状态机；AutoGen 更像多 Agent 协作实验室；CrewAI 更像角色分工的流程系统。
+
+所以这一页不是在排榜单，而是在纠正比较方式。
+
+不要先问哪个框架最先进，而要先问：你的任务更像聊天、编排、代码协作，还是高自主权代理。
+
+Agent 世界里很多误判，都是从把不同层级的东西放在同一张榜单里比较开始的。
+-->

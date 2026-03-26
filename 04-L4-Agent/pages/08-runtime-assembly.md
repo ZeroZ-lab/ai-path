@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## 07 OpenClaw 真正难的地方：runtime 怎么装起来
+## 11 OpenClaw 真正难的地方：runtime 怎么装起来
 
 <div class="grid gap-6 md:grid-cols-3 mt-6 items-stretch">
   <section class="rounded-3xl border border-blue-100 bg-blue-50/80 p-5 shadow-md">
@@ -35,3 +35,20 @@ layout: default
   <div class="text-sm font-bold text-slate-900">为什么这页很关键</div>
   <p class="mt-3 text-sm text-slate-600 leading-6">很多人看到 OpenClaw，会把注意力放在“它能开浏览器、能跑命令”。但真正决定它像不像一个系统的，不是工具数量，而是每一轮推理之前，runtime 如何把身份、会话、技能、记忆、规则和权限装进同一个可执行上下文里。</p>
 </div>
+
+<!--
+逐字稿：
+这一页我想讲 OpenClaw 真正难的地方：不是工具多，而是 runtime 怎么装起来。
+
+很多人第一次看到 OpenClaw，会把注意力放在“它能开浏览器”“它能跑命令”。但真正决定它像不像一个系统的，不是工具数量，而是每一轮推理之前，系统怎么把身份、会话、技能、记忆、规则和权限装进同一个上下文。
+
+所以这里可以先记三层。
+
+第一层是身份层。也就是这个 Agent 到底是谁、按什么方式做事、什么情况下算完成。
+
+第二层是装配层。把背景文件、规则、对话历史、工作区信息、记忆和技能一起拼起来。
+
+第三层是执行层。模型决定下一步动作，工具返回 observation，再把这些结果继续统一注入下一轮。
+
+所以 runtime 不是一个盒子，而是一套持续装配、持续执行、持续回流的机制。
+-->
